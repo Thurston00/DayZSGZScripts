@@ -1,0 +1,5 @@
+enum ESgActionCategory
+{	
+	WarmUp,
+	Game
+}

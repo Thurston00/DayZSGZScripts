@@ -1,0 +1,208 @@
+FrameWidgetClass rootFrame {
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  ImageWidgetClass Background {
+   ignorepointer 1
+   color 0 0 0 0.9412
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   mode blend
+  }
+  GridSpacerWidgetClass Grid {
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 64
+   Margin 64
+   "Size To Content V" 1
+   Columns 1
+   {
+    FrameWidgetClass CountDownFrame {
+     ignorepointer 1
+     position 0 0
+     size 1 96
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      GridSpacerWidgetClass CountDownGrid {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Padding 0
+       Margin 0
+       Columns 1
+       Rows 2
+       {
+        TextWidgetClass CountDownLabel1 {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "Waiting for players..."
+         font "gui/fonts/sdf_MetronBook72"
+         "exact text" 1
+         "exact text size" 35
+         "text halign" center
+         "text valign" center
+        }
+        TextWidgetClass CountDownLabel2 {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         font "gui/fonts/sdf_MetronBook72"
+         "exact text" 1
+         "exact text size" 35
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass ImageFrame {
+     clipchildren 0
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     {
+      ImageWidgetClass ContentImage {
+       clipchildren 0
+       ignorepointer 1
+       size 0.16 0.09
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       fixaspect inside
+       mode blend
+       "src alpha" 1
+       stretch 1
+       {
+        PanelWidgetClass ImageBorder {
+         clipchildren 0
+         ignorepointer 1
+         color 0 0 0 1
+         size 1.001 1.001
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         style sgz_border
+        }
+        FrameWidgetClass RightButtonFrame {
+         clipchildren 0
+         ignorepointer 1
+         position -32 0
+         size 64 64
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 1
+        }
+        FrameWidgetClass LeftButtonFrame {
+         clipchildren 0
+         ignorepointer 1
+         position -32 0
+         size 64 64
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 1
+        }
+        FrameWidgetClass NavigationFrame {
+         ignorepointer 1
+         position 0 16
+         size 320 32
+         halign center_ref
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 1
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass DescFrame {
+     ignorepointer 1
+     position 0 0
+     size 1 112
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      MultilineTextWidgetClass DescMultiLineLabel {
+       ignorepointer 1
+       size 0.75 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       text "Hint_Text"
+       font "gui/fonts/sdf_MetronLight72"
+       "italic text" 0
+       "exact text" 1
+       "exact text size" 20
+       "text halign" center
+       wrap 1
+       "condense whitespace" 1
+       "strip newlines" 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

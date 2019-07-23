@@ -1,0 +1,19 @@
+ImageWidgetClass rootFrame {
+ ignorepointer 1
+ position 0 0
+ size 16 16
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 1
+ vexactsize 1
+ fixaspect fixwidth
+ userID 5
+ image0 "set:sgz_hud image:compass_teammate"
+ imageTexture "{7FB640362F6B33EB}mod_sg/gui/imagesets/zombie.edds"
+ mode blend
+ "src alpha" 1
+ "no wrap" 0
+ stretch 0
+}

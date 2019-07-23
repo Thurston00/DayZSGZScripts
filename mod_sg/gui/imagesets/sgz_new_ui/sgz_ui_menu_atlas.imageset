@@ -1,0 +1,142 @@
+ImageSetClass {
+ Name "sgz_ui_menu"
+ RefSize 3840 2160
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{95163AA0A4BF58F0}mod_sg/gui/imagesets/sgz_new_ui/sgz_ui_menu_atlas.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass logo {
+   Name "logo"
+   Pos 112 389
+   Size 384 288
+   Flags 0
+  }
+  ImageSetDefClass loading {
+   Name "loading"
+   Pos 3399 403
+   Size 144 144
+   Flags 0
+  }
+ }
+ Groups {
+  ImageSetGroupClass arrow {
+   Name "arrow"
+   Images {
+    ImageSetDefClass arrow_left {
+     Name "arrow_left"
+     Pos 688 573
+     Size 72 72
+     Flags 0
+    }
+    ImageSetDefClass arrow_right {
+     Name "arrow_right"
+     Pos 868 573
+     Size 72 72
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass slider {
+   Name "slider"
+   Images {
+    ImageSetDefClass slider_left {
+     Name "slider_left"
+     Pos 635 417
+     Size 128 65
+     Flags 0
+    }
+    ImageSetDefClass slider_right {
+     Name "slider_right"
+     Pos 853 417
+     Size 128 65
+     Flags 0
+    }
+    ImageSetDefClass slider_region_eu {
+     Name "slider_region_eu"
+     Pos 2111 524
+     Size 96 96
+     Flags 0
+    }
+    ImageSetDefClass slider_region_us {
+     Name "slider_region_us"
+     Pos 1910 524
+     Size 96 96
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass panel {
+   Name "panel"
+   Images {
+    ImageSetDefClass panel_header {
+     Name "panel_header"
+     Pos 0 0
+     Size 3840 352
+     Flags 0
+    }
+    ImageSetDefClass panel_footer {
+     Name "panel_footer"
+     Pos 0 1816
+     Size 3840 344
+     Flags 0
+    }
+    ImageSetDefClass panel_dialoge {
+     Name "panel_dialoge"
+     Pos 112 774
+     Size 1062 109
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass button {
+   Name "button"
+   Images {
+    ImageSetDefClass button_cancel {
+     Name "button_cancel"
+     Pos 1693 394
+     Size 96 96
+     Flags 0
+    }
+    ImageSetDefClass button_settings {
+     Name "button_settings"
+     Pos 1910 395
+     Size 96 96
+     Flags 0
+    }
+    ImageSetDefClass button_exit {
+     Name "button_exit"
+     Pos 2110 395
+     Size 96 96
+     Flags 0
+    }
+    ImageSetDefClass button_action_high_hover {
+     Name "button_action_high_hover"
+     Pos 2870 605
+     Size 432 144
+     Flags 0
+    }
+    ImageSetDefClass button_menu_primary {
+     Name "button_menu_primary"
+     Pos 1124 397
+     Size 432 190
+     Flags 0
+    }
+    ImageSetDefClass button_navigation_normal {
+     Name "button_navigation_normal"
+     Pos 3680 400
+     Size 16 16
+     Flags 0
+    }
+    ImageSetDefClass button_navigation_selected {
+     Name "button_navigation_selected"
+     Pos 3616 400
+     Size 16 16
+     Flags 0
+    }
+   }
+  }
+ }
+}

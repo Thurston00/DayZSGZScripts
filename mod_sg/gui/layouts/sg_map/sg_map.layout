@@ -1,0 +1,374 @@
+FrameWidgetClass rootFrame {
+ visible 1
+ clipchildren 1
+ ignorepointer 0
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ priority 998
+ {
+  PanelWidgetClass Background {
+   clipchildren 1
+   ignorepointer 1
+   keepsafezone 0
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   draggable 0
+   style rover_sim_black
+  }
+  PanelWidgetClass MapContainer {
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   {
+    ImageWidgetClass MapWidget {
+     clipchildren 1
+     ignorepointer 0
+     keepsafezone 0
+     size 960 960
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     priority 6
+     draggable 0
+     imageTexture "{833F88B878B0D0BB}mod_sg/gui/textures/map_severograd.edds"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 1
+     filter 0
+     {
+      FrameWidgetClass ZoneOverlay1Overlay {
+       visible 0
+       ignorepointer 1
+       position 0.23541 0.07282
+       size 0.42865 0.34441
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        ImageWidgetClass ZoneOverlay1On {
+         visible 0
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         imageTexture "{02972F4EA5927141}mod_sg/gui/textures/map_zone1_on.edds"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+        ImageWidgetClass ZoneOverlay1Off {
+         visible 0
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         imageTexture "{4B5B0AB85A122005}mod_sg/gui/textures/map_zone1_off.edds"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+       }
+      }
+      FrameWidgetClass ZoneOverlay2Overlay {
+       visible 0
+       ignorepointer 1
+       position 0.46896 0.46345
+       size 0.24685 0.18764
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        ImageWidgetClass ZoneOverlay2On {
+         visible 0
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         imageTexture "{0C896B0698657E9B}mod_sg/gui/textures/map_zone2_on.edds"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+        ImageWidgetClass ZoneOverlay2Off {
+         visible 0
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         imageTexture "{0BAB2B9DEC0EA242}mod_sg/gui/textures/map_zone2_off.edds"
+         mode blend
+         "src alpha" 1
+         "no wrap" 0
+         stretch 1
+        }
+       }
+      }
+      FrameWidgetClass ZoneOverlay3Overlay {
+       visible 0
+       clipchildren 0
+       ignorepointer 1
+       position 0.5433 0.2736
+       size 0.03 0.03
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       fixaspect fixwidth
+       {
+        ImageWidgetClass ZoneOverlay3Icon {
+         visible 0
+         clipchildren 0
+         ignorepointer 1
+         position -20 -20
+         size 40 40
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 1
+         image0 "set:sgz_ui image:end_phase"
+         mode blend
+         "src alpha" 1
+         "no wrap" 1
+         stretch 1
+         filter 1
+        }
+       }
+      }
+      FrameWidgetClass StaticBuildingOverlay {
+       visible 1
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       {
+        FrameWidgetClass Static0 {
+         clipchildren 0
+         ignorepointer 1
+         position 0.49005 0.70388
+         size 0.01 0.01
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass StaticImage0 {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 40 40
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:sgz_ui image:medical"
+           mode blend
+           "src alpha" 1
+           "no wrap" 1
+           stretch 1
+          }
+         }
+        }
+        FrameWidgetClass Static1 {
+         clipchildren 0
+         ignorepointer 1
+         position 0.45357 0.65539
+         size 0.01 0.01
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass StaticImage1 {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 40 40
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:sgz_ui image:construction"
+           mode blend
+           "src alpha" 1
+           "no wrap" 1
+           stretch 1
+          }
+         }
+        }
+        FrameWidgetClass Static2 {
+         clipchildren 0
+         ignorepointer 1
+         position 0.38336 0.65945
+         size 0.01 0.01
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass StaticImage2 {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 40 40
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:sgz_ui image:police"
+           mode blend
+           "src alpha" 1
+           "no wrap" 1
+           stretch 1
+          }
+         }
+        }
+        FrameWidgetClass Static3 {
+         clipchildren 0
+         ignorepointer 1
+         position 0.59167 0.49025
+         size 0.01 0.01
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass StaticImage3 {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 40 40
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:sgz_ui image:church"
+           mode blend
+           "src alpha" 1
+           "no wrap" 1
+           stretch 1
+          }
+         }
+        }
+        FrameWidgetClass Static4 {
+         clipchildren 0
+         ignorepointer 1
+         position 0.5422 0.42231
+         size 0.01 0.01
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass StaticImage4 {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 40 40
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:sgz_ui image:lumberyard"
+           mode blend
+           "src alpha" 1
+           "no wrap" 1
+           stretch 1
+          }
+         }
+        }
+        FrameWidgetClass Static5 {
+         clipchildren 0
+         ignorepointer 1
+         position 0.67566 0.4098
+         size 0.01 0.01
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass StaticImage5 {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 40 40
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:sgz_ui image:barn"
+           mode blend
+           "src alpha" 1
+           "no wrap" 1
+           stretch 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

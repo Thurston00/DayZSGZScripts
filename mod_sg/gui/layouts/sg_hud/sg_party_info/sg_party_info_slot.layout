@@ -1,0 +1,182 @@
+FrameWidgetClass rootFrame {
+ clipchildren 1
+ position 0 0
+ size 1 40
+ halign right_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ {
+  GridSpacerWidgetClass Grid0 {
+   ignorepointer 1
+   position 0 -1
+   size 1 0.92
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content H" 1
+   Columns 2
+   Rows 1
+   {
+    ImageWidgetClass Background {
+     ignorepointer 1
+     color 0 0 0 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     image0 "set:sgz_hud image:player_info_background"
+     mode blend
+     "src alpha" 1
+     filter 0
+     {
+      GridSpacerWidgetClass Grid {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "Ignore invisible" 0
+       Padding 16
+       Margin 0
+       "Size To Content H" 1
+       content_halign center
+       content_valign center
+       Rows 1
+       {
+        FrameWidgetClass MicrophoneFrame {
+         ignorepointer 1
+         position 10 0
+         size 40 40
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ImageWidgetClass MicrophoneIcon {
+           visible 0
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           image0 "set:sgz_hud image:microphone"
+           mode blend
+           "src alpha" 1
+          }
+         }
+        }
+        GridSpacerWidgetClass GridSpacerWidget0 {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         Padding 4
+         Margin 6
+         "Size To Content V" 1
+         Columns 1
+         Rows 2
+         {
+          FrameWidgetClass FrameWidget0 {
+           ignorepointer 1
+           position 10 10
+           size 48 16
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           {
+            TextWidgetClass NameLabel {
+             ignorepointer 1
+             position 0 0
+             size 1 1
+             halign right_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             text "PLAYER 1"
+             font "gui/fonts/sdf_MetronBook72"
+             "bold text" 1
+             "exact text" 1
+             "exact text size" 16
+             "text halign" right
+             "text valign" center
+            }
+           }
+          }
+          FrameWidgetClass HealthBarFrame {
+           ignorepointer 1
+           size 1 6
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+          }
+         }
+        }
+        FrameWidgetClass RightPadding {
+         ignorepointer 1
+         position 0 0
+         size 8 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 0
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass StatusFrame {
+     ignorepointer 1
+     position 0 0
+     size 40 40
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass StatusIcon {
+       visible 0
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 "set:sgz_hud image:teammate_dead"
+       mode blend
+       "src alpha" 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

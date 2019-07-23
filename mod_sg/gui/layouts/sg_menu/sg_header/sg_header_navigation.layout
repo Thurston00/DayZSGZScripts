@@ -1,0 +1,46 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  GridSpacerWidgetClass ButtonGrid {
+   size 1 1
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 8
+   Margin 0
+   "Size To Content H" 1
+   content_valign center
+   Columns 2
+   Rows 1
+   {
+    FrameWidgetClass TutorialButtonFrame {
+     ignorepointer 1
+     position 10 10
+     size 216 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+    FrameWidgetClass CustomGameButtonFrame {
+     ignorepointer 1
+     position 10 10
+     size 216 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+   }
+  }
+ }
+}

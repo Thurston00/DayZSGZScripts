@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{363FD3E52D4FC929}mod_sg/gui/textures/sgz_hints/sg_tutorial_crashsites.tga"
+ Author "1254"
+ ChangeDate 84616946
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "sg_tutorial_crashsites.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

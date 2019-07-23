@@ -1,0 +1,108 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 116
+ halign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ {
+  ImageWidgetClass Background {
+   ignorepointer 1
+   color 0 0 0 0
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   mode blend
+   "src alpha" 1
+  }
+  GridSpacerWidgetClass Grid0 {
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 16
+   "Size To Content V" 1
+   Columns 1
+   Rows 5
+   {
+    GridSpacerWidgetClass HeaderGrid {
+     clipchildren 0
+     position 0 0
+     size 1 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     Padding 0
+     Margin 0
+     "Size To Content H" 1
+     Rows 1
+     {
+      TextWidgetClass TeamLabel0 {
+       clipchildren 0
+       position 0 0
+       size 0.5 32
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "#sg_menu_team_c"
+       font "gui/fonts/sdf_MetronBook72"
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 20
+       "size to text h" 1
+       "text valign" center
+      }
+      FrameWidgetClass TeamLabel1 {
+       clipchildren 0
+       size 8 1
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+      }
+      TextWidgetClass TeamLabel {
+       clipchildren 0
+       position 0 0
+       size 1 32
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "1"
+       font "gui/fonts/sdf_MetronBook72"
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 20
+       "text valign" center
+      }
+     }
+    }
+    GridSpacerWidgetClass ContentGrid {
+     clipchildren 0
+     position 0 0
+     size 1 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     Margin 0
+     Columns 1
+     Rows 1
+    }
+   }
+  }
+ }
+}

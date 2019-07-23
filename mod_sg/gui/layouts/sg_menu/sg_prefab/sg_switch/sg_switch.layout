@@ -1,0 +1,118 @@
+FrameWidgetClass rootFrame {
+ clipchildren 0
+ size 1 32
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ {
+  GridSpacerWidgetClass Grid {
+   clipchildren 0
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content H" 1
+   Rows 1
+   {
+    FrameWidgetClass LeftLabelFrame {
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 0.5 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass LeftLabel {
+       clipchildren 0
+       ignorepointer 0
+       size 1 1
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       draggable 0
+       text "switch_state_0"
+       font "gui/fonts/sdf_MetronBook72"
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 20
+       "text halign" right
+       "text valign" center
+      }
+     }
+    }
+    FrameWidgetClass SwitchImageFrame {
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 64 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass SwitchImage {
+       clipchildren 0
+       ignorepointer 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 "set:sgz_ui_menu image:slider_left"
+       mode blend
+       "src alpha" 1
+       stretch 1
+       "flip u" 0
+       filter 1
+      }
+     }
+    }
+    FrameWidgetClass RightLabelFrame {
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 0.5 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass RightLabel {
+       clipchildren 0
+       ignorepointer 0
+       size 1 1
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       draggable 0
+       text "switch_state_1"
+       font "gui/fonts/sdf_MetronBook72"
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 20
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

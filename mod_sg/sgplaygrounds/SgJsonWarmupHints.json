@@ -1,0 +1,30 @@
+{
+	"m_Hints":
+	[
+		{
+			"m_Image": "{E7CBBD77594DE1FE}mod_sg/gui/textures/sgz_hints/sg_tutorial_phases.edds",
+			"m_Title": "#sg_tutorial_phases_title",
+			"m_Text": "#sg_tutorial_phases"
+		},		
+		{
+			"m_Image": "{F89985145912B012}mod_sg/gui/textures/sgz_hints/sg_tutorial_hotspots.edds",
+			"m_Title": "#sg_tutorial_hotspots_title",
+			"m_Text": "#sg_tutorial_hotspots"
+		},			
+		{
+			"m_Image": "{CAF154044D477AA4}mod_sg/gui/textures/sgz_hints/sg_tutorial_endgame.edds",
+			"m_Title": "#sg_tutorial_endgame_title",
+			"m_Text": "#sg_tutorial_endgame"
+		},			
+		{
+			"m_Image": "{363FD3E52D4FC929}mod_sg/gui/textures/sgz_hints/sg_tutorial_crashsites.edds",
+			"m_Title": "#sg_tutorial_crashsites_title",
+			"m_Text": "#sg_tutorial_crashsites"
+		},		
+		{
+			"m_Image": "{975F65984BC238CF}mod_sg/gui/textures/sgz_hints/sg_tutorial_healing.edds",
+			"m_Title": "#sg_tutorial_healing_title",
+			"m_Text": "#sg_tutorial_healing"
+		}
+	]
+}

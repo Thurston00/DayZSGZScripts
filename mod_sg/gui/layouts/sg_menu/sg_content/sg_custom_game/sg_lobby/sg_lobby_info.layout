@@ -1,0 +1,296 @@
+FrameWidgetClass rootFrame {
+ ignorepointer 1
+ size 1 1
+ halign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  GridSpacerWidgetClass GridSpacerWidget0 {
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content V" 1
+   Columns 1
+   Rows 2
+   {
+    FrameWidgetClass LobbyNameFrame {
+     ignorepointer 1
+     position 0 0
+     size 1 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      TextWidgetClass LobbyNameLabel {
+       ignorepointer 1
+       size 1 1
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       text "LOBBY_NAME"
+       font "gui/fonts/sdf_MetronBook72"
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 24
+       "size to text h" 1
+       "text valign" center
+       {
+        PanelWidgetClass PanelWidget0 {
+         ignorepointer 1
+         color 0.9098 0.8314 0.3333 1
+         size 1 4
+         halign center_ref
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         scaled 0
+         style rover_sim_colorable
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass FrameWidget0 {
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     {
+      ImageWidgetClass Background {
+       ignorepointer 1
+       color 0 0 0 0.2
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       mode blend
+      }
+      GridSpacerWidgetClass ContentGrid {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Padding 16
+       Margin 32
+       "Size To Content V" 1
+       Columns 1
+       {
+        ImageWidgetClass MapImage {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+        GridSpacerWidgetClass PlaygroundGrid {
+         ignorepointer 1
+         position 0 0
+         size 1 32
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         Padding 16
+         Margin 0
+         "Size To Content H" 1
+         Columns 2
+         Rows 1
+         {
+          TextWidgetClass PlaygroundHeaderLabel {
+           clipchildren 0
+           ignorepointer 1
+           color 0.7255 0.7255 0.7255 1
+           size 160 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 0
+           text "#sg_menu_playground"
+           font "gui/fonts/sdf_MetronBook72"
+           "bold text" 0
+           "exact text" 1
+           "exact text size" 20
+           "size to text h" 1
+           "text valign" center
+          }
+          TextWidgetClass MapNameLabel {
+           clipchildren 0
+           ignorepointer 1
+           size 1 48
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "*SEVEROGRAD"
+           font "gui/fonts/sdf_MetronBook72"
+           "bold text" 0
+           "exact text" 1
+           "exact text size" 20
+           "text valign" center
+          }
+         }
+        }
+        GridSpacerWidgetClass TeamSizeGrid {
+         ignorepointer 1
+         position 10 10
+         size 1 32
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         Padding 16
+         Margin 0
+         "Size To Content H" 1
+         Columns 2
+         Rows 1
+         {
+          TextWidgetClass TeamSizeLabel {
+           clipchildren 0
+           ignorepointer 1
+           color 0.7255 0.7255 0.7255 1
+           size 48 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 0
+           text "#sg_menu_lobby_team_size"
+           font "gui/fonts/sdf_MetronBook72"
+           "bold text" 0
+           "exact text" 1
+           "exact text size" 20
+           "size to text h" 1
+           "text valign" center
+          }
+          TextWidgetClass TeamSizeValueLabel {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "4 players"
+           font "gui/fonts/sdf_MetronBook72"
+           "bold text" 0
+           "exact text" 1
+           "exact text size" 20
+           "text valign" center
+          }
+         }
+        }
+        GridSpacerWidgetClass RoomPassGrid {
+         ignorepointer 1
+         position 10 10
+         size 1 32
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         Padding 16
+         Margin 0
+         "Size To Content H" 1
+         Columns 2
+         Rows 1
+         {
+          TextWidgetClass RoomPassLabel {
+           clipchildren 0
+           ignorepointer 1
+           color 0.7255 0.7255 0.7255 1
+           position 0 0
+           size 48 1
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 0
+           text "#sg_menu_privacy"
+           font "gui/fonts/sdf_MetronBook72"
+           "bold text" 0
+           "exact text" 1
+           "exact text size" 20
+           "size to text h" 1
+           "text valign" center
+          }
+          TextWidgetClass RoomPassValueLabel {
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "-"
+           font "gui/fonts/sdf_MetronLight42"
+           "bold text" 0
+           "exact text" 1
+           "exact text size" 20
+           "text valign" center
+          }
+         }
+        }
+        FrameWidgetClass DestroyLobbyFrameRow {
+         visible 0
+         ignorepointer 0
+         position 10 10
+         size 48 48
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          FrameWidgetClass DestroyLobbyFrame {
+           ignorepointer 0
+           position 0 0
+           size 216 48
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

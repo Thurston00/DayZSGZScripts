@@ -1,0 +1,49 @@
+FrameWidgetClass IconRoot {
+ clipchildren 0
+ ignorepointer 1
+ size 0.03 0.03
+ valign bottom_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ fixaspect fixwidth
+ {
+  ImageWidgetClass Icon {
+   clipchildren 0
+   ignorepointer 1
+   color 1 0 0 1
+   position -15 -15
+   size 30 30
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 1
+   image0 "set:sgz_ui image:player"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 1
+   filter 1
+  }
+  ImageWidgetClass Icon0 {
+   clipchildren 0
+   ignorepointer 1
+   position -20 -20
+   size 40 40
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   image0 "set:sgz_ui image:player"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 1
+   filter 1
+  }
+ }
+}

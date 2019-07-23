@@ -1,0 +1,18 @@
+MetaFileClass {
+ Name "{0005F77CFBD128B2}mod_sg/gui/imagesets/sg_gui.tga"
+ Author "3046"
+ ChangeDate 1747100995
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "sg_gui.tga"
+   FormatCompress Best
+   CompressTreshold 100
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

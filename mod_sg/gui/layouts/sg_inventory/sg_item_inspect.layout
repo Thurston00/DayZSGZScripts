@@ -1,0 +1,494 @@
+FrameWidgetClass rootFrame {
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass rootPanel {
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   {
+    GridSpacerWidgetClass InspectGrid {
+     color 0 0 0 1
+     size 1250 600
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Colorable
+     "Size To Content V" 1
+     Columns 1
+     Rows 2
+     {
+      ImageWidgetClass InspectLabelBackgroundImage {
+       color 0.2157 0.2157 0.2157 1
+       size 1 48
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       imageTexture "{DAA636C623B11C5E}Gui/imagesets/GUI_back.edds"
+       mode blend
+       "src alpha" 1
+       {
+        TextWidgetClass ItemNameLabel {
+         size 0.9 45
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         text "Item Name"
+         font "gui/fonts/sdf_MetronBook72"
+         "exact text" 1
+         "exact text size" 26
+         "text halign" center
+         "text valign" center
+        }
+        ButtonWidgetClass CloseButton {
+         ignorepointer 0
+         position 0.01 0
+         size 28 28
+         halign right_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ImageWidgetClass CloseButtonImage {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           image0 "set:dayz_gui image:icon_x"
+           mode blend
+           "src alpha" 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass InspectContentPanel {
+       color 0.3569 0.3569 0.3569 1
+       size 1 1
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       style DayZDefaultPanel
+       {
+        GridSpacerWidgetClass ContentGrid {
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         Margin 10
+         "Size To Content H" 1
+         Columns 2
+         Rows 1
+         {
+          FrameWidgetClass StatsFrame {
+           size 400 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 0
+           {
+            GridSpacerWidgetClass StatsGrid {
+             size 1 0.9
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             "Size To Content V" 1
+             Columns 1
+             Rows 6
+             {
+              PanelWidgetClass DamagePanel {
+               visible 1
+               position 175.75101 97.3838
+               size 48 48
+               hexactpos 1
+               vexactpos 1
+               hexactsize 1
+               vexactsize 1
+               {
+                GridSpacerWidgetClass DamageGrid {
+                 ignorepointer 1
+                 size 1 1
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 0
+                 vexactsize 0
+                 "Size To Content H" 1
+                 Columns 2
+                 Rows 1
+                 {
+                  TextWidgetClass DamageLabel {
+                   position 10 10
+                   size 1 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 0
+                   vexactsize 0
+                   text "Damage"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text valign" center
+                  }
+                  TextWidgetClass DamageValueLabel {
+                   position 10 10
+                   size 100 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 1
+                   vexactsize 0
+                   text "Pristine"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "italic text" 0
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text halign" right
+                   "text valign" center
+                  }
+                 }
+                }
+               }
+              }
+              PanelWidgetClass FoodStatePanel {
+               position 175.75101 97.3838
+               size 48 48
+               hexactpos 1
+               vexactpos 1
+               hexactsize 1
+               vexactsize 1
+               {
+                GridSpacerWidgetClass FoodStateGrid {
+                 ignorepointer 1
+                 size 1 1
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 0
+                 vexactsize 0
+                 "Size To Content H" 1
+                 Columns 2
+                 Rows 1
+                 {
+                  TextWidgetClass FoodStateLabel {
+                   position 10 10
+                   size 1 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 0
+                   vexactsize 0
+                   text "Food State"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text valign" center
+                  }
+                  TextWidgetClass FoodStateValueLabel {
+                   position 10 10
+                   size 100 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 1
+                   vexactsize 0
+                   text "Raw"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "italic text" 0
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text halign" right
+                   "text valign" center
+                  }
+                 }
+                }
+               }
+              }
+              PanelWidgetClass WeightPanel {
+               position 175.75101 97.3838
+               size 48 48
+               hexactpos 1
+               vexactpos 1
+               hexactsize 1
+               vexactsize 1
+               {
+                GridSpacerWidgetClass WeightGrid {
+                 ignorepointer 1
+                 size 1 1
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 0
+                 vexactsize 0
+                 "Size To Content H" 1
+                 Columns 2
+                 Rows 1
+                 {
+                  TextWidgetClass WeightLabel {
+                   position 10 10
+                   size 1 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 0
+                   vexactsize 0
+                   text "Weight"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text valign" center
+                  }
+                  TextWidgetClass WeightValueLabel {
+                   clipchildren 0
+                   inheritalpha 0
+                   position 10 10
+                   size 100 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 1
+                   vexactsize 0
+                   text "15 Kg"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "italic text" 0
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text halign" right
+                   "text valign" center
+                  }
+                 }
+                }
+               }
+              }
+              PanelWidgetClass QuantityPanel {
+               position 175.75101 97.3838
+               size 48 48
+               hexactpos 1
+               vexactpos 1
+               hexactsize 1
+               vexactsize 1
+               {
+                GridSpacerWidgetClass QuantityGrid {
+                 inheritalpha 0
+                 ignorepointer 1
+                 size 1 1
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 0
+                 vexactsize 0
+                 "Size To Content H" 1
+                 Columns 2
+                 Rows 1
+                 {
+                  TextWidgetClass QuantityLabel {
+                   position 10 10
+                   size 1 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 0
+                   vexactsize 0
+                   text "Quantity"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text valign" center
+                  }
+                  TextWidgetClass QuantityValueLabel {
+                   clipchildren 0
+                   position 10 10
+                   size 175 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 1
+                   vexactsize 0
+                   text "250 / 250 (100%)"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "italic text" 0
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text halign" right
+                   "text valign" center
+                  }
+                 }
+                }
+               }
+              }
+              PanelWidgetClass AmmoPanel {
+               visible 1
+               position 175.75101 97.3838
+               size 48 48
+               hexactpos 1
+               vexactpos 1
+               hexactsize 1
+               vexactsize 1
+               {
+                GridSpacerWidgetClass AmmoGrid {
+                 ignorepointer 1
+                 size 1 1
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 0
+                 vexactsize 0
+                 "Size To Content H" 1
+                 Columns 2
+                 Rows 1
+                 {
+                  TextWidgetClass AmmoLabel {
+                   ignorepointer 1
+                   position 10 10
+                   size 1 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 0
+                   vexactsize 0
+                   text "Ammo"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text valign" center
+                  }
+                  TextWidgetClass AmmoValueLabel {
+                   ignorepointer 1
+                   position 10 10
+                   size 100 1
+                   hexactpos 1
+                   vexactpos 1
+                   hexactsize 1
+                   vexactsize 0
+                   text "7.62x45"
+                   font "gui/fonts/sdf_MetronLight72"
+                   "italic text" 0
+                   "exact text" 1
+                   "exact text size" 20
+                   "size to text h" 0
+                   "text halign" right
+                   "text valign" center
+                  }
+                 }
+                }
+               }
+              }
+              GridSpacerWidgetClass DescriptionGrid {
+               size 1 1
+               halign center_ref
+               valign center_ref
+               hexactpos 1
+               vexactpos 1
+               hexactsize 0
+               vexactsize 0
+               "Size To Content V" 1
+               Columns 1
+               Rows 2
+               {
+                TextWidgetClass DescriptionLabel {
+                 ignorepointer 1
+                 position 92 78.4616
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 text "Description:"
+                 font "gui/fonts/sdf_MetronLight72"
+                 "exact text" 1
+                 "exact text size" 20
+                 "text valign" center
+                }
+                MultilineTextWidgetClass DescriptionValueLabel {
+                 ignorepointer 1
+                 position 92 78.4616
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 text "description dasf"
+                 font "gui/fonts/sdf_MetronLight72"
+                 "exact text" 1
+                 "exact text size" 20
+                 "size to text h" 0
+                 "size to text v" 1
+                 wrap 1
+                 "condense whitespace" 1
+                 "strip newlines" 1
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          FrameWidgetClass ItemPreviewFrame {
+           position 1066.88 328.51205
+           size 1 1
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           {
+            ItemPreviewWidgetClass ItemPreviewWidget {
+             size 1 0.9
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,267 @@
+ImageSetClass {
+ Name "sgz_hud"
+ RefSize 1024 1024
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{880EF36F94A8AB8B}mod_sg/gui/imagesets/sgz_new_ui/sgz_hud_atlas.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass player_count {
+   Name "player_count"
+   Pos 531 915
+   Size 42 42
+   Flags 0
+  }
+  ImageSetDefClass player_count_background {
+   Name "player_count_background"
+   Pos 912 16
+   Size 96 48
+   Flags 0
+  }
+  ImageSetDefClass overload {
+   Name "overload"
+   Pos 83 972
+   Size 41 41
+   Flags 0
+  }
+  ImageSetDefClass splitter {
+   Name "splitter"
+   Pos 623 970
+   Size 1 38
+   Flags 0
+  }
+  ImageSetDefClass microphone {
+   Name "microphone"
+   Pos 84 922
+   Size 41 41
+   Flags 0
+  }
+  ImageSetDefClass tracker {
+   Name "tracker"
+   Pos 669 989
+   Size 22 22
+   Flags 0
+  }
+  ImageSetDefClass player_info_background {
+   Name "player_info_background"
+   Pos 656 80
+   Size 352 64
+   Flags 0
+  }
+  ImageSetDefClass gear_info_background {
+   Name "gear_info_background"
+   Pos 576 304
+   Size 432 64
+   Flags 0
+  }
+  ImageSetDefClass gun_sks {
+   Name "gun_sks"
+   Pos 15 502
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gun_mosin9130 {
+   Name "gun_mosin9130"
+   Pos 16 454
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gun_m4a1 {
+   Name "gun_m4a1"
+   Pos 16 408
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gun_svd {
+   Name "gun_svd"
+   Pos 16 359
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gun_akm {
+   Name "gun_akm"
+   Pos 16 313
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gun_izh18 {
+   Name "gun_izh18"
+   Pos 16 264
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gun_fnx45 {
+   Name "gun_fnx45"
+   Pos 16 216
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gun_ump45 {
+   Name "gun_ump45"
+   Pos 16 168
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gun_mp133 {
+   Name "gun_mp133"
+   Pos 16 121
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gun_mp5k {
+   Name "gun_mp5k"
+   Pos 16 68
+   Size 128 36
+   Flags 0
+  }
+  ImageSetDefClass gun_cz75 {
+   Name "gun_cz75"
+   Pos 16 24
+   Size 128 32
+   Flags 0
+  }
+  ImageSetDefClass gear_helmet {
+   Name "gear_helmet"
+   Pos 289 963
+   Size 48 48
+   Flags 0
+  }
+  ImageSetDefClass gear_armor {
+   Name "gear_armor"
+   Pos 336 962
+   Size 48 48
+   Flags 0
+  }
+  ImageSetDefClass health {
+   Name "health"
+   Pos 242 967
+   Size 45 45
+   Flags 0
+  }
+ }
+ Groups {
+  ImageSetGroupClass zone {
+   Name "zone"
+   Images {
+    ImageSetDefClass zone_phase {
+     Name "zone_phase"
+     Pos 386 914
+     Size 44 44
+     Flags 0
+    }
+    ImageSetDefClass zone_transition {
+     Name "zone_transition"
+     Pos 434 914
+     Size 44 44
+     Flags 0
+    }
+    ImageSetDefClass zone_final {
+     Name "zone_final"
+     Pos 482 914
+     Size 44 44
+     Flags 0
+    }
+    ImageSetDefClass zone_background {
+     Name "zone_background"
+     Pos 768 16
+     Size 128 48
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass teammate {
+   Name "teammate"
+   Images {
+    ImageSetDefClass teammate_dead {
+     Name "teammate_dead"
+     Pos 704 944
+     Size 32 32
+     Flags 0
+    }
+    ImageSetDefClass teammate_disconnected {
+     Name "teammate_disconnected"
+     Pos 704 977
+     Size 32 32
+     Flags 0
+    }
+    ImageSetDefClass teammate_unconscious {
+     Name "teammate_unconscious"
+     Pos 704 912
+     Size 32 32
+     Flags 0
+    }
+    ImageSetDefClass teammate_background {
+     Name "teammate_background"
+     Pos 767 160
+     Size 241 128
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass blood {
+   Name "blood"
+   Images {
+    ImageSetDefClass blood_single {
+     Name "blood_single"
+     Pos 763 965
+     Size 48 48
+     Flags 0
+    }
+    ImageSetDefClass blood_double {
+     Name "blood_double"
+     Pos 761 920
+     Size 48 48
+     Flags 0
+    }
+    ImageSetDefClass blood_triple {
+     Name "blood_triple"
+     Pos 757 871
+     Size 48 48
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass compass {
+   Name "compass"
+   Images {
+    ImageSetDefClass compass_image {
+     Name "compass_image"
+     Pos 824 824
+     Size 192 192
+     Flags 0
+    }
+    ImageSetDefClass compass_teammate {
+     Name "compass_teammate"
+     Pos 634 978
+     Size 31 32
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass stance {
+   Name "stance"
+   Images {
+    ImageSetDefClass stance_stand {
+     Name "stance_stand"
+     Pos 21 969
+     Size 42 42
+     Flags 0
+    }
+    ImageSetDefClass stance_crouch {
+     Name "stance_crouch"
+     Pos 21 925
+     Size 42 42
+     Flags 0
+    }
+    ImageSetDefClass stance_prone {
+     Name "stance_prone"
+     Pos 19 879
+     Size 42 42
+     Flags 0
+    }
+   }
+  }
+ }
+}

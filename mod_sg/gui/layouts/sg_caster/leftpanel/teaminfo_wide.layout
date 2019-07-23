@@ -1,0 +1,129 @@
+FrameWidgetClass TeamInfo {
+ visible 1
+ clipchildren 0
+ ignorepointer 1
+ position 0 0
+ size 165 28
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ priority 3
+ draggable 0
+ scriptclass "SgListView"
+ {
+  PanelWidgetClass Label {
+   visible 1
+   clipchildren 1
+   ignorepointer 1
+   position 0 0
+   size 1 28
+   hexactpos 0
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   priority 3
+   scriptclass ""
+   {
+    TextWidgetClass Playercount {
+     ignorepointer 1
+     position 0.64 0
+     size 0.24 0.8
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 3
+     text "6/6"
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass TeamName {
+     inheritalpha 0
+     ignorepointer 1
+     position 0.02 0
+     size 0.62 0.85
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 3
+     style Normal
+     text "Team A"
+     "exact text" 1
+     "text valign" center
+    }
+    ButtonWidgetClass Collapse {
+     position 0.88 0
+     size 0.12 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 4
+     scriptclass ""
+     style MainMenu
+     "no focus" 1
+     {
+      ImageWidgetClass Opened {
+       visible 1
+       ignorepointer 1
+       position 0 0.075
+       size 0.5 0.5
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       fixaspect fixwidth
+       priority 3
+       image0 "set:dayz_gui image:Collapse"
+       mode blend
+       "src alpha" 1
+      }
+      ImageWidgetClass Collapsed {
+       visible 0
+       ignorepointer 1
+       position 0 0
+       size 0.5 0.5
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       fixaspect fixwidth
+       priority 3
+       image0 "set:dayz_gui image:Expand"
+       mode blend
+       "src alpha" 1
+      }
+     }
+    }
+    ImageWidgetClass Background {
+     visible 1
+     ignorepointer 1
+     color 0 0 0 0.8627
+     position 0 0
+     size 1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 2
+     mode blend
+    }
+   }
+  }
+ }
+ {
+  ScriptParamsClass {
+   m_ResizeRoot 1
+   m_Resize 0
+   m_IgnoreInvisible 0
+   m_IgnoreFirst 0
+  }
+ }
+}

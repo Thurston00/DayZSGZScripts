@@ -1,0 +1,170 @@
+FrameWidgetClass rootFrame {
+ clipchildren 0
+ size 368 64
+ halign right_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  ImageWidgetClass Background {
+   inheritalpha 0
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   image0 "set:sgz_hud image:player_info_background"
+   mode blend
+   "src alpha" 1
+   "no wrap" 0
+   stretch 1
+   filter 0
+  }
+  WrapSpacerWidgetClass Grid {
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   content_halign right
+   {
+    FrameWidgetClass Margin {
+     ignorepointer 1
+     position 0 0
+     size 0 0
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+    FrameWidgetClass HealthFrame {
+     ignorepointer 1
+     position 0 0
+     size 32 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+    FrameWidgetClass BloodFrame {
+     ignorepointer 1
+     position 0 0
+     size 32 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+    FrameWidgetClass ShockFrame {
+     ignorepointer 1
+     position 0 0
+     size 32 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+    FrameWidgetClass SplitterRightFrame {
+     ignorepointer 1
+     position 0 0
+     size 16 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     {
+      PanelWidgetClass SplitterRightPanel {
+       ignorepointer 1
+       size 2 32
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style rover_sim_colorable
+      }
+     }
+    }
+    FrameWidgetClass StomachFrame {
+     ignorepointer 1
+     position 0 0
+     size 32 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+    FrameWidgetClass ThirstFrame {
+     ignorepointer 1
+     position 0 0
+     size 32 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+    FrameWidgetClass SplitterLeftFrame {
+     ignorepointer 1
+     position 0 0
+     size 16 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     {
+      PanelWidgetClass SplitterLeftPanel {
+       ignorepointer 1
+       size 2 32
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style rover_sim_colorable
+      }
+     }
+    }
+    FrameWidgetClass WoundFrame {
+     ignorepointer 1
+     position 0 0
+     size 32 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+   }
+  }
+ }
+}

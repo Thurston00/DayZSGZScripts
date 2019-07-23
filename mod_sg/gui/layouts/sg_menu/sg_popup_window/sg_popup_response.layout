@@ -1,0 +1,246 @@
+FrameWidgetClass rootFrame {
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ priority 999
+ {
+  ImageWidgetClass Background {
+   ignorepointer 1
+   color 0 0 0 0.9412
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   mode blend
+  }
+  PanelWidgetClass ContentPanel {
+   size 544 272
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 1
+   style blank
+   {
+    ImageWidgetClass ContentBackground0 {
+     ignorepointer 1
+     color 0.2549 0.298 0.3412 0.7843
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     mode blend
+     {
+      PanelWidgetClass PanelWidget4 {
+       ignorepointer 1
+       color 0.9137 0.8314 0.3333 1
+       size 1 4
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       scaled 0
+       style rover_sim_colorable
+      }
+      PanelWidgetClass PanelWidget5 {
+       ignorepointer 1
+       color 0.9137 0.8314 0.3333 0.1961
+       size 1 1
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       scaled 0
+       style rover_sim_colorable
+      }
+      PanelWidgetClass PanelWidget6 {
+       ignorepointer 1
+       color 0.9137 0.8314 0.3333 0.1961
+       size 1 1
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       scaled 0
+       style rover_sim_colorable
+      }
+      PanelWidgetClass PanelWidget7 {
+       ignorepointer 1
+       color 0.9137 0.8314 0.3333 0.1961
+       size 1 1
+       halign center_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       scaled 0
+       style rover_sim_colorable
+      }
+     }
+    }
+    GridSpacerWidgetClass Grid {
+     ignorepointer 1
+     color 0 0 0 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     Padding 0
+     Margin 0
+     "Size To Content V" 1
+     Columns 1
+     Rows 2
+     {
+      FrameWidgetClass HeaderFrame {
+       ignorepointer 1
+       size 1 48
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        ImageWidgetClass HeaderBackground {
+         ignorepointer 1
+         color 0.9098 0.8314 0.3333 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         image0 "set:sgz_ui_menu image:panel_dialoge"
+         mode blend
+         "src alpha" 1
+        }
+        TextWidgetClass HeaderLabel {
+         clipchildren 0
+         ignorepointer 1
+         color 0 0 0 1
+         position 0 -4
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "*Popup Header"
+         font "gui/fonts/sdf_MetronBook72"
+         "bold text" 1
+         "exact text" 1
+         "exact text size" 24
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      GridSpacerWidgetClass GridSpacerWidget1 {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Padding 16
+       Margin 32
+       "Size To Content V" 1
+       Columns 1
+       Rows 2
+       {
+        FrameWidgetClass DescriptionFrame {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         {
+          MultilineTextWidgetClass DescMultiLabel {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "*Some alert text. Some alert text. "
+           font "gui/fonts/sdf_MetronBook72"
+           "exact text" 1
+           "exact text size" 20
+           "text halign" center
+           "text valign" center
+           wrap 1
+           "condense whitespace" 1
+          }
+         }
+        }
+        GridSpacerWidgetClass GridSpacerWidget0 {
+         ignorepointer 1
+         size 1 48
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         Padding 48
+         Margin 0
+         Columns 2
+         Rows 1
+         {
+          FrameWidgetClass SecondaryButtonFrame {
+           ignorepointer 1
+           position 10 10
+           size 216 48
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+          }
+          FrameWidgetClass PrimaryButtonFrame {
+           ignorepointer 1
+           position 10 10
+           size 216 48
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

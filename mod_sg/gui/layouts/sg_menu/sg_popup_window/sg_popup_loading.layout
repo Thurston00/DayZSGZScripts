@@ -1,0 +1,223 @@
+FrameWidgetClass rootFrame {
+ ignorepointer 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ priority 999
+ {
+  ImageWidgetClass Background {
+   ignorepointer 1
+   color 0 0 0 0.9412
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   mode blend
+  }
+  PanelWidgetClass ContentFrame {
+   ignorepointer 0
+   size 432 224
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 1
+   style blank
+   {
+    ImageWidgetClass ContentBackground {
+     ignorepointer 1
+     color 0.2549 0.298 0.3412 0.7843
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     mode blend
+     {
+      PanelWidgetClass PanelWidget0 {
+       ignorepointer 1
+       color 0.9137 0.8314 0.3333 1
+       size 1 4
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       scaled 0
+       style rover_sim_colorable
+      }
+      PanelWidgetClass PanelWidget1 {
+       ignorepointer 1
+       color 0.9137 0.8314 0.3333 0.1961
+       size 1 1
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       scaled 0
+       style rover_sim_colorable
+      }
+      PanelWidgetClass PanelWidget2 {
+       ignorepointer 1
+       color 0.9137 0.8314 0.3333 0.1961
+       size 1 1
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       scaled 0
+       style rover_sim_colorable
+      }
+      PanelWidgetClass PanelWidget3 {
+       ignorepointer 1
+       color 0.9137 0.8314 0.3333 0.1961
+       size 1 1
+       halign center_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       scaled 0
+       style rover_sim_colorable
+      }
+     }
+    }
+    GridSpacerWidgetClass Grid {
+     ignorepointer 1
+     color 0 0 0 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     Padding 0
+     Margin 0
+     "Size To Content V" 1
+     Columns 1
+     Rows 2
+     {
+      FrameWidgetClass HeaderFrame {
+       ignorepointer 1
+       position 0 -4
+       size 1 48
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        ImageWidgetClass HeaderBackground {
+         ignorepointer 1
+         color 0.9098 0.8314 0.3333 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         image0 "set:sgz_ui_menu image:panel_dialoge"
+         mode blend
+         "src alpha" 1
+        }
+        TextWidgetClass HeaderLabel {
+         clipchildren 0
+         ignorepointer 1
+         color 0 0 0 1
+         position 0 -4
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "*Waiting For Server"
+         font "gui/fonts/sdf_MetronBook72"
+         "bold text" 1
+         "exact text" 1
+         "exact text size" 24
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      FrameWidgetClass InputPanel {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       {
+        FrameWidgetClass InputFrame {
+         ignorepointer 1
+         size 1 80
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          ImageWidgetClass LoadingImage {
+           clipchildren 0
+           ignorepointer 1
+           size 80 80
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:sgz_ui_menu image:loading"
+           mode blend
+           "src alpha" 1
+           stretch 0
+           "flip u" 0
+          }
+          ImageWidgetClass CancelImage {
+           visible 0
+           ignorepointer 1
+           color 0.7843 0 0 1
+           size 80 80
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:sg_ui_icons image:Cross"
+           mode blend
+           "src alpha" 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

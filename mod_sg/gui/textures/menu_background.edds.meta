@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{A4E2489F82490EFB}mod_sg/gui/textures/menu_background.edds"
+ Author "3046"
+ ChangeDate 352102084
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "menu_background.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

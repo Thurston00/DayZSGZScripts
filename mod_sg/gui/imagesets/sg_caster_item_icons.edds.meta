@@ -1,0 +1,14 @@
+MetaFileClass  {
+ Name "{DD37F67B6408C771}mod_sg/gui/imagesets/sg_caster_item_icons.edds"
+ Author "janosik"
+ ChangeDate 181691213
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "sg_caster_item_icons.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+ }
+}

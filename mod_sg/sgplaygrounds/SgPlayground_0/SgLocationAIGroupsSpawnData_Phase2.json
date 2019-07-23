@@ -1,0 +1,1006 @@
+{
+    "m_AIHerdSpawnData": [
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenBFatMaleRed",
+                "SG_PatrolInfectedCitizenBFatMaleBlue",
+                "SG_PatrolInfectedCitizenAMaleGrey",
+                "SG_PatrolInfectedCitizenAFemaleBrown",
+                "SG_PatrolInfectedCitizenAFemaleBeige"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2218.72,
+                        174.183,
+                        1984.33
+                    ],
+                    "m_Range": 5,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2300.56,
+                        185.134,
+                        1942.35
+                    ],
+                    "m_Range": 5,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2367.77,
+                        198.73,
+                        1794.77
+                    ],
+                    "m_Range": 5,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 1,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_GuardInfectedDoctor"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2288.37,
+                        190.324,
+                        1896.04
+                    ],
+                    "m_Range": 25,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": [
+                        {
+                            "m_Position": [
+                                2301,
+                                190.084,
+                                1914.42
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2293.59,
+                                189.768,
+                                1917.25
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2277.98,
+                                189.155,
+                                1914.43
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2275.24,
+                                190.23,
+                                1900.46
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2273.1,
+                                190.533,
+                                1883.79
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2281.18,
+                                190.641,
+                                1875.59
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2292.86,
+                                191.467,
+                                1875.99
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2304.26,
+                                191.872,
+                                1882.79
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2299.86,
+                                190.89,
+                                1888.97
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2309.07,
+                                190.906,
+                                1897.89
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2310.03,
+                                190.358,
+                                1906.28
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 1,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_GuardInfectedHeavyIndustryWorker"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2618.22,
+                        221.366,
+                        1589.61
+                    ],
+                    "m_Range": 42,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": [
+                        {
+                            "m_Position": [
+                                2626.98,
+                                219.497,
+                                1625.13
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2603.86,
+                                221.062,
+                                1616.75
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2588.07,
+                                221.442,
+                                1606.99
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2580.62,
+                                221.449,
+                                1586.05
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2587.76,
+                                221.44,
+                                1575.88
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2597.61,
+                                221.444,
+                                1562.2
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2626.65,
+                                221.43,
+                                1567.38
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2648.82,
+                                221.43,
+                                1567.25
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2655.25,
+                                221.43,
+                                1596.94
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2638.95,
+                                221.372,
+                                1607.71
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 1,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_GuardInfectedPoliceman"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2110.33,
+                        194.5,
+                        1647.16
+                    ],
+                    "m_Range": 55,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": [
+                        {
+                            "m_Position": [
+                                2117.69,
+                                194.544,
+                                1699.28
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2137.68,
+                                194.729,
+                                1684.8
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2157.35,
+                                194.5,
+                                1659.97
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2137.1,
+                                194.5,
+                                1642.3
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2140.37,
+                                194.5,
+                                1602.83
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2110.32,
+                                194.5,
+                                1603.35
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2077.46,
+                                194.5,
+                                1622.91
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2061.61,
+                                194.5,
+                                1633.52
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2058.58,
+                                194.5,
+                                1655.75
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2091.22,
+                                194.5,
+                                1663.75
+                            ]
+                        },
+                        {
+                            "m_Position": [
+                                2090.43,
+                                193.973,
+                                1693.49
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenBFatMaleGreen",
+                "SG_PatrolInfectedCitizenAMaleRed",
+                "SG_PatrolInfectedCitizenAMaleBrown",
+                "SG_PatrolInfectedCitizenAFemaleBlue",
+                "SG_PatrolInfectedCitizenAFemaleBeige"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2450.78,
+                        188.479,
+                        1980.59
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2461.23,
+                        196.588,
+                        1911.83
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2470.77,
+                        204.097,
+                        1807.67
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenBFatMaleBlue",
+                "SG_PatrolInfectedCitizenBFatMaleRed",
+                "SG_PatrolInfectedCitizenAMaleRed",
+                "SG_PatrolInfectedCitizenAMaleBrown",
+                "SG_PatrolInfectedCitizenAFemaleBeige"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2394.15,
+                        201,
+                        1776.76
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2477.29,
+                        210.622,
+                        1703.99
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2515.17,
+                        218.123,
+                        1611.57
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenAMaleRed",
+                "SG_PatrolInfectedCitizenAMaleBrown",
+                "SG_PatrolInfectedCitizenBFatMaleGreen",
+                "SG_PatrolInfectedCitizenAFemaleBlue",
+                "SG_PatrolInfectedCitizenAFemaleBrown"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2546.14,
+                        227.231,
+                        1466.03
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2521.12,
+                        220.888,
+                        1565.24
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2330.63,
+                        221.143,
+                        1568.29
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenAMaleGrey",
+                "SG_PatrolInfectedCitizenAMaleBrown",
+                "SG_PatrolInfectedCitizenAMaleBlue",
+                "SG_PatrolInfectedCitizenBFatMaleBlue",
+                "SG_PatrolInfectedCitizenAFemaleBeige"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2352.44,
+                        189.253,
+                        1924.07
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2493.73,
+                        205.061,
+                        1806.24
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenAFemaleBrown",
+                "SG_PatrolInfectedCitizenAFemaleBlue",
+                "SG_PatrolInfectedCitizenAMaleGrey",
+                "SG_PatrolInfectedCitizenAMaleRed",
+                "SG_PatrolInfectedCitizenBFatMaleGreen"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2164.12,
+                        166.51,
+                        1987.35
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2228.63,
+                        187.259,
+                        1829.49
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2355.09,
+                        200.15,
+                        1758.88
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 1,
+            "m_MinCount": 5,
+            "m_MaxCount": 5,
+            "m_EntityNames": [
+                "SG_GuardInfectedHeavyIndustryWorker"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2138.46,
+                        194.654,
+                        1646.04
+                    ],
+                    "m_Range": 20,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenAFemaleBeige",
+                "SG_PatrolInfectedCitizenAFemaleBlue",
+                "SG_PatrolInfectedCitizenAMaleBrown",
+                "SG_PatrolInfectedCitizenAMaleGrey",
+                "SG_PatrolInfectedCitizenBFatMaleRed"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2274.01,
+                        191.141,
+                        1865.92
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2320.79,
+                        191.712,
+                        1890.46
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2337.94,
+                        193.441,
+                        1884.47
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2461.18,
+                        196.711,
+                        1907.66
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenAFemaleBeige",
+                "SG_PatrolInfectedCitizenAFemaleBlue",
+                "SG_PatrolInfectedCitizenAMaleBrown",
+                "SG_PatrolInfectedCitizenAMaleRed",
+                "SG_PatrolInfectedCitizenBFatMaleGreen"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        1893.89,
+                        185.434,
+                        1613.08
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        1852.56,
+                        195.453,
+                        1500.1
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        1863.79,
+                        197.413,
+                        1400.18
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenAFemaleBlue",
+                "SG_PatrolInfectedCitizenAMaleBrown",
+                "SG_PatrolInfectedCitizenAMaleGrey",
+                "SG_PatrolInfectedCitizenAMaleRed",
+                "SG_PatrolInfectedCitizenBFatMaleGreen"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2208.68,
+                        199.502,
+                        1607.88
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2012.32,
+                        194.732,
+                        1603.88
+                    ],
+                    "m_Range": 5,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        1861.72,
+                        192.789,
+                        1518.96
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 0,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_PatrolInfectedCitizenAFemaleBeige",
+                "SG_PatrolInfectedCitizenAMaleBlue",
+                "SG_PatrolInfectedCitizenAMaleBrown",
+                "SG_PatrolInfectedCitizenBFatMaleRed",
+                "SG_PatrolInfectedCitizenBFatMaleBlue"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2667.71,
+                        206.673,
+                        1766.8
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2518.28,
+                        206.054,
+                        1795.76
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                },
+                {
+                    "m_Position": [
+                        2367.63,
+                        220.481,
+                        1583.17
+                    ],
+                    "m_Range": 10,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 1,
+            "m_MinCount": 10,
+            "m_MaxCount": 10,
+            "m_EntityNames": [
+                "SG_GuardInfectedHeavyIndustryWorker"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2583.94,
+                        214.553,
+                        1821.51
+                    ],
+                    "m_Range": 30,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 2,
+            "m_MinCount": 4,
+            "m_MaxCount": 6,
+            "m_EntityNames": [
+                "SG_StaticInfectedVillagerMaleBlue",
+                "SG_StaticInfectedVillagerMaleGreen",
+                "SG_StaticInfectedVillagerMaleGrey",
+                "SG_StaticInfectedVillagerFemaleBlue",
+                "SG_StaticInfectedVillagerFemaleGreen",
+                "SG_StaticInfectedVillagerFemaleRed",
+                "SG_StaticInfectedVillagerFemaleWhite"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        1912.21,
+                        188.603,
+                        1534.88
+                    ],
+                    "m_Range": 80,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 2,
+            "m_MinCount": 2,
+            "m_MaxCount": 3,
+            "m_EntityNames": [
+                "SG_StaticInfectedVillagerMaleBlue",
+                "SG_StaticInfectedVillagerMaleGreen",
+                "SG_StaticInfectedVillagerMaleGrey",
+                "SG_StaticInfectedVillagerFemaleBlue",
+                "SG_StaticInfectedVillagerFemaleGreen",
+                "SG_StaticInfectedVillagerFemaleRed",
+                "SG_StaticInfectedVillagerFemaleWhite"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        1861.55,
+                        196.281,
+                        1434.04
+                    ],
+                    "m_Range": 45,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 2,
+            "m_MinCount": 2,
+            "m_MaxCount": 5,
+            "m_EntityNames": [
+                "SG_StaticInfectedSkaterMaleBlue",
+                "SG_StaticInfectedSkaterMaleGreen",
+                "SG_StaticInfectedVillagerMaleBlue",
+                "SG_StaticInfectedVillagerMaleGrey",
+                "SG_StaticInfectedVillagerFemaleRed",
+                "SG_StaticInfectedVillagerFemaleBlue"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2210.67,
+                        177.785,
+                        1936.99
+                    ],
+                    "m_Range": 50,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 2,
+            "m_MinCount": 3,
+            "m_MaxCount": 5,
+            "m_EntityNames": [
+                "SG_StaticInfectedSkaterMaleBlue",
+                "SG_StaticInfectedSkaterMaleBrown",
+                "SG_StaticInfectedSkaterMaleGreen",
+                "SG_StaticInfectedVillagerMaleBlue",
+                "SG_StaticInfectedVillagerMaleGreen",
+                "SG_StaticInfectedVillagerMaleGrey",
+                "SG_StaticInfectedVillagerFemaleGreen",
+                "SG_StaticInfectedVillagerFemaleRed",
+                "SG_StaticInfectedVillagerFemaleWhite"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2290.84,
+                        194.065,
+                        1815.77
+                    ],
+                    "m_Range": 50,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 2,
+            "m_MinCount": 4,
+            "m_MaxCount": 6,
+            "m_EntityNames": [
+                "SG_StaticInfectedSkaterMaleBlue",
+                "SG_StaticInfectedSkaterMaleBrown",
+                "SG_StaticInfectedSkaterMaleGrey",
+                "SG_StaticInfectedVillagerMaleBlue",
+                "SG_StaticInfectedVillagerMaleGrey",
+                "SG_StaticInfectedVillagerFemaleBlue",
+                "SG_StaticInfectedVillagerFemaleRed",
+                "SG_StaticInfectedVillagerFemaleWhite"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2407.75,
+                        203.183,
+                        1846.74
+                    ],
+                    "m_Range": 60,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 2,
+            "m_MinCount": 1,
+            "m_MaxCount": 2,
+            "m_EntityNames": [
+                "SG_StaticInfectedSkaterMaleBrown",
+                "SG_StaticInfectedSkaterMaleGreen",
+                "SG_StaticInfectedVillagerMaleBlue",
+                "SG_StaticInfectedVillagerMaleGreen",
+                "SG_StaticInfectedVillagerMaleGrey",
+                "SG_StaticInfectedVillagerFemaleRed",
+                "SG_StaticInfectedVillagerFemaleWhite"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2486.47,
+                        191.564,
+                        1957.77
+                    ],
+                    "m_Range": 30,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 2,
+            "m_MinCount": 1,
+            "m_MaxCount": 2,
+            "m_EntityNames": [
+                "SG_StaticInfectedSkaterMaleGreen",
+                "SG_StaticInfectedSkaterMaleGrey",
+                "SG_StaticInfectedVillagerMaleBlue",
+                "SG_StaticInfectedVillagerMaleGreen",
+                "SG_StaticInfectedVillagerFemaleGreen",
+                "SG_StaticInfectedVillagerFemaleRed"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2496.01,
+                        199.92,
+                        1874.99
+                    ],
+                    "m_Range": 30,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 2,
+            "m_MinCount": 2,
+            "m_MaxCount": 3,
+            "m_EntityNames": [
+                "SG_StaticInfectedSkaterMaleBlue",
+                "SG_StaticInfectedSkaterMaleBrown",
+                "SG_StaticInfectedSkaterMaleGreen",
+                "SG_StaticInfectedVillagerMaleGrey",
+                "SG_StaticInfectedVillagerFemaleBlue",
+                "SG_StaticInfectedVillagerFemaleGreen"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2474.56,
+                        210.361,
+                        1760.37
+                    ],
+                    "m_Range": 40,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        },
+        {
+            "m_AIGroup": 2,
+            "m_MinCount": 5,
+            "m_MaxCount": 7,
+            "m_EntityNames": [
+                "SG_StaticInfectedSkaterMaleBrown",
+                "SG_StaticInfectedSkaterMaleGreen",
+                "SG_StaticInfectedSkaterMaleGrey",
+                "SG_StaticInfectedVillagerMaleGreen",
+                "SG_StaticInfectedVillagerMaleGrey",
+                "SG_StaticInfectedVillagerFemaleBlue",
+                "SG_StaticInfectedVillagerFemaleRed",
+                "SG_StaticInfectedVillagerFemaleWhite"
+            ],
+            "m_AIZones": [
+                {
+                    "m_Position": [
+                        2521.92,
+                        221.425,
+                        1532.92
+                    ],
+                    "m_Range": 70,
+                    "m_CanSpawn": 1,
+                    "m_SpawnPoints": []
+                }
+            ]
+        }
+    ]
+}

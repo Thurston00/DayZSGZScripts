@@ -1,0 +1,68 @@
+FrameWidgetClass rootFrame {
+ size 1 48
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ {
+  GridSpacerWidgetClass ButtonGrid {
+   size 1 1
+   halign right_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content H" 1
+   content_halign right
+   Columns 2
+   Rows 1
+   {
+    FrameWidgetClass OptionsFrameOut {
+     color 0.1961 0.1961 0.1961 1
+     position 10 10
+     size 48 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     {
+      FrameWidgetClass OptionsFrame {
+       size 48 48
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+      }
+     }
+    }
+    FrameWidgetClass ExitFrameOut {
+     color 0.1961 0.1961 0.1961 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      FrameWidgetClass ExitFrame {
+       size 48 48
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

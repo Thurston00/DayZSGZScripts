@@ -1,0 +1,40 @@
+FrameWidgetClass rootFrame {
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  ImageWidgetClass Background {
+   ignorepointer 1
+   color 1 1 1 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   mode blend
+  }
+  GridSpacerWidgetClass ContentGrid {
+   clipchildren 1
+   inheritalpha 0
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content V" 1
+   content_halign center
+   Columns 1
+   Rows 10
+  }
+ }
+}

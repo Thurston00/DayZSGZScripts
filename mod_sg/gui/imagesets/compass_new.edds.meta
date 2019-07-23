@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{06980918E19B9A84}mod_sg/gui/imagesets/compass_new.tga"
+ Author "3046"
+ ChangeDate 151807633
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "compass_new.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

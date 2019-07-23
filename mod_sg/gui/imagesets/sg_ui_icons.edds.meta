@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{DC79A60863559BD2}mod_sg/gui/imagesets/sg_ui_icons.tga"
+ Author "janosik"
+ ChangeDate 1472406572
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "sg_ui_icons.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

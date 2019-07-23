@@ -1,0 +1,105 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 300 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 1
+ vexactsize 0
+ {
+  PanelWidgetClass PanelWidget0 {
+   ignorepointer 1
+   color 0.0784 0.0784 0.0784 0.8627
+   position 0 0
+   size 1 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    TextWidgetClass TextWidget0 {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "AI Spawn Editor"
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass PanelWidget1 {
+   ignorepointer 1
+   color 0.0784 0.0784 0.0784 0.8627
+   position 0 48
+   size 1 984
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    ScrollWidgetClass Scroller {
+     visible 1
+     clipchildren 0
+     ignorepointer 0
+     color 0.1961 0.1961 0.1961 0.3922
+     size 1 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     scriptclass ""
+     style blank
+     "Ignore invisible" 0
+     "Scrollbar V" 1
+     {
+      GridSpacerWidgetClass Content {
+       clipchildren 0
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scriptclass ""
+       style Colorable
+       Padding 0
+       Margin 0
+       "Size To Content V" 1
+       Columns 1
+       Rows 100
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass PanelWidget2 {
+   ignorepointer 1
+   color 0.0784 0.0784 0.0784 0.8627
+   size 1 48
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    ButtonWidgetClass CloseButtonWidget {
+     position 0 0
+     size 1 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "Close"
+    }
+   }
+  }
+ }
+}

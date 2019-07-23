@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{D37F8627E0A8F9F6}mod_sg/gui/imagesets/sgz_editor/editor_atlas.edds"
+ Author "1254"
+ ChangeDate 543401626
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "editor_atlas.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

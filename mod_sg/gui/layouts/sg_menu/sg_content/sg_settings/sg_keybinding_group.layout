@@ -1,0 +1,155 @@
+FrameWidgetClass group_root {
+ clipchildren 0
+ inheritalpha 0
+ ignorepointer 0
+ position 0 0
+ size 1 1
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  WrapSpacerWidgetClass WrapSpacerWidget0 {
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 0
+   Margin 0
+   "Size To Content V" 1
+   content_halign center
+   content_valign bottom
+   {
+    ScrollWidgetClass group_scroll {
+     color 0.9137 0.8314 0.3333 0.1961
+     size 1 1
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     "Scrollbar V" 1
+     {
+      WrapSpacerWidgetClass group_content {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       ignorepointer 1
+       position 0 0
+       size 1 0
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       style Empty
+       "no focus" 1
+       Padding 16
+       Margin 0
+       "Size To Content V" 1
+       content_halign center
+      }
+     }
+    }
+    FrameWidgetClass spacer {
+     ignorepointer 1
+     position 0 10
+     size 1 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+    }
+    PanelWidgetClass group_header {
+     clipchildren 0
+     inheritalpha 0
+     ignorepointer 1
+     color 0 0 0 0
+     size 1 48
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style rover_sim_colorable
+     "no focus" 1
+     {
+      PanelWidgetClass keyboard_preset {
+       clipchildren 0
+       inheritalpha 0
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign right_ref
+       hexactpos 0
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       priority 10
+       "no focus" 1
+       {
+        GridSpacerWidgetClass GridSpacerWidget0 {
+         clipchildren 0
+         ignorepointer 1
+         size 400 1
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 0
+         priority 10
+         Padding 0
+         Margin 0
+         "Size To Content H" 1
+         Columns 2
+         Rows 1
+         {
+          TextWidgetClass keyboard_image {
+           clipchildren 0
+           inheritalpha 0
+           ignorepointer 1
+           position 0 10
+           size 1 1
+           halign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "#keybinding_profile"
+           font "gui/fonts/sdf_MetronBook72"
+           "exact text" 1
+           "exact text size" 24
+           "text halign" center
+           "text valign" center
+          }
+          PanelWidgetClass keyboard_dropown {
+           clipchildren 0
+           inheritalpha 0
+           ignorepointer 1
+           color 0.1176 0.1176 0.1176 0.3922
+           position 0 3
+           size 216 1
+           halign center_ref
+           valign bottom_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 0
+           priority 20
+           style rover_sim_colorable
+           "no focus" 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,21 @@
+enum ESgSyncEvent
+{
+	WarmUpJoined,
+	WarmUpFinished,
+	GameStarted,
+	GameUpdate,
+	GameFinished,
+	GamePhaseChanged,
+	GameSyncTimer,
+	GameShowPoI,
+	PlayerInitialized,	
+	PlayerReconnected,
+	PlayerDied,
+	PlayerMoveLockChanged,
+	PlayerDeadcamStart,
+	PlayerDeadcamStop,
+	CollarBlockChanged,
+	CollarDamage,
+	CollarExplosion,
+	TeamDeadStats
+}

@@ -1,0 +1,224 @@
+FrameWidgetClass rootFrame {
+ size 240 48
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  GridSpacerWidgetClass GameInfoGrid {
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content H" 1
+   content_valign center
+   Columns 2
+   Rows 1
+   {
+    FrameWidgetClass ZoneInfoFrame {
+     clipchildren 1
+     ignorepointer 1
+     position 0 0
+     size 128 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     scaled 1
+     {
+      ImageWidgetClass ZoneInfoBackground {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 "set:sgz_hud image:zone_background"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 1
+       filter 0
+      }
+      GridSpacerWidgetClass ZoneInfoGrid {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Padding 0
+       Margin 4
+       "Size To Content H" 1
+       Columns 2
+       Rows 1
+       {
+        ImageWidgetClass ZoneIcon {
+         ignorepointer 1
+         size 44 44
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:sgz_hud image:zone_phase"
+         mode blend
+         "src alpha" 1
+         {
+          TextWidgetClass CurentZoneValueLabel {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "0"
+           font "gui/fonts/sdf_MetronBook72"
+           "bold text" 1
+           "exact text" 1
+           "exact text size" 20
+           "size to text v" 0
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+        FrameWidgetClass ZoneTimeLabelFrame {
+         ignorepointer 1
+         position 10 10
+         size 1 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         {
+          TextWidgetClass ZoneTimeLabel {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "00:15"
+           font "gui/fonts/sdf_MetronBook72"
+           "text color" 0.0471 0.0471 0.0471 1
+           "bold text" 1
+           "exact text" 1
+           "exact text size" 20
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass PlayerCountFrame {
+     clipchildren 1
+     ignorepointer 1
+     position 0 0
+     size 96 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     scaled 1
+     {
+      ImageWidgetClass PlayerCountBackgournd {
+       inheritalpha 0
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 "set:sgz_hud image:player_count_background"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 1
+       filter 0
+      }
+      GridSpacerWidgetClass PlayerCountGrid {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Padding 0
+       Margin 4
+       "Size To Content H" 1
+       Columns 2
+       Rows 1
+       {
+        ImageWidgetClass PlayerCountIcon {
+         ignorepointer 1
+         size 44 44
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:sgz_hud image:player_count"
+         mode blend
+         "src alpha" 1
+        }
+        FrameWidgetClass PlayerCountValueFrame {
+         ignorepointer 1
+         position 10 10
+         size 1 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         {
+          TextWidgetClass PlayerCountLabel {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "16"
+           font "gui/fonts/sdf_MetronBook72"
+           "text color" 0.0471 0.0471 0.0471 1
+           "bold text" 1
+           "exact text" 1
+           "exact text size" 20
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

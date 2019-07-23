@@ -1,0 +1,220 @@
+ImageSetClass {
+ Name "sgz_ui"
+ RefSize 1024 1024
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{3153928F83DC9677}mod_sg/gui/imagesets/sgz_new_ui/sgz_ui_atlas.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass ready_state {
+   Name "ready_state"
+   Pos 111 87
+   Size 34 34
+   Flags 0
+  }
+  ImageSetDefClass splitter {
+   Name "splitter"
+   Pos 16 21
+   Size 480 3
+   Flags 0
+  }
+  ImageSetDefClass border {
+   Name "border"
+   Pos 16 232
+   Size 480 48
+   Flags 0
+  }
+  ImageSetDefClass panel {
+   Name "panel"
+   Pos 16 304
+   Size 256 256
+   Flags 0
+  }
+  ImageSetDefClass white_pixel {
+   Name "white_pixel"
+   Pos 118 47
+   Size 1 1
+   Flags 0
+  }
+  ImageSetDefClass white_pixels {
+   Name "white_pixels"
+   Pos 123 49
+   Size 2 2
+   Flags 0
+  }
+  ImageSetDefClass grey_pixels {
+   Name "grey_pixels"
+   Pos 79 40
+   Size 2 2
+   Flags 0
+  }
+  ImageSetDefClass host {
+   Name "host"
+   Pos 591 28
+   Size 24 24
+   Flags 0
+  }
+  ImageSetDefClass tick {
+   Name "tick"
+   Pos 588 59
+   Size 24 24
+   Flags 0
+  }
+  ImageSetDefClass arrow_right {
+   Name "arrow_right"
+   Pos 624 32
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass arrow_left {
+   Name "arrow_left"
+   Pos 694 32
+   Size 64 64
+   Flags 0
+  }
+ }
+ Groups {
+  ImageSetGroupClass checkbox {
+   Name "checkbox"
+   Images {
+    ImageSetDefClass checkbox_unchecked {
+     Name "checkbox_unchecked"
+     Pos 15 87
+     Size 34 34
+     Flags 0
+    }
+    ImageSetDefClass checkbox_checked {
+     Name "checkbox_checked"
+     Pos 15 135
+     Size 34 34
+     Flags 0
+    }
+    ImageSetDefClass checkbox_checked_disabled {
+     Name "checkbox_checked_disabled"
+     Pos 15 183
+     Size 34 34
+     Flags 0
+    }
+    ImageSetDefClass checkbox_unchecked_disabled {
+     Name "checkbox_unchecked_disabled"
+     Pos 15 39
+     Size 34 34
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass radio {
+   Name "radio"
+   Images {
+    ImageSetDefClass radio_checked {
+     Name "radio_checked"
+     Pos 63 135
+     Size 34 34
+     Flags 0
+    }
+    ImageSetDefClass radio_unchecked {
+     Name "radio_unchecked"
+     Pos 63 87
+     Size 34 34
+     Flags 0
+    }
+    ImageSetDefClass radio_checked_disabled {
+     Name "radio_checked_disabled"
+     Pos 63 183
+     Size 35 34
+     Flags 0
+    }
+    ImageSetDefClass radio_unchecked_disabled {
+     Name "radio_unchecked_disabled"
+     Pos 63 39
+     Size 34 34
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass editbox {
+   Name "editbox"
+   Images {
+    ImageSetDefClass editbox_left {
+     Name "editbox_left"
+     Pos 16 232
+     Size 3 48
+     Flags 0
+    }
+    ImageSetDefClass editbox_right {
+     Name "editbox_right"
+     Pos 493 232
+     Size 3 48
+     Flags 0
+    }
+    ImageSetDefClass editbox_top {
+     Name "editbox_top"
+     Pos 16 232
+     Size 480 3
+     Flags 0
+    }
+    ImageSetDefClass editbox_bottom {
+     Name "editbox_bottom"
+     Pos 16 277
+     Size 480 3
+     Flags 0
+    }
+   }
+  }
+  ImageSetGroupClass map_icons {
+   Name "map_icons"
+   Images {
+    ImageSetDefClass police {
+     Name "police"
+     Pos 0 976
+     Size 48 48
+     Flags 0
+    }
+    ImageSetDefClass medical {
+     Name "medical"
+     Pos 48 976
+     Size 48 48
+     Flags 0
+    }
+    ImageSetDefClass church {
+     Name "church"
+     Pos 96 976
+     Size 48 48
+     Flags 0
+    }
+    ImageSetDefClass barn {
+     Name "barn"
+     Pos 144 976
+     Size 48 48
+     Flags 0
+    }
+    ImageSetDefClass construction {
+     Name "construction"
+     Pos 192 976
+     Size 48 48
+     Flags 0
+    }
+    ImageSetDefClass lumberyard {
+     Name "lumberyard"
+     Pos 240 976
+     Size 48 48
+     Flags 0
+    }
+    ImageSetDefClass end_phase {
+     Name "end_phase"
+     Pos 288 976
+     Size 48 48
+     Flags 0
+    }
+    ImageSetDefClass player {
+     Name "player"
+     Pos 336 976
+     Size 48 48
+     Flags 0
+    }
+   }
+  }
+ }
+}

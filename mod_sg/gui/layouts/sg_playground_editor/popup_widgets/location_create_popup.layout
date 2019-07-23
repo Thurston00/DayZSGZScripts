@@ -1,0 +1,54 @@
+PanelWidgetClass rootFrame {
+ ignorepointer 1
+ color 0.0941 0.0941 0.0941 0.7059
+ size 400 200
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ style rover_sim_colorable
+ {
+  TextListboxWidgetClass LocationList {
+   position 16 16
+   size 372 140
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style SGZListBox
+   "title visible" 0
+   colums "1"
+   "highlight row" 1
+   font "gui/fonts/MetronBook22"
+  }
+  ButtonWidgetClass CancelButton {
+   position 16 16
+   size 0.3 0.1
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   text "Cancel"
+   text_proportion 0.7
+   font "gui/fonts/sdf_MetronBook24"
+   switch normal
+  }
+  ButtonWidgetClass ConfirmButton {
+   position 16 16
+   size 0.3 0.1
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   text "Confirm"
+   text_proportion 0.7
+   font "gui/fonts/sdf_MetronBook24"
+   switch normal
+  }
+ }
+}

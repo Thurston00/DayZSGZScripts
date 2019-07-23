@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{F89985145912B012}mod_sg/gui/textures/sgz_hints/sg_tutorial_hotspots.edds"
+ Author "pato-pc"
+ ChangeDate 1756128987
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "sg_tutorial_hotspots.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

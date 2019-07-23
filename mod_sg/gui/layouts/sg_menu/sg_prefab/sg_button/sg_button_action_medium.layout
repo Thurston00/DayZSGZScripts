@@ -1,0 +1,141 @@
+FrameWidgetClass rootFrame {
+ size 216 48
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  ImageWidgetClass Background {
+   visible 1
+   ignorepointer 0
+   color 0 0 0 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   image0 ""
+   mode blend
+   "src alpha" 1
+   stretch 1
+   "Transition width" 0
+   Progress 0
+  }
+  FrameWidgetClass Border {
+   visible 1
+   clipchildren 0
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   priority 1
+   {
+    PanelWidgetClass BorderLeft {
+     inheritalpha 1
+     ignorepointer 1
+     size 4 1
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     scaled 0
+     style rover_sim_colorable
+    }
+    PanelWidgetClass BorderRight {
+     inheritalpha 1
+     ignorepointer 1
+     size 4 1
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     scaled 0
+     style rover_sim_colorable
+    }
+    PanelWidgetClass BorderTop {
+     inheritalpha 1
+     ignorepointer 1
+     size 1 4
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     scaled 0
+     style rover_sim_colorable
+    }
+    PanelWidgetClass BorderBottom {
+     inheritalpha 1
+     ignorepointer 1
+     size 1 4
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style rover_sim_colorable
+    }
+   }
+  }
+  FrameWidgetClass ContentFrame {
+   visible 1
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   {
+    TextWidgetClass ContentLabel {
+     clipchildren 0
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "button_text"
+     font "gui/fonts/sdf_MetronBook72"
+     "italic text" 0
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 24
+     "size to text h" 1
+     "size to text v" 1
+     "text halign" center
+     "text valign" center
+     {
+      PanelWidgetClass Underline {
+       visible 0
+       ignorepointer 1
+       size 1 2
+       halign center_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       style rover_sim_colorable
+      }
+     }
+    }
+   }
+  }
+ }
+}

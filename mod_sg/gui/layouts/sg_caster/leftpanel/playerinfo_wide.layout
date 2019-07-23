@@ -1,0 +1,115 @@
+PanelWidgetClass PlayerInfo {
+ visible 1
+ clipchildren 0
+ ignorepointer 1
+ position 0 0
+ size 176 76
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ priority 3
+ scriptclass ""
+ "no focus" 1
+ {
+  ButtonWidgetClass PlayerButton {
+   ignorepointer 0
+   size 166 66
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style NewStyle
+   {
+    ImageWidgetClass Background {
+     clipchildren 1
+     ignorepointer 1
+     color 0 0 0 0.6667
+     position 0 0
+     size 1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     mode blend
+    }
+    ProgressBarWidgetClass Health {
+     clipchildren 0
+     ignorepointer 1
+     color 1 1 1 0.4706
+     position 8 20
+     size 150 6
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     priority 1
+     style SG_Loading
+     current 100
+    }
+    TextWidgetClass Name {
+     ignorepointer 1
+     position 8 0
+     size 150 18
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     scriptclass ""
+     style Normal
+     text "Player 1"
+     "exact text" 1
+     "text valign" center
+    }
+    PanelWidgetClass Weapon {
+     visible 1
+     clipchildren 0
+     ignorepointer 1
+     position 8 28
+     size 150 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     priority 1
+     {
+      ImageWidgetClass WeaponIcon {
+       ignorepointer 1
+       size 114.75999 36
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect outside
+       image0 "set:sg_caster_item_icons image:assaultrifle"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       filter 1
+       {
+        TextWidgetClass AmmoCount {
+         position 28 14
+         size 22 22
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "30"
+         font "gui/fonts/Metron-Bold"
+         "exact text" 1
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

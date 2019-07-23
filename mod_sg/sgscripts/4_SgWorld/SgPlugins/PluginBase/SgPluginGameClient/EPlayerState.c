@@ -1,0 +1,5 @@
+enum EPlayerStatus
+{
+	Alive,
+	Dead,
+}

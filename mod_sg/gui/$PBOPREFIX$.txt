@@ -1,0 +1,7 @@
+﻿///<'gui.pbo' properties via Mikero's dos tools, dll version 7.16>///
+product=sgz
+prefix=mod_sg\gui
+version=5071P
+//Pbo Type is: Arma Unknown pbo typ (no config).
+//Sha: '815F13DBAF901D92406C154B28CBE686C7137A95'
+//////</properties>//////

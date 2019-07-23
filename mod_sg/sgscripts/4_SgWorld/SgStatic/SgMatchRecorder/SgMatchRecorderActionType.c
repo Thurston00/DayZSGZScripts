@@ -1,0 +1,19 @@
+enum SgMatchRecorderActionType
+{
+	None,
+	PlayerShoot,
+	PlayerDamage,
+	EntityDied,
+	PlayerItemPickup,
+	PlayerItemDtop,
+	ItemSpawn,
+	ItemPhaseStart,
+	MainSetTimer,
+	MainSetPhase,
+	MainSetTransition,
+	SpawnTransmitter,
+	SpawnAntenna,
+	SpawnV3SCrash,
+	SpawnHeliCrash,
+	SpawnEndPoi
+}

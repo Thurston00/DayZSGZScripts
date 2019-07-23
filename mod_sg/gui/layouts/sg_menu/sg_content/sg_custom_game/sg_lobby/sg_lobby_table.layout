@@ -1,0 +1,156 @@
+FrameWidgetClass rootFrame {
+ ignorepointer 1
+ size 1 1
+ halign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  GridSpacerWidgetClass GridSpacerWidget0 {
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content V" 1
+   Columns 1
+   Rows 2
+   {
+    GridSpacerWidgetClass LabelGrid {
+     ignorepointer 1
+     position 0 0
+     size 1 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     Padding 15
+     Margin 0
+     "Size To Content H" 1
+     Rows 1
+     {
+      TextWidgetClass TableLabel {
+       clipchildren 0
+       ignorepointer 1
+       position 0 0
+       size 80 3
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       text "#sg_menu_lobby_c"
+       font "gui/fonts/sdf_MetronBook72"
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 20
+       "size to text h" 0
+       "text valign" center
+       {
+        PanelWidgetClass PanelWidget0 {
+         visible 0
+         ignorepointer 1
+         color 0.9137 0.8314 0.3333 1
+         size 1.5 4
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         scaled 0
+         style rover_sim_colorable
+        }
+       }
+      }
+      TextWidgetClass PlayerCountLabel {
+       clipchildren 0
+       ignorepointer 1
+       position 0 0
+       size 80 1
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       text "16/16"
+       font "gui/fonts/sdf_MetronBook72"
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 20
+       "size to text h" 1
+       "text valign" center
+       {
+        PanelWidgetClass PanelWidget1 {
+         visible 0
+         ignorepointer 1
+         color 0.9137 0.8314 0.3333 1
+         size 1 4
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         scaled 0
+         style rover_sim_colorable
+        }
+       }
+      }
+      FrameWidgetClass Spacer {
+       ignorepointer 1
+       position 10 10
+       size 1 1
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+      }
+     }
+    }
+    FrameWidgetClass FrameWidget0 {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     {
+      ImageWidgetClass Background {
+       ignorepointer 1
+       color 0 0 0 0.2
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       mode blend
+       "src alpha" 0
+      }
+      GridSpacerWidgetClass ContentGrid {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Padding 0
+       Margin 16
+       "Size To Content V" 1
+       content_halign center
+       Columns 4
+       Rows 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

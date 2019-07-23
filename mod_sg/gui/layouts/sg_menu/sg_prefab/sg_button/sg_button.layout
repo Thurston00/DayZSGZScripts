@@ -1,0 +1,74 @@
+FrameWidgetClass rootFrame {
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  ImageWidgetClass Background {
+   visible 1
+   ignorepointer 0
+   color 1 1 1 0
+   position -0.79999 0.39999
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   mode blend
+   "src alpha" 1
+   stretch 1
+  }
+  FrameWidgetClass ContentFrame {
+   visible 1
+   ignorepointer 1
+   size 1 48
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    TextWidgetClass ContentLabel {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "button_text"
+     font "gui/fonts/sdf_MetronBook72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 30
+     "size to text h" 1
+     "size to text v" 1
+     "text halign" center
+     "text valign" center
+     {
+      PanelWidgetClass Underline {
+       visible 0
+       clipchildren 0
+       ignorepointer 1
+       size 1 2
+       halign center_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       style rover_sim_colorable
+      }
+     }
+    }
+   }
+  }
+ }
+}

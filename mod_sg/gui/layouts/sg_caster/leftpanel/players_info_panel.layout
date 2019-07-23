@@ -1,0 +1,289 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 390 658
+ halign right_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  PanelWidgetClass ScrollBarContainer {
+   color 1 1 1 0.2745
+   position 0 36
+   size 390 622
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   scriptclass "ScrollBarContainer"
+   style bordered
+   {
+    PanelWidgetClass Content {
+     clipchildren 0
+     inheritalpha 0
+     ignorepointer 1
+     position 0 0
+     size 390 406
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     priority 1
+     draggable 0
+     scriptclass "AutoHeightSpacer"
+     style blank
+     {
+      ScriptParamsClass {
+       AlignChilds 1
+      }
+     }
+    }
+    PanelWidgetClass ScrollBar {
+     color 0.2353 0.2353 0.2353 1
+     position 0 0
+     size 10 622
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+    }
+    PanelWidgetClass Scroller {
+     color 0.1569 0.1569 0.1569 1
+     size 12 36
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+    }
+   }
+   {
+    ScriptParamsClass {
+    }
+   }
+  }
+  SmartPanelWidgetClass SettingsPanel {
+   clipchildren 0
+   color 0 0 0 0.8431
+   size 160 36
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style RightGrungeStyle
+   {
+    PanelWidgetClass SettingsSpacerPanel {
+     clipchildren 0
+     ignorepointer 1
+     position 4 0
+     size 156 60
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     priority 3
+     scriptclass "AutoHeightSpacer"
+     style blank
+     {
+      ButtonWidgetClass OpenSortMenu {
+       clipchildren 0
+       size 30 30
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       scriptclass ""
+       style MainMenu
+       {
+        ImageWidgetClass OpenIcon {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         fixaspect fixwidth
+         image0 "set:dayz_gui image:icon_collapse"
+         mode blend
+         "src alpha" 1
+        }
+        PanelWidgetClass SortOptionsPanel {
+         visible 0
+         clipchildren 1
+         ignorepointer 1
+         color 0.1725 0.1725 0.1725 0.8824
+         position 0 30
+         size 112 120
+         halign right_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         priority 1
+         scriptclass "SgListView"
+         style rover_sim_colorable
+         {
+          TextWidgetClass TeamSort {
+           visible 1
+           color 1 1 1 0.7843
+           position 0 30
+           size 112 30
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           priority 1
+           style Light
+           text "Team Name"
+           font "gui/fonts/Metron16"
+           "text offset" -8 0
+           "exact text" 1
+           "text halign" right
+           "text valign" center
+          }
+          TextWidgetClass HealthSort {
+           visible 1
+           color 1 1 1 0.7843
+           position 0 40
+           size 112 30
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           priority 2
+           style Light
+           text "Health"
+           font "gui/fonts/Metron16"
+           "text offset" -8 0
+           "exact text" 1
+           "text halign" right
+           "text valign" center
+          }
+          TextWidgetClass ELOSort {
+           visible 1
+           color 1 1 1 0.7843
+           position 0 60
+           size 112 30
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           priority 3
+           style Light
+           text "ELO"
+           font "gui/fonts/Metron16"
+           "text offset" -8 0
+           "exact text" 1
+           "text halign" right
+           "text valign" center
+          }
+          TextWidgetClass Label {
+           visible 1
+           ignorepointer 1
+           position 0 0
+           size 112 30
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           style Normal
+           text "Sort By:"
+           font "gui/fonts/Metron16"
+           "text offset" 8 0
+           "exact text" 1
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+      CheckBoxWidgetClass ShowHealth {
+       size 30 30
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style NewStyle
+       checked 0
+      }
+      CheckBoxWidgetClass ShowWeapons {
+       size 30 30
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style NewStyle
+       checked 0
+      }
+      CheckBoxWidgetClass ShowDead {
+       size 30 30
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style NewStyle
+       checked 0
+      }
+      CheckBoxWidgetClass GroupTeams {
+       size 30 30
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style NewStyle
+       checked 0
+      }
+     }
+     {
+      ScriptParamsClass {
+       AlignChilds 1
+      }
+     }
+    }
+   }
+  }
+  SmartPanelWidgetClass PlayersInfoPanelImage {
+   color 1 1 1 0.3922
+   position 0 0
+   size 230 36
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style LeftGrungeStyle
+   {
+    TextWidgetClass PlayersInfoPanelText {
+     color 0 0 0 1
+     position 12 0
+     size 218 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Normal
+     text "Players Info:"
+     font "gui/fonts/sdf_MetronBook24"
+     "text color" 0 0 0 1
+     "shadow opacity" 0
+     "bold text" 0
+     "exact text" 1
+     "exact text size" 28
+     "text valign" center
+    }
+   }
+  }
+ }
+}

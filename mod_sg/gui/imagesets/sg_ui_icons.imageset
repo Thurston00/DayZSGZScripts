@@ -1,0 +1,266 @@
+ImageSetClass {
+ Name "sg_ui_icons"
+ RefSize 896 768
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{DC79A60863559BD2}mod_sg/gui/imagesets/sg_ui_icons.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass DownArrow {
+   Name "DownArrow"
+   Pos 0 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass UpArrow {
+   Name "UpArrow"
+   Pos 128 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Cross {
+   Name "Cross"
+   Pos 256 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Compass {
+   Name "Compass"
+   Pos 384 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass DownTriangle {
+   Name "DownTriangle"
+   Pos 512 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass UpTriangle {
+   Name "UpTriangle"
+   Pos 640 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Tick {
+   Name "Tick"
+   Pos 768 0
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Download {
+   Name "Download"
+   Pos 0 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Questionmark {
+   Name "Questionmark"
+   Pos 128 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass File {
+   Name "File"
+   Pos 256 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Flag {
+   Name "Flag"
+   Pos 384 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Folder {
+   Name "Folder"
+   Pos 512 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Heart {
+   Name "Heart"
+   Pos 640 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass RescueWheel {
+   Name "RescueWheel"
+   Pos 768 128
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Link {
+   Name "Link"
+   Pos 0 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Location {
+   Name "Location"
+   Pos 128 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Lock {
+   Name "Lock"
+   Pos 256 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Tag {
+   Name "Tag"
+   Pos 384 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass ListCondensed {
+   Name "ListCondensed"
+   Pos 512 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass List {
+   Name "List"
+   Pos 640 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Mail {
+   Name "Mail"
+   Pos 768 256
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Minus {
+   Name "Minus"
+   Pos 0 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Boxes {
+   Name "Boxes"
+   Pos 128 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Dots {
+   Name "Dots"
+   Pos 256 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Plus {
+   Name "Plus"
+   Pos 384 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Profile {
+   Name "Profile"
+   Pos 512 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Profiles {
+   Name "Profiles"
+   Pos 640 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass SoundOn {
+   Name "SoundOn"
+   Pos 0 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass SoundOff {
+   Name "SoundOff"
+   Pos 768 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Star {
+   Name "Star"
+   Pos 128 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Microphone {
+   Name "Microphone"
+   Pos 256 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Anchor {
+   Name "Anchor"
+   Pos 384 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Bell {
+   Name "Bell"
+   Pos 512 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Boat {
+   Name "Boat"
+   Pos 640 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Bookmark {
+   Name "Bookmark"
+   Pos 768 640
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Refresh {
+   Name "Refresh"
+   Pos 0 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Refind {
+   Name "Refind"
+   Pos 768 384
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Expand {
+   Name "Expand"
+   Pos 128 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Rudder {
+   Name "Rudder"
+   Pos 256 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass SailMenu {
+   Name "SailMenu"
+   Pos 384 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Search {
+   Name "Search"
+   Pos 512 512
+   Size 128 128
+   Flags 0
+  }
+  ImageSetDefClass Settings {
+   Name "Settings"
+   Pos 640 512
+   Size 128 128
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

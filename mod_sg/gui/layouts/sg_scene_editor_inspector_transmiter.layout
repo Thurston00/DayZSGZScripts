@@ -1,0 +1,400 @@
+PanelWidgetClass pnl_right_inspector_transmiter {
+ position 0 0.31
+ size 1 0.4
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass pnl_phase_editor {
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    PanelWidgetClass pnl_att_title0 {
+     color 0 0 0 0.7843
+     position 0 0
+     size 1 30
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      TextWidgetClass txt_att_title0 {
+       position 0 0
+       size 1 0.7
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Phase Editor"
+       font "gui/fonts/Metron"
+       "exact text" 1
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass pnl_prop_base {
+     position 0 30
+     size 0.9 144
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      ButtonWidgetClass btn_phase_preview {
+       position 0 0.432
+       size 1 0.142
+       hexactpos 1
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Editor
+       text "Preview"
+      }
+      PanelWidgetClass pnl_phase_name {
+       position 0 0
+       size 1 0.142
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        PanelWidgetClass pnl_phase_name_class_name {
+         position 0 0
+         size 0.4 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          TextWidgetClass txt_phase_area_id {
+           color 0.3098 0.3098 0.3098 1
+           position 0 0
+           size 1 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "Area ID"
+           "text offset" 5 0
+           "exact text" 1
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pnl_phase_name_class_value {
+         position 0.4 0
+         size 0.6 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          TextWidgetClass txt_phase_area_id_value {
+           color 0.3098 0.3098 0.3098 1
+           position 0.03 0
+           size 0.94 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "0"
+           "text color" 0.3098 0.3098 0.3098 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass pnl_phase_radius {
+       position 0 0.142
+       size 1 0.142
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        PanelWidgetClass pnl_phase_radius_class_name {
+         position 0 0
+         size 0.4 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          TextWidgetClass txt_phase_radius_class_name {
+           color 0.3098 0.3098 0.3098 1
+           position 0 0
+           size 1 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "Radius"
+           "text offset" 5 0
+           "exact text" 1
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pnl_phase_radius_class_value {
+         position 0.4 0
+         size 0.6 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          EditBoxWidgetClass ebx_phase_radius_class_value {
+           color 0.3098 0.3098 0.3098 1
+           position 0.03 0
+           size 0.94 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "50"
+           "text color" 0.3098 0.3098 0.3098 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass pnl_phase_density {
+       position 0 0.284
+       size 1 0.142
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        PanelWidgetClass pnl_phase_density_class_name {
+         position 0 0
+         size 0.4 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          TextWidgetClass txt_phase_density_class_name0 {
+           color 0.3098 0.3098 0.3098 1
+           position 0 0
+           size 1 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "Density"
+           "text offset" 5 0
+           "exact text" 1
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pnl_phase_density_class_value {
+         position 0.4 0
+         size 0.6 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          EditBoxWidgetClass ebx_phase_density_class_value {
+           color 0.3098 0.3098 0.3098 1
+           position 0.03 0
+           size 0.94 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "0,3"
+           "text color" 0.3098 0.3098 0.3098 1
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass btn_phase_generate {
+       position 0 0.876
+       size 1 0.142
+       hexactpos 1
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Editor
+       text "Generate"
+      }
+      PanelWidgetClass pnl_phase_count {
+       position 0 0.58
+       size 1 0.142
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        PanelWidgetClass pnl_phase_count_class_name {
+         position 0 0
+         size 0.4 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          TextWidgetClass txt_phase_count_class_name {
+           color 0.3098 0.3098 0.3098 1
+           position 0 0
+           size 1 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "Antenna count"
+           "text offset" 5 0
+           "exact text" 1
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pnl_phase_count_class_value {
+         position 0.4 0
+         size 0.6 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          TextWidgetClass txt_phase_count_class_value {
+           color 0.3098 0.3098 0.3098 1
+           position 0.03 0
+           size 0.94 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "150"
+           "exact text" 1
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass pnl_phase_circuit {
+       position 0 0.728
+       size 1 0.142
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        PanelWidgetClass pnl_phase_circuit_class_name {
+         position 0 0
+         size 0.4 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          TextWidgetClass txt_phase_circuit_class_name2 {
+           color 0.3098 0.3098 0.3098 1
+           position 0 0
+           size 1 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "Area circuit"
+           "text offset" 5 0
+           "exact text" 1
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pnl_phase_circuit_class_value {
+         position 0.4 0
+         size 0.6 1
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style EditorPanel
+         {
+          TextWidgetClass txt_phase_circuit_class_value {
+           color 0.3098 0.3098 0.3098 1
+           position 0.03 0
+           size 0.94 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "150"
+           "exact text" 1
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass pnl_prop_phase_details {
+     visible 1
+     position -14 265
+     size 0.9 113
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      ButtonWidgetClass btn_count_buildings_in_range {
+       position 0 0
+       size 0.45 21
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       style Editor
+       text "CountBuildings"
+      }
+      ButtonWidgetClass btn_editor_loot {
+       size 0.45 21
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       style Editor
+       text "Loot Editor"
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,324 @@
+FrameWidgetClass rootFrame {
+ visible 1
+ clipchildren 0
+ size 1 32
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ {
+  GridSpacerWidgetClass Grid {
+   clipchildren 0
+   ignorepointer 1
+   position 0 0
+   size 240 16
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   Padding 0
+   Margin 0
+   "Size To Content H" 1
+   content_halign center
+   content_valign center
+   Columns 10
+   Rows 1
+   {
+    FrameWidgetClass PageFrame_0 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_0 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    FrameWidgetClass PageFrame_1 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_1 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    FrameWidgetClass PageFrame_2 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_2 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    FrameWidgetClass PageFrame_3 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_3 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    FrameWidgetClass PageFrame_4 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_4 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    FrameWidgetClass PageFrame_5 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_5 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    FrameWidgetClass PageFrame_6 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_6 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    FrameWidgetClass PageFrame_7 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_7 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    FrameWidgetClass PageFrame_8 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_8 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    FrameWidgetClass PageFrame_9 {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 24 16
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PageImage_9 {
+       clipchildren 0
+       ignorepointer 0
+       color 1 1 1 0.4706
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sgz_ui image:ready_state"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

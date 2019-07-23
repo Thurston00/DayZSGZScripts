@@ -1,0 +1,194 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass UnconsciousPanel {
+   color 0 0 0 0.7843
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanel
+   {
+    PanelWidgetClass UnconsciousCenterPanel {
+     inheritalpha 0
+     color 0 0 0 0.8627
+     size 600 150
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      GridSpacerWidgetClass UnconsciousGrid {
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Padding 16
+       Margin 16
+       content_halign center
+       content_valign center
+       Columns 1
+       Rows 2
+       {
+        FrameWidgetClass HeadlineLabelFrame {
+         ignorepointer 1
+         position 10 10
+         size 48 48
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass HeadlineLabel {
+           ignorepointer 1
+           size 1 31
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "*You are unconscious"
+           font "gui/fonts/sdf_MetronBook72"
+           "text halign" center
+          }
+         }
+        }
+        FrameWidgetClass FrameWidget1 {
+         ignorepointer 1
+         position 10 10
+         size 48 48
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          FrameWidgetClass BPMProgressFrame {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+          }
+          GridSpacerWidgetClass BPMGrid {
+           ignorepointer 1
+           size 1 32
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           Padding 4
+           Margin 0
+           "Size To Content H" 1
+           Columns 5
+           Rows 1
+           {
+            FrameWidgetClass spacer {
+             ignorepointer 1
+             size 0.5 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+            }
+            ImageWidgetClass BPMIcon {
+             position 986.96002 347.38391
+             size 32 32
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 1
+             image0 "set:sgz_hud image:teammate_unconscious"
+             mode blend
+             "src alpha" 1
+             stretch 1
+            }
+            TextWidgetClass BPMContent {
+             position 1238.64001 679.82404
+             size 62 1.5
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 0
+             text "100"
+             font "gui/fonts/sdf_MetronLight72"
+             "exact text" 1
+             "exact text size" 30
+             "text halign" right
+             "text valign" center
+            }
+            TextWidgetClass BPMLabel {
+             color 0.7843 0.7843 0.7843 1
+             size 48 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 0
+             text "BPM"
+             font "gui/fonts/sdf_MetronLight72"
+             "text offset" 0 10
+             "exact text" 1
+             "exact text size" 16
+             "size to text h" 0
+             "text halign" center
+            }
+            FrameWidgetClass spacer1 {
+             ignorepointer 1
+             size 0.5 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+            }
+           }
+          }
+          PanelWidgetClass BPMBorder {
+           clipchildren 0
+           ignorepointer 1
+           position 1.048 1.048
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           style bordered
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

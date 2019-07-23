@@ -1,0 +1,106 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 784 16
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  GridSpacerWidgetClass Grid {
+   ignorepointer 1
+   size 1 1
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content H" 1
+   Columns 4
+   Rows 1
+   {
+    TextWidgetClass PlayerNameLabel {
+     clipchildren 0
+     ignorepointer 1
+     color 0.4902 0.4902 0.4902 1
+     size 288 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "#sg_result_name_c"
+     font "gui/fonts/sdf_MetronBook72"
+     "text color" 0.5882 0.5882 0.5882 1
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 20
+     "size to text h" 0
+     "text valign" center
+    }
+    TextWidgetClass PlayerKillsLabel {
+     clipchildren 0
+     ignorepointer 1
+     color 0.4902 0.4902 0.4902 1
+     size 144 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "#sg_result_player_kills_c"
+     font "gui/fonts/sdf_MetronBook72"
+     "text color" 0.5882 0.5882 0.5882 1
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 20
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass ZombieKillsLabel {
+     clipchildren 0
+     ignorepointer 1
+     color 0.4902 0.4902 0.4902 1
+     position 10 0
+     size 144 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "#sg_result_zombie_kills_c"
+     font "gui/fonts/sdf_MetronBook72"
+     "text color" 0.5882 0.5882 0.5882 1
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 20
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass SurvivalTimeLabel {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     color 0.4902 0.4902 0.4902 1
+     position 10 10
+     size 160 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "#sg_result_survival_time_c"
+     font "gui/fonts/sdf_MetronBook72"
+     "text color" 0.5882 0.5882 0.5882 1
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 20
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+ }
+}

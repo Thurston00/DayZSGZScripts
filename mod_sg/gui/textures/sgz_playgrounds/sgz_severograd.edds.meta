@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{7816238049D8FCEA}mod_sg/gui/textures/sgz_playgrounds/sgz_severograd.tga"
+ Author "3672"
+ ChangeDate 1019455109
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "sgz_severograd.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

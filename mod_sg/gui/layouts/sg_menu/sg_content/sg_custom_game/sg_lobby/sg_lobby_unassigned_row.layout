@@ -1,0 +1,58 @@
+FrameWidgetClass rootFrame {
+ size 1 32
+ halign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ {
+  GridSpacerWidgetClass Grid {
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content H" 1
+   Columns 2
+   Rows 1
+   {
+    ImageWidgetClass PlayerImage {
+     visible 0
+     clipchildren 0
+     ignorepointer 1
+     size 32 1
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     image0 "set:sgz_ui image:host"
+     mode blend
+     "src alpha" 1
+    }
+    TextWidgetClass PlayerNameLabel {
+     clipchildren 0
+     ignorepointer 1
+     color 0.7255 0.7255 0.7255 1
+     position 0 0
+     size 1 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "JozkoKiller"
+     font "gui/fonts/sdf_MetronLight72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 20
+     "text valign" center
+    }
+   }
+  }
+ }
+}

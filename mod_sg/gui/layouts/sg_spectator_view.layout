@@ -1,0 +1,527 @@
+PanelWidgetClass pnl_root {
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass pnl_border {
+   position 0.016 0.028
+   size 0.968 0.944
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    PanelWidgetClass pnl_left {
+     position 0 0
+     size 0.2 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      PanelWidgetClass pnl_phase_manager {
+       position 0 0
+       size 1 0.5
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style EditorPanel
+       {
+        PanelWidgetClass pnl_pm_header {
+         color 0 0 0 0.7843
+         position 0 0
+         size 1 0.05
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style rover_sim_colorable
+         {
+          TextWidgetClass txt_pm_header {
+           size 0.8 0.7
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "Phase Manager"
+           "text offset" 15 0
+           "exact text" 1
+          }
+          ButtonWidgetClass btn_pm_header {
+           position 0 0
+           size 0.01 0.01
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           fixaspect inside
+           text "X"
+          }
+         }
+        }
+        PanelWidgetClass pnl_pm_folders {
+         position 0 0.05
+         size 1 0.05
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ButtonWidgetClass btn_pm_folders_p1 {
+           color 1 0 0 1
+           position 0 0
+           size 0.3333 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Default
+           {
+            TextWidgetClass txt_pm_folders1 {
+             ignorepointer 1
+             position 0 0
+             size 1 0.7
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "Phase1"
+             font "gui/fonts/Metron"
+             "exact text" 1
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          ButtonWidgetClass btn_pm_folders_p2 {
+           color 0 0.6667 0 1
+           position 0.3333 0
+           size 0.3333 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Default
+           {
+            TextWidgetClass txt_pm_folders2 {
+             ignorepointer 1
+             size 1 0.7
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "Phase2"
+             font "gui/fonts/Metron"
+             "exact text" 1
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          ButtonWidgetClass btn_pm_folders_p3 {
+           color 1 0 0 1
+           position 0.6666 0
+           size 0.3333 1
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Default
+           {
+            TextWidgetClass txt_pm_folders3 {
+             ignorepointer 1
+             size 1 0.7
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "Phase3"
+             font "gui/fonts/Metron"
+             "exact text" 1
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+         }
+        }
+        PanelWidgetClass pnl_pm_content {
+         position 0 0.1
+         size 1 0.9
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          TextWidgetClass pnl_pm_content_title {
+           position 0 0
+           size 1 0.05
+           halign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "Phase1"
+           font "gui/fonts/Metron-Bold"
+           "exact text" 1
+           "text halign" center
+           "text valign" center
+          }
+          ButtonWidgetClass btn_pm_content_activate {
+           position 0.05 0.07
+           size 0.4 0.05
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Editor
+           {
+            TextWidgetClass txt_pm_content_activate {
+             ignorepointer 1
+             size 1 0.7
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "Activate"
+             font "gui/fonts/MetronLight"
+             "exact text" 1
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          ButtonWidgetClass btn_pm_content_transition {
+           position 0.05 0.07
+           size 0.4 0.05
+           halign right_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Editor
+           {
+            TextWidgetClass txt_pm_content_transition {
+             ignorepointer 1
+             position 0 0
+             size 1 0.7
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             text "Transition"
+             font "gui/fonts/MetronLight"
+             "exact text" 1
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          PanelWidgetClass pnl_pm_content_trns_sett {
+           position 0 0.15
+           size 0.9 0.16
+           halign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style EditorPanel
+           {
+            PanelWidgetClass pnl_pm_content_ts_title {
+             color 0 0 0 0.7843
+             position 0 0
+             size 1 0.3
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             style rover_sim_colorable
+             {
+              TextWidgetClass txt_pm_content_ts_title {
+               size 1 0.7
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               text "Transmiter Setting"
+               font "gui/fonts/Metron"
+               "text offset" 15 0
+              }
+             }
+            }
+            PanelWidgetClass pnl_pm_content_ts_radius {
+             position 0 0.35
+             size 1 0.3
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              TextWidgetClass txt_pm_content_ts_radius {
+               size 0.7 0.8
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               text "PAS Radius"
+               font "gui/fonts/Metron"
+               "text offset" 5 0
+               "exact text" 1
+               "text valign" center
+              }
+              EditBoxWidgetClass ebx_pm_content_ts_radius {
+               position 0.7 0
+               size 0.3 0.8
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               text "30"
+              }
+             }
+            }
+            PanelWidgetClass pnl_pm_content_ts_radius_show {
+             position 0 0.7
+             size 1 0.3
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              TextWidgetClass txt_pm_content_ts_radius_show {
+               size 0.7 0.8
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               text "PAS Radius Show"
+               font "gui/fonts/Metron"
+               "text offset" 5 0
+               "exact text" 1
+               "text valign" center
+              }
+              PanelWidgetClass pnl_pm_content_ts_radius_show_container {
+               position 0.7 0
+               size 0.3 0.8
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               {
+                CheckBoxWidgetClass chb_pm_content_ts_radius_show_container {
+                 position 0 0
+                 size 0.01 0.01
+                 valign center_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 0
+                 fixaspect inside
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          PanelWidgetClass pnl_pm_content_antn_sett {
+           position 0 0.34
+           size 0.9 0.16
+           halign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style EditorPanel
+           {
+            PanelWidgetClass pnl_pm_content_as_title {
+             color 0 0 0 0.7843
+             position 0 0
+             size 1 0.3
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             style rover_sim_colorable
+             {
+              TextWidgetClass txt_pm_content_as_title {
+               size 1 0.7
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               text "Antenna Setting"
+               font "gui/fonts/Metron"
+               "text offset" 15 0
+              }
+             }
+            }
+            PanelWidgetClass pnl_pm_content_as_radius {
+             position 0 0.35
+             size 1 0.3
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              TextWidgetClass txt_pm_content_as_radius {
+               size 0.7 0.8
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               text "PAS Radius"
+               font "gui/fonts/Metron"
+               "text offset" 5 0
+               "exact text" 1
+               "text valign" center
+              }
+              EditBoxWidgetClass ebx_pm_content_as_radius {
+               position 0.7 0
+               size 0.3 0.8
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               text "50"
+              }
+             }
+            }
+            PanelWidgetClass pnl_pm_content_as_radius_show {
+             position 0 0.7
+             size 1 0.3
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              TextWidgetClass txt_pm_content_as_radius_show {
+               size 0.7 0.8
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               text "PAS Radius Show"
+               font "gui/fonts/Metron"
+               "text offset" 5 0
+               "exact text" 1
+               "text valign" center
+              }
+              PanelWidgetClass pnl_pm_content_as_radius_show_container {
+               position 0.7 0
+               size 0.3 0.8
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               {
+                CheckBoxWidgetClass chb_pm_content_as_radius_show_container {
+                 position 0 0
+                 size 0.01 0.01
+                 valign center_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 0
+                 fixaspect inside
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          PanelWidgetClass pnl_pm_content_trnsm_sounds {
+           position 0.05 0.53
+           size 0.9 0.44
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            TextListboxWidgetClass tlb_pm_content_trnsm_sounds {
+             position 0 0
+             size 1 0.85
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             style Editor
+             lines 10
+            }
+            ButtonWidgetClass btn_pm_content_trnsm_sounds {
+             position 0 0
+             size 0.4 0.12
+             valign bottom_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              TextWidgetClass TextWidget0 {
+               ignorepointer 1
+               position 0 0
+               size 1 0.8
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               text "Play"
+               font "gui/fonts/Metron"
+               "exact text" 1
+               "text halign" center
+               "text valign" center
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass pnl_center {
+     position 0 0
+     size 0.6 1
+     halign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+    }
+    PanelWidgetClass pnl_right {
+     size 0.2 1
+     halign right_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+    }
+   }
+  }
+ }
+}

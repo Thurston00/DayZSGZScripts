@@ -1,0 +1,62 @@
+ImageSetClass {
+ Name "sg_caster_item_icons"
+ RefSize 1654 1582
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{DD37F67B6408C771}mod_sg/gui/imagesets/sg_caster_item_icons.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass assaultrifle {
+   Name "assaultrifle"
+   Pos 0 0
+   Size 832 261
+   Flags 0
+  }
+  ImageSetDefClass shotgun {
+   Name "shotgun"
+   Pos 0 266
+   Size 834 144
+   Flags 0
+  }
+  ImageSetDefClass medical {
+   Name "medical"
+   Pos 0 413
+   Size 697 627
+   Flags 0
+  }
+  ImageSetDefClass pistol {
+   Name "pistol"
+   Pos 199 1038
+   Size 768 544
+   Flags 0
+  }
+  ImageSetDefClass submachinegun {
+   Name "submachinegun"
+   Pos 844 5
+   Size 810 445
+   Flags 0
+  }
+  ImageSetDefClass rifle {
+   Name "rifle"
+   Pos 820 495
+   Size 833 126
+   Flags 0
+  }
+  ImageSetDefClass melee {
+   Name "melee"
+   Pos 895 692
+   Size 759 57
+   Flags 0
+  }
+  ImageSetDefClass grenade {
+   Name "grenade"
+   Pos 1315 1173
+   Size 338 407
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{EDB6DB7929137217}mod_sg/gui/imagesets/sgz_new_ui/sgz_hud_atlas.edds"
+ Author "pato-pc"
+ ChangeDate 1932158680
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "sgz_hud_atlas.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

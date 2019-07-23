@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8228218269FA4D83}mod_sg/gui/imagesets/compass_player.tga"
+ Author "inv1141"
+ ChangeDate 1119642708
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "compass_player.tga"
+   TiledTexture 0
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{833F88B878B0D0BB}mod_sg/gui/textures/map_severograd.png"
+ Author "1254"
+ ChangeDate 722151154
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "map_severograd.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

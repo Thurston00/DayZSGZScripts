@@ -1,0 +1,27 @@
+PanelWidgetClass rootFrame {
+ position 0 0
+ size 420 164
+ halign right_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ scriptclass "AutoHeightSpacer"
+ style bordered
+ {
+  PanelWidgetClass PlayerContainer {
+   position 10 10
+   size 185 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+ }
+ {
+  ScriptParamsClass {
+   AlignChilds 1
+   Gap 10
+  }
+ }
+}

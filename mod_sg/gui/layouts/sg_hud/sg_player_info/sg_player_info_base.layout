@@ -1,0 +1,201 @@
+FrameWidgetClass rootFrame {
+ clipchildren 0
+ size 368 64
+ halign right_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  ImageWidgetClass Background {
+   inheritalpha 0
+   ignorepointer 1
+   color 0 0 0 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   image0 "set:sgz_hud image:player_info_background"
+   mode blend
+   "src alpha" 1
+   "no wrap" 0
+   stretch 1
+   filter 0
+  }
+  GridSpacerWidgetClass Grid {
+   ignorepointer 1
+   position -1.13261 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 16
+   "Size To Content H" 1
+   content_halign center
+   content_valign center
+   Columns 4
+   Rows 1
+   {
+    WrapSpacerWidgetClass GridSpacerWidget0 {
+     ignorepointer 1
+     position 0 0
+     size 80 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     Padding 16
+     Margin 0
+     content_halign right
+     {
+      FrameWidgetClass OverloadFrame {
+       visible 0
+       ignorepointer 1
+       size 32 1
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       {
+        ImageWidgetClass OverloadIcon {
+         visible 1
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         fixaspect fixwidth
+         image0 "set:sgz_hud image:overload"
+         mode blend
+         "src alpha" 1
+         stretch 0
+         {
+          TextWidgetClass TextWidget0 {
+           ignorepointer 1
+           color 0 0 0 1
+           position 1.1 0.5
+           size 26 26
+           halign center_ref
+           valign bottom_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "kg"
+           font "gui/fonts/sdf_MetronBook72"
+           "exact text" 1
+           "exact text size" 12
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+      FrameWidgetClass BleedingFrame {
+       visible 0
+       ignorepointer 1
+       size 32 1
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       {
+        ImageWidgetClass BleedingIcon {
+         visible 1
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         fixaspect fixwidth
+         image0 "set:sgz_hud image:blood_single"
+         mode blend
+         "src alpha" 1
+         stretch 0
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass SplitterFrame {
+     visible 1
+     ignorepointer 1
+     size 2 1
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     scaled 0
+     {
+      ImageWidgetClass SplitterImage {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       fixaspect fixwidth
+       image0 "set:sgz_hud image:splitter"
+       mode blend
+       "src alpha" 1
+       stretch 0
+      }
+     }
+    }
+    PanelWidgetClass FrameWidget0 {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 2 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     scaled 0
+     style rover_sim_colorable
+    }
+    FrameWidgetClass HealthBarFrame0 {
+     ignorepointer 1
+     size 1 1
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     {
+      FrameWidgetClass HealthBarFrame {
+       ignorepointer 1
+       size 1 14
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,101 @@
+FrameWidgetClass rootFrame {
+ clipchildren 0
+ ignorepointer 1
+ position 0 0
+ size 0 0
+ hexactpos 0
+ vexactpos 0
+ hexactsize 1
+ vexactsize 1
+ fixaspect fixwidth
+ userID 5
+ {
+  GridSpacerWidgetClass Wrapper {
+   clipchildren 0
+   inheritalpha 0
+   ignorepointer 1
+   size 300 48
+   halign center_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   Margin 0
+   content_halign center
+   Columns 1
+   {
+    TextWidgetClass Distance {
+     clipchildren 0
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text " 30 m "
+     font "gui/fonts/sdf_MetronLight72"
+     "exact text" 0
+     "exact text size" 20
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass PlayerName {
+     clipchildren 0
+     inheritalpha 0
+     ignorepointer 1
+     size 1 1
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "Player1"
+     font "gui/fonts/sdf_MetronLight72"
+     "bold text" 0
+     "text sharpness" 1.264
+     "exact text" 0
+     "exact text size" 25
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" center
+     "text valign" center
+    }
+    FrameWidgetClass FrameWidget0 {
+     clipchildren 0
+     ignorepointer 1
+     position 0 0
+     size 1 32
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      ImageWidgetClass TrackerImage {
+       clipchildren 0
+       ignorepointer 1
+       size 16 16
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       userID 5
+       image0 "set:sgz_hud image:tracker"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,168 @@
+FrameWidgetClass rootFrame {
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  GridSpacerWidgetClass GridSpacerWidget0 {
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content V" 1
+   Columns 1
+   Rows 2
+   {
+    FrameWidgetClass LabelFrame {
+     ignorepointer 1
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass Label {
+       position 0 0
+       size 1 1
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       text "#sg_menu_unassigned_players"
+       font "gui/fonts/sdf_MetronLight42"
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 20
+       "size to text h" 1
+       "text valign" center
+       {
+        ImageWidgetClass Splitter {
+         visible 0
+         ignorepointer 1
+         color 0.9137 0.8314 0.3333 1
+         size 1 4
+         halign center_ref
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         scaled 0
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass FrameWidget0 {
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     {
+      ImageWidgetClass Background {
+       color 0 0 0 0.2
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       mode blend
+       "src alpha" 1
+      }
+      GridSpacerWidgetClass GridSpacerWidget1 {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Padding 0
+       Margin 0
+       "Size To Content H" 1
+       Columns 2
+       Rows 1
+       {
+        FrameWidgetClass FrameWidget1 {
+         ignorepointer 1
+         position 10 10
+         size 32 1
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 0
+        }
+        FrameWidgetClass ScrollerFrame {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         {
+          ScrollWidgetClass ScrollerW {
+           ignorepointer 0
+           color 0.9137 0.8314 0.3333 0.1961
+           position 0 0
+           size 1 1
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           style blank
+           "Scrollbar V" 1
+           {
+            WrapSpacerWidgetClass Scroller {
+             ignorepointer 1
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             Padding 8
+             Margin 16
+             "Size To Content V" 1
+             content_halign center
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass ScrollerButton {
+       color 0.9137 0.8314 0.3333 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,82 @@
+GridSpacerWidgetClass rootFrame {
+ clipchildren 0
+ position 0 0
+ size 1 40
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ Padding 0
+ Margin 0
+ "Size To Content V" 1
+ Columns 1
+ Rows 100
+ {
+  PanelWidgetClass PanelWidget1 {
+   ignorepointer 1
+   color 1 1 1 0.502
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   scaled 0
+   style rover_sim_colorable
+  }
+  PanelWidgetClass TopPanelWidget {
+   ignorepointer 0
+   color 0 0 0.502 0.502
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style rover_sim_colorable
+   {
+    TextWidgetClass AIGroupTextWidget {
+     ignorepointer 1
+     size 1 0.8
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "aiGroup"
+     "text offset" 10 0
+     "text valign" center
+    }
+    ButtonWidgetClass AddHerdButtonWidget {
+     position 0 0
+     size 60 1
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "Add"
+     text_proportion 0.65
+    }
+   }
+  }
+  GridSpacerWidgetClass Content {
+   clipchildren 0
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   scriptclass ""
+   style Colorable
+   Padding 0
+   Margin 0
+   "Size To Content V" 1
+   Columns 1
+   Rows 100
+  }
+ }
+}

@@ -1,0 +1,418 @@
+FrameWidgetClass CampaignMenu {
+ clipchildren 0
+ color 1 1 1 1
+ position 0 0
+ size 1 1
+ halign left
+ valign top
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ priority 50
+ {
+  FrameWidgetClass CampaignMenuLeftPanel {
+   visible 1
+   clipchildren 0
+   color 1 1 1 1
+   position 0 0
+   size 0.25 1
+   halign left
+   valign top
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   priority 50
+   {
+    ImageWidgetClass LeftPanelBackground {
+     color 0 0 0 0.9882
+     position 0 0
+     size 1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     image0 ""
+     imageTexture "{68AE58E5E99FB598}Gui/textures/left_pane_full_ca.edds"
+     mode blend
+     "src alpha" 1
+     stretch 1
+    }
+    FrameWidgetClass CampaignMenuLeftWindowClipper {
+     clipchildren 0
+     color 1 1 1 1
+     position 0.04 0.01
+     size 0.92 0.98
+     halign left
+     valign top
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 50
+     {
+      WindowWidgetClass CampaignMenuWindow {
+       clipchildren 0
+       inheritalpha 1
+       color 1 1 1 1
+       position 0.1 0.275
+       size 0.9 0.2
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       priority 1
+       style Default
+       "text color" 1 1 0 1
+       {
+        ButtonWidgetClass PlayBtn {
+         visible 1
+         clipchildren 0
+         inheritalpha 1
+         position 0 0
+         size 1 0.2
+         halign left
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 142
+         draggable 0
+         scriptclass "MainMenuButtonEffect"
+         style MainMenu
+         text "#main_menu_play"
+         text_offset 0 0
+         text_halign left
+         font "gui/fonts/Metron"
+         "text color" 1 0.9961 1 1
+         "disabled text color" 0.3373 0.3373 0.3373 1
+         switch once
+         {
+          ScriptParamsClass {
+           speed 4
+           amount 1
+          }
+         }
+        }
+        ButtonWidgetClass CharacterBtn {
+         visible 1
+         clipchildren 0
+         inheritalpha 1
+         position 0 0.2
+         size 1 0.2
+         halign left
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 143
+         scriptclass "MainMenuButtonEffect"
+         style MainMenu
+         text "#main_menu_character"
+         text_offset 0 0
+         text_halign left
+         font "gui/fonts/Metron"
+         "disabled text color" 0.3373 0.3373 0.3373 1
+         {
+          ScriptParamsClass {
+           speed 4
+           amount 1
+          }
+         }
+        }
+        ButtonWidgetClass ChangeServerBtn {
+         visible 1
+         clipchildren 0
+         inheritalpha 1
+         position 0 0.4
+         size 1 0.2
+         halign left
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 105
+         scriptclass "MainMenuButtonEffect"
+         style MainMenu
+         text "#main_menu_change_server"
+         text_offset 0 0
+         text_halign left
+         font "gui/fonts/Metron"
+         "disabled text color" 0.3373 0.3373 0.3373 1
+         {
+          ScriptParamsClass {
+           speed 4
+           amount 1
+          }
+         }
+        }
+        ButtonWidgetClass ConfigureBtn {
+         visible 1
+         clipchildren 0
+         inheritalpha 1
+         position 0 0.6
+         size 1 0.2
+         halign left
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 102
+         scriptclass "MainMenuButtonEffect"
+         style MainMenu
+         text "#main_menu_configure"
+         text_offset 0 0
+         text_halign left
+         font "gui/fonts/Metron"
+         "disabled text color" 0.3373 0.3373 0.3373 1
+         {
+          ScriptParamsClass {
+           speed 4
+           amount 1
+          }
+         }
+        }
+        ButtonWidgetClass ExitBtn {
+         visible 1
+         clipchildren 0
+         inheritalpha 1
+         position 0 0.8
+         size 1 0.2
+         halign left
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         userID 106
+         scriptclass "MainMenuButtonEffect"
+         style MainMenu
+         text "#main_menu_exit"
+         text_offset 0 0
+         text_halign left
+         font "gui/fonts/Metron"
+         "disabled text color" 0.3373 0.3373 0.3373 1
+         {
+          ScriptParamsClass {
+           speed 4
+           amount 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass PanelInformation {
+       position 0.1 0.02
+       size 0.9 0.1
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        TextWidgetClass EarlyAccessTextWidget {
+         inheritalpha 1
+         color 0.6392 0.6392 0.6392 0.8196
+         position 0 0.3
+         size 1 0.22
+         valign bottom_ref
+         hexactsize 0
+         vexactsize 0
+         text "#early_access_alpha"
+         "exact text" 1
+        }
+        TextWidgetClass VersionTextWidget {
+         inheritalpha 1
+         color 0.6392 0.6392 0.6392 0.8196
+         position 0 0
+         size 1 0.22
+         valign bottom_ref
+         hexactsize 0
+         vexactsize 0
+         text "#main_menu_version"
+         "text color" 0.7765 0.7765 0.7765 1
+         "exact text" 1
+         "text valign" center
+        }
+       }
+      }
+      PanelWidgetClass PanelLogo {
+       position 0 0.05
+       size 1 0.2
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        ImageWidgetClass ImageDayZLogo {
+         visible 0
+         inheritalpha 1
+         position 0 0
+         size 0.02 0.01
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         fixaspect inside
+         image0 "Gui/textures/dayz_logo_small_ca"
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass CampaignMenuRightPanel {
+   clipchildren 0
+   color 1 1 1 1
+   size 0.615 1
+   halign right_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   priority 50
+   {
+    FrameWidgetClass CampaignMenuRightWindowClipper {
+     clipchildren 0
+     color 1 1 1 1
+     position 0.025 0.02597
+     size 0.95 0.95
+     halign left
+     valign top
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 50
+     {
+      WindowWidgetClass PlayerStatistics {
+       clipchildren 0
+       inheritalpha 1
+       position 0.74 0.17442
+       size 0.23583 0.30087
+       style Default
+       {
+        TextListboxWidgetClass StatisticsTextListboxWidget {
+         disabled 1
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         style Default
+         "title visible" 0
+         colums "text;70;text2;30"
+         lines 15
+         font "gui/fonts/Metron"
+        }
+       }
+      }
+      FrameWidgetClass NotificationFrameWidget {
+       position 0.02693 0.48511
+       size 288 128
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 1
+       vexactsize 1
+      }
+      FrameWidgetClass CharacterRotationFrame {
+       inheritalpha 1
+       position 0.27006 0.11628
+       size 0.71661 0.77907
+      }
+      EditBoxWidgetClass NameEditBoxWidget {
+       inheritalpha 1
+       color 1 1 1 1
+       position 0.01496 0.10922
+       size 0.32266 0.04911
+       halign right_ref
+       valign bottom_ref
+       hexactsize 0
+       vexactsize 0
+       priority 1
+       style Default
+       text "Character Name"
+       font "gui/fonts/Metron"
+       "text color" 1 1 1 0.7059
+      }
+      TextWidgetClass LegalTextWidget {
+       inheritalpha 1
+       position -0.00035 0.97144
+       size 1 0.02
+       hexactsize 0
+       vexactsize 0
+       userID 666
+       text "Survivor GameZ - prototype version"
+       "text offset" 0 0
+       "exact text" 1
+       "text halign" right
+      }
+      ButtonWidgetClass RightCharacterBtn {
+       visible 1
+       color 1 0 0 1
+       position 0.8195 0.718
+       size 0.159 0.049
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       userID 50
+       text "Right"
+      }
+      ButtonWidgetClass LeftCharacterBtn {
+       visible 1
+       color 1 0 0 1
+       position 0.318 0.718
+       size 0.153 0.049
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       userID 51
+       style Default
+       text "Left"
+      }
+      TextWidgetClass CharacterNameTxt {
+       visible 0
+       position 0.503 0.718
+       size 0.2866 0.049
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass Panel_Title {
+   position 0 0
+   size 1 0.2
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    TextWidgetClass Text_Title {
+     size 1 0.5
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text "Survivor GameZ"
+     font "gui/fonts/Metron"
+     "text halign" center
+    }
+   }
+  }
+ }
+}

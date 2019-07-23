@@ -1,0 +1,314 @@
+EffectDef {
+ MinFPS 30
+ Emitors {
+  EmitorDef explo_fire_02 {
+   ShapeType Box
+   ShapeSize 0.2 0 0.2
+   MaxNum 3
+   BirthRate 999
+   Material "{257D7EAB9142037F}Graphics/Particles/materials/weapons/weapon_shot_fnx_03.emat"
+   SizeMultiplier 1
+   SizeRND 0
+   RandomRotDir 0
+   RandomAngle 1
+   Velocity 0
+   LifeTime 0.03
+   LifeTimeRND 0
+   Color {
+    0 1 1 1 1 1 1 1
+   }
+   Alpha {
+    0 1 1 0
+   }
+   Size {
+    0 1 1 1
+   }
+   EffectTime 0.05
+   Repeat 0
+  }
+  EmitorDef explo_dust_01 {
+   ShapeType Cone
+   ConeAngle 360 100 150
+   MaxNum 30
+   BirthRate 600
+   Angles 0 0 0
+   LocalTransform 0
+   Material "{67FEB95AE2ECC2EA}Graphics/Particles/materials/smoke/smoke_dust_01.emat"
+   SizeMultiplier 4
+   SizeRND 2
+   RandomRotDir 1
+   RotMultiplier 0
+   StreakFullUV 0
+   VelAngle 0
+   RandomAngle 1
+   Sort 0
+   Velocity 10
+   VelocityRND 30
+   AirResistance 10
+   AirResistanceRND 5
+   GravityMultiply 1
+   GravityMultiplyRND 1
+   Wind 1
+   LifeTime 0.1
+   LifeTimeRND 0.4
+   Color {
+    0 0.1392 0.1392 0.1519 1 0.1519 0.1392 0.1392
+   }
+   Alpha {
+    0 1 0.025 0.55 1 0
+   }
+   RotationSpeed {
+    0 0.18354 1 0.1962
+   }
+   Size {
+    0 0 0.025 0.25 1 1
+   }
+   EffectTime 0.1
+   Repeat 0
+  }
+  EmitorDef explo_dust_02 {
+   ShapeType Cone
+   ConeAngle 360 20 60
+   MaxNum 15
+   BirthRate 600
+   Angles 0 0 0
+   LocalTransform 0
+   Material "{391690195D614CE5}Graphics/Particles/materials/smoke/smoke_dust_02.emat"
+   SizeMultiplier 2
+   SizeRND 2
+   RandomRotDir 1
+   RotMultiplier 0
+   StreakFullUV 0
+   VelAngle 0
+   RandomAngle 1
+   Sort 0
+   Velocity 8
+   VelocityRND 5
+   AirResistance 2
+   AirResistanceRND 0
+   GravityMultiply 2
+   GravityMultiplyRND 1
+   Wind 1
+   LifeTime 0.5
+   LifeTimeRND 0.5
+   Color {
+    0 0.1456 0 0 1 0.1456 0 0
+   }
+   Alpha {
+    0 1 0.625 1 1 0
+   }
+   RotationSpeed {
+    0 0.18354 1 0.1962
+   }
+   Size {
+    0 0 0.025 0.25 1 0.55
+   }
+   EffectTime 0.1
+   Repeat 0
+  }
+  EmitorDef explo_dust_02_hi {
+   ShapeType Cone
+   ConeAngle 360 0 20
+   MaxNum 15
+   BirthRate 600
+   Angles 0 0 0
+   LocalTransform 0
+   Material "{391690195D614CE5}Graphics/Particles/materials/smoke/smoke_dust_02.emat"
+   SizeMultiplier 1
+   SizeRND 2
+   RandomRotDir 1
+   RotMultiplier 0
+   StreakFullUV 0
+   VelAngle 0
+   RandomAngle 1
+   Sort 0
+   Velocity 12
+   VelocityRND 5
+   AirResistance 2
+   AirResistanceRND 0
+   GravityMultiply 2
+   GravityMultiplyRND 1
+   Wind 1
+   LifeTime 1
+   LifeTimeRND 0.5
+   Color {
+    0 0.2215 0 0 1 0.2468 0 0
+   }
+   Alpha {
+    0 1 0.625 1 1 0
+   }
+   RotationSpeed {
+    0 0.18354 1 0.1962
+   }
+   Size {
+    0 0 0.025 0.25 1 0.55
+   }
+   EffectTime 0.1
+   Repeat 0
+  }
+  EmitorDef explo_dust_03 {
+   ShapeType Cone
+   ConeAngle 360 0 40
+   MaxNum 5
+   BirthRate 600
+   Angles 0 0 0
+   LocalTransform 0
+   Material "{70CE85062FA7388F}Graphics/Particles/materials/smoke/smoke_dust_05.emat"
+   ScaleX 0.503
+   SizeMultiplier 1
+   SizeRND 0.5
+   RandomRotDir 0
+   RotMultiplier 0
+   StreakFullUV 0
+   VelAngle 1
+   RandomAngle 0
+   Sort 0
+   Velocity 20
+   VelocityRND 20
+   AirResistance 2
+   AirResistanceRND 0
+   GravityMultiply 5
+   GravityMultiplyRND 0
+   Wind 0
+   LifeTime 0.2
+   LifeTimeRND 0.1
+   Color {
+    0 0.2785 0 0 1 0.3038 0 0
+   }
+   Alpha {
+    0 1 1 0
+   }
+   RotationSpeed {
+    0 0 1 0
+   }
+   Size {
+    0 0 0.025 0.25 1 1
+   }
+   EffectTime 0.1
+   Repeat 0
+  }
+  EmitorDef explo_dust_04 {
+   ShapeType Cone
+   ConeAngle 360 0 100
+   MaxNum 15
+   BirthRate 600
+   Angles 0 0 0
+   LocalTransform 0
+   Material "{84C6C29E227A50FB}Graphics/Particles/materials/smoke/smoke_dust_04.emat"
+   ScaleX 0.578
+   SizeMultiplier 1
+   SizeRND 3
+   RandomRotDir 0
+   RotMultiplier 0
+   StreakFullUV 0
+   VelAngle 1
+   RandomAngle 1
+   Sort 0
+   Velocity 5
+   VelocityRND 20
+   AirResistance 5
+   AirResistanceRND 0
+   GravityMultiply 0
+   GravityMultiplyRND 0
+   Wind 0
+   LifeTime 0.1
+   LifeTimeRND 0.1
+   Color {
+    0 0.3101 0 0 1 0.2785 0 0
+   }
+   Alpha {
+    0 1 0.12726 1 1 0
+   }
+   RotationSpeed {
+    0 0 1 0
+   }
+   Size {
+    0 0 0.025 0.25 1 0.55
+   }
+   EffectTime 0.1
+   Repeat 0
+  }
+  EmitorDef explo_fire_03 {
+   ShapeType Cone
+   ConeAngle 360 0 100
+   MaxNum 10
+   BirthRate 999
+   Angles 0 0 0
+   LocalTransform 0
+   Material "{84C6C29E227A50FB}Graphics/Particles/materials/smoke/smoke_dust_04.emat"
+   ScaleX 0.578
+   SizeMultiplier 1
+   SizeRND 3
+   RandomRotDir 0
+   RotMultiplier 0
+   StreakFullUV 0
+   VelAngle 1
+   RandomAngle 1
+   Sort 0
+   Velocity 40
+   VelocityRND 40
+   AirResistance 10
+   AirResistanceRND 0
+   GravityMultiply 1
+   GravityMultiplyRND 0
+   Wind 0
+   LifeTime 0.05
+   LifeTimeRND 0.2
+   Color {
+    0 0.2848 0 0 1 0.3165 0 0
+   }
+   Alpha {
+    0 1 0.12726 1 1 0
+   }
+   RotationSpeed {
+    0 0 1 0
+   }
+   Size {
+    0 0 0.025 0.25 1 1
+   }
+   EffectTime 0.1
+   Repeat 0
+  }
+  EmitorDef explo_debris_01 {
+   ShapeType Cone
+   ConeAngle 360 20 100
+   MaxNum 30
+   BirthRate 600
+   Angles 0 0 0
+   LocalTransform 0
+   Material "{214D9C1A37B3A94A}Graphics/Particles/materials/smoke/smoke_debris_01.emat"
+   SizeMultiplier 0.05
+   SizeRND 0.1
+   RandomRotDir 1
+   RotMultiplier 1000
+   StreakFullUV 0
+   VelAngle 0
+   RandomAngle 1
+   Sort 0
+   Velocity 20
+   VelocityRND 10
+   AirResistance 0
+   AirResistanceRND 0
+   GravityMultiply 3
+   GravityMultiplyRND 1
+   Wind 1
+   RandomFrame 1
+   LifeTime 1
+   LifeTimeRND 0
+   Color {
+    0 0.2722 0 0 1 0.3038 0 0
+   }
+   Alpha {
+    0 1 1 1
+   }
+   RotationSpeed {
+    0 1 1 1
+   }
+   Size {
+    0 1 0.875 1 1 0
+   }
+   EffectTime 0.1
+   Repeat 0
+  }
+ }
+}

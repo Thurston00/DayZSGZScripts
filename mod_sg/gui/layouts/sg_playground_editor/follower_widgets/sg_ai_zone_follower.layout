@@ -1,0 +1,93 @@
+PanelWidgetClass rootFrame {
+ clipchildren 0
+ ignorepointer 1
+ color 1 1 1 0.7843
+ position 0 0
+ size 22 22
+ hexactpos 0
+ vexactpos 0
+ hexactsize 1
+ vexactsize 1
+ fixaspect fixwidth
+ style blank
+ "no focus" 1
+ {
+  PanelWidgetClass IconPanel {
+   clipchildren 0
+   inheritalpha 1
+   ignorepointer 0
+   position -0.5 -0.5
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style blank
+   "no focus" 1
+   {
+    PanelWidgetClass IconBcg {
+     clipchildren 0
+     inheritalpha 1
+     ignorepointer 1
+     color 1 1 1 0.502
+     position 0 0
+     size 1.5 1.5
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+    }
+    ImageWidgetClass Icon {
+     clipchildren 0
+     inheritalpha 1
+     ignorepointer 1
+     position 0 0
+     size 1.5 1.5
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     mode blend
+     "src alpha" 1
+     stretch 1
+    }
+    GridSpacerWidgetClass PanelWidget0 {
+     ignorepointer 1
+     color 0 0 0 0.7686
+     position -0.5 -1.3
+     size 1.5 0.8
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style Colorable
+     "Size To Content H" 1
+     Columns 1
+     Rows 1
+     {
+      TextWidgetClass Text {
+       clipchildren 0
+       inheritalpha 1
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign right_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       font "gui/fonts/AmorSerifPro14"
+       "exact text" 1
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

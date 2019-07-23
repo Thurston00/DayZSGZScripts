@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{CAF154044D477AA4}mod_sg/gui/textures/sgz_hints/sg_tutorial_endgame.edds"
+ Author "pato-pc"
+ ChangeDate 1083991771
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "sg_tutorial_endgame.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

@@ -1,0 +1,18 @@
+MetaFileClass {
+ Name "{F7E1937D5F3719A8}mod_sg/gui/imagesets/playground_thumbnails.tga"
+ Author "janosik"
+ ChangeDate 1805837349
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "playground_thumbnails.tga"
+   FormatCompress Best
+   CompressTreshold 100
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

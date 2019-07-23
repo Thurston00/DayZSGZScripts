@@ -1,0 +1,91 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 784 32
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  GridSpacerWidgetClass Grid {
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content H" 1
+   Columns 4
+   Rows 1
+   {
+    TextWidgetClass PlayerNameLabel {
+     ignorepointer 1
+     size 288 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "Player Name"
+     font "gui/fonts/sdf_MetronBook72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 32
+     "size to text h" 0
+    }
+    TextWidgetClass PlayerKillsLabel {
+     ignorepointer 1
+     size 144 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "KILLS"
+     font "gui/fonts/sdf_MetronBook72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 32
+     "text halign" center
+    }
+    TextWidgetClass ZombieKillsLabel {
+     ignorepointer 1
+     position 10 0
+     size 144 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "ZOMBIE KILLS"
+     font "gui/fonts/sdf_MetronBook72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 32
+     "text halign" center
+    }
+    TextWidgetClass SurvivalTimeLabel {
+     visible 0
+     ignorepointer 1
+     position 10 10
+     size 160 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "SURVIVAL TIME"
+     font "gui/fonts/sdf_MetronBook72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 32
+     "text halign" center
+    }
+   }
+  }
+ }
+}

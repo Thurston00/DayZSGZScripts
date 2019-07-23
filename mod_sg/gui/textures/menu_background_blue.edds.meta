@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{B0DE4FF0B2A57899}mod_sg/gui/textures/menu_background_blue.edds"
+ Author "pato-pc"
+ ChangeDate 1272145610
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "menu_background_blue.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

@@ -1,0 +1,98 @@
+ImageSetClass {
+ Name "sg_gui"
+ RefSize 1024 1024
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{A20DCBEF53B52D09}mod_sg/gui/imagesets/sg_gui.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass progressfull {
+   Name "progressfull"
+   Pos 0 0
+   Size 628 54
+   Flags 0
+  }
+  ImageSetDefClass progressempty {
+   Name "progressempty"
+   Pos 0 54
+   Size 628 54
+   Flags 0
+  }
+  ImageSetDefClass playericon {
+   Name "playericon"
+   Pos 0 108
+   Size 62 62
+   Flags 0
+  }
+  ImageSetDefClass noisepanel {
+   Name "noisepanel"
+   Pos 755 0
+   Size 269 1024
+   Flags 0
+  }
+  ImageSetDefClass minimapicon {
+   Name "minimapicon"
+   Pos 1 174
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass twitch {
+   Name "twitch"
+   Pos 0 244
+   Size 39 39
+   Flags 0
+  }
+  ImageSetDefClass ready {
+   Name "ready"
+   Pos 0 283
+   Size 39 39
+   Flags 0
+  }
+  ImageSetDefClass notready {
+   Name "notready"
+   Pos 0 322
+   Size 39 39
+   Flags 0
+  }
+  ImageSetDefClass avatar {
+   Name "avatar"
+   Pos 0 361
+   Size 65 65
+   Flags 0
+  }
+  ImageSetDefClass WhitePixel {
+   Name "WhitePixel"
+   Pos 736 0
+   Size 2 2
+   Flags 0
+  }
+  ImageSetDefClass TransparentPixel {
+   Name "TransparentPixel"
+   Pos 735 0
+   Size 1 1
+   Flags 0
+  }
+  ImageSetDefClass towerhighlighted {
+   Name "towerhighlighted"
+   Pos 0 426
+   Size 64 72
+   Flags 0
+  }
+  ImageSetDefClass towerbase {
+   Name "towerbase"
+   Pos 0 500
+   Size 64 72
+   Flags 0
+  }
+  ImageSetDefClass sgzlogo {
+   Name "sgzlogo"
+   Pos 0 572
+   Size 147 81
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

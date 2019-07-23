@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{4B5B0AB85A122005}mod_sg/gui/textures/map_zone1_off.png"
+ Author "3672"
+ ChangeDate 618309340
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "map_zone1_off.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

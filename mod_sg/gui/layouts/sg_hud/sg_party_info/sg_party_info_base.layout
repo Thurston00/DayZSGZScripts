@@ -1,0 +1,30 @@
+FrameWidgetClass rootFrame {
+ clipchildren 0
+ size 1 1
+ halign right_ref
+ valign bottom_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  GridSpacerWidgetClass PartyGrid {
+   clipchildren 0
+   ignorepointer 1
+   position -48 0
+   size 1 1
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 0
+   Margin 0
+   "Size To Content V" 1
+   content_halign center
+   content_valign bottom
+   Columns 1
+  }
+ }
+}

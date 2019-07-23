@@ -1,0 +1,274 @@
+FrameWidgetClass rootFrame {
+ visible 1
+ clipchildren 1
+ ignorepointer 1
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ priority 200
+ {
+  PanelWidgetClass SidePanelLeft {
+   clipchildren 1
+   inheritalpha 0
+   ignorepointer 1
+   position 24 24
+   size 390 658
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   scaled 1
+   priority 2
+   style blank
+  }
+  PanelWidgetClass GameInfoPanel {
+   position 24 24
+   size 252 82
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    SmartPanelWidgetClass PhaseInfoLabelPanel {
+     color 1 1 1 0.3922
+     position 0 0
+     size 128 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style LeftGrungeStyle
+     {
+      TextWidgetClass PIPLabel {
+       color 0 0 0 1
+       position 8 0
+       size 120 36
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Normal
+       text "Phase"
+       font "gui/fonts/sdf_MetronBook24"
+       "shadow opacity" 0
+       "bold text" 0
+       "exact text" 1
+       "text valign" center
+      }
+     }
+    }
+    SmartPanelWidgetClass PhaseInfoNumberPanel {
+     color 0 0 0 0.8431
+     position 128 0
+     size 52 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style RightGrungeStyle
+     {
+      TextWidgetClass PhaseNumber {
+       position 0 0
+       size 52 36
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Normal
+       text "1"
+       font "gui/fonts/sdf_MetronBook24"
+       "shadow opacity" 0
+       "bold text" 0
+       "exact text" 1
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    SmartPanelWidgetClass PlayerCountInfoPanel {
+     color 1 1 1 0.3922
+     position 0 46
+     size 156 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style LeftGrungeStyle
+     {
+      TextWidgetClass PCIPLabel {
+       color 0 0 0 1
+       position 8 0
+       size 148 36
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Normal
+       text "Remaining Players"
+       font "gui/fonts/sdf_MetronBook24"
+       "shadow opacity" 0
+       "bold text" 0
+       "exact text" 1
+       "text valign" center
+      }
+     }
+    }
+    SmartPanelWidgetClass PCIPBackground {
+     color 0 0 0 0.8431
+     position 156 0
+     size 52 36
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style RightGrungeStyle
+     {
+      TextWidgetClass PlayerRemainingCount {
+       position 0 0
+       size 52 36
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Normal
+       text "16"
+       font "gui/fonts/sdf_MetronBook24"
+       "shadow opacity" 0
+       "bold text" 0
+       "exact text" 1
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    SmartPanelWidgetClass PhaseTimeInfoPanel {
+     color 0 0 0 0.8431
+     position 184 0
+     size 68 36
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style GrungeBorder
+     {
+      TextWidgetClass PhaseTime {
+       size 68 36
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Normal
+       text "9:35"
+       font "gui/fonts/sdf_MetronBook24"
+       "shadow opacity" 0
+       "bold text" 0
+       "exact text" 1
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass SelectedPlayerTeamPanel {
+   position 24 130
+   size 192 82
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  FrameWidgetClass MinimapFrame {
+   ignorepointer 1
+   position 24 24
+   size 300 300
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   fixaspect fixwidth
+   {
+    ButtonWidgetClass IncreaseZoom {
+     position 0.02 0.02
+     size 0.08 0.08
+     halign right_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 2
+     style MainMenu
+     {
+      ImageWidgetClass Collapsed {
+       visible 1
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       fixaspect fixwidth
+       priority 3
+       image0 "set:dayz_gui image:Expand"
+       mode blend
+       "src alpha" 1
+      }
+     }
+    }
+    ButtonWidgetClass DecreaseZoom {
+     position 0.02 0.12
+     size 0.08 0.08
+     halign right_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 2
+     style MainMenu
+     {
+      ImageWidgetClass Opened {
+       visible 1
+       ignorepointer 1
+       position 0 0.075
+       size 1 1
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       fixaspect fixwidth
+       priority 3
+       image0 "set:dayz_gui image:Collapse"
+       mode blend
+       "src alpha" 1
+      }
+     }
+    }
+   }
+  }
+  TextWidgetClass SelectedPlayerName {
+   position -5 100
+   size 357 48
+   halign center_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "SelectedPlayerName"
+   "text halign" center
+   "text valign" center
+  }
+ }
+}

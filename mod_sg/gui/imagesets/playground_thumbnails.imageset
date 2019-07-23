@@ -1,0 +1,32 @@
+ImageSetClass {
+ Name "playground_thumbnails"
+ RefSize 3000 1200
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{F7E1937D5F3719A8}mod_sg/gui/imagesets/playground_thumbnails.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass chernogorsk {
+   Name "chernogorsk"
+   Pos 0 0
+   Size 1000 1200
+   Flags 0
+  }
+  ImageSetDefClass berezino {
+   Name "berezino"
+   Pos 1000 0
+   Size 1000 1200
+   Flags 0
+  }
+  ImageSetDefClass severograd {
+   Name "severograd"
+   Pos 2000 0
+   Size 1000 1200
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

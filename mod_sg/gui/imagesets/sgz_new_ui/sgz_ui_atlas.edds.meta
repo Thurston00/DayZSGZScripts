@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{A9348BF620907B86}mod_sg/gui/imagesets/sgz_new_ui/sgz_ui_atlas.tga"
+ Author "3046"
+ ChangeDate 828581565
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "sgz_ui_atlas.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

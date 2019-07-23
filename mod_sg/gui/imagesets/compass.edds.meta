@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7992B40EB3BAFF4A}mod_sg/gui/imagesets/compass.edds"
+ Author "inv1141"
+ ChangeDate 1737729103
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "compass.tga"
+   TiledTexture 0
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

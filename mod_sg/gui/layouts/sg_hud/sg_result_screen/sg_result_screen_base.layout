@@ -1,0 +1,391 @@
+FrameWidgetClass rootFrame {
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  ImageWidgetClass Background {
+   ignorepointer 1
+   color 0 0 0 0.9412
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   mode blend
+   "src alpha" 1
+  }
+  FrameWidgetClass ResultFrame {
+   ignorepointer 1
+   position 112 122
+   size 784 480
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    ImageWidgetClass ResultPanelBackground {
+     visible 0
+     ignorepointer 1
+     color 0 0 0 0.5882
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     mode blend
+     "src alpha" 1
+    }
+    GridSpacerWidgetClass Grid {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     Padding 0
+     Margin 16
+     "Size To Content V" 1
+     Columns 1
+     Rows 5
+     {
+      FrameWidgetClass FrameWidget0 {
+       ignorepointer 1
+       position 10 10
+       size 1 80
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       {
+        GridSpacerWidgetClass Grid1 {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         Padding 16
+         Margin 0
+         Columns 1
+         Rows 2
+         {
+          TextWidgetClass PlayerNameLabel {
+           ignorepointer 1
+           color 0.6157 0.6196 0.3647 1
+           position 0 0
+           size 1 0.5
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "Player Name"
+           font "gui/fonts/sdf_MetronBook72"
+           "exact text" 1
+           "exact text size" 24
+           "text valign" center
+          }
+          GridSpacerWidgetClass Grid2 {
+           ignorepointer 1
+           size 1 0.5
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           Padding 8
+           Margin 0
+           "Size To Content H" 1
+           Columns 4
+           Rows 1
+           {
+            TextWidgetClass WinnerLabel {
+             visible 0
+             ignorepointer 1
+             size 1 13
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+             text "#sg_result_winner_c"
+             font "gui/fonts/sdf_MetronBook72"
+             "bold text" 1
+             "exact text" 1
+             "exact text size" 32
+             "size to text h" 1
+             "size to text v" 0
+             "text valign" center
+            }
+            TextWidgetClass SlashLabel {
+             visible 0
+             clipchildren 0
+             ignorepointer 1
+             color 0.4902 0.4902 0.4902 1
+             size 10 0.5
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 0
+             text "/"
+             font "gui/fonts/sdf_MetronBook72"
+             "bold text" 1
+             "exact text" 1
+             "exact text size" 32
+            }
+            TextWidgetClass TeamRankLabel {
+             visible 1
+             ignorepointer 1
+             color 0.4902 0.4902 0.4902 1
+             size 1 0.5
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             text "#sg_result_team_rank_c"
+             font "gui/fonts/sdf_MetronBook72"
+             "bold text" 1
+             "exact text" 1
+             "exact text size" 32
+             "size to text h" 1
+             "size to text v" 0
+            }
+            TextWidgetClass TeamRankValueLabel {
+             visible 1
+             ignorepointer 1
+             color 0.4902 0.4902 0.4902 1
+             size 100 0.5
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 1
+             vexactsize 0
+             font "gui/fonts/sdf_MetronBook72"
+             "bold text" 1
+             "exact text" 1
+             "exact text size" 32
+             "size to text h" 0
+             "size to text v" 0
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      FrameWidgetClass Spacer {
+       ignorepointer 1
+       position 0 0
+       size 1 0.5
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+      }
+      GridSpacerWidgetClass PlayerStatsGrid {
+       ignorepointer 1
+       position 0 0
+       size 48 138
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       Padding 16
+       Margin 0
+       "Size To Content V" 1
+       Columns 1
+       {
+        TextWidgetClass PlayerStatsLabel {
+         clipchildren 0
+         ignorepointer 1
+         position 0 0
+         size 1 16
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         text "#sg_result_player_stats"
+         font "gui/fonts/sdf_MetronBook72"
+         "bold text" 1
+         "exact text" 1
+         "exact text size" 20
+         "text valign" center
+        }
+        FrameWidgetClass PlayerStatsHeader {
+         ignorepointer 1
+         position 10 10
+         size 48 16
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+        }
+        GridSpacerWidgetClass PlayerStatsContentGrid {
+         ignorepointer 1
+         position 0 0
+         size 1 80
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         Padding 16
+         Margin 0
+         Columns 1
+         Rows 2
+        }
+       }
+      }
+      FrameWidgetClass Spacer1 {
+       ignorepointer 1
+       position 1 0
+       size 1 0.5
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+      }
+      FrameWidgetClass TeamStatsFrame {
+       ignorepointer 1
+       position 10 10
+       size 48 96
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        GridSpacerWidgetClass TeamStatsGrid {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         Padding 16
+         Margin 0
+         "Size To Content V" 1
+         Columns 1
+         {
+          TextWidgetClass TeamStatsLabel {
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 1 16
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "#sg_result_team_stats"
+           font "gui/fonts/sdf_MetronBook72"
+           "bold text" 1
+           "exact text" 1
+           "exact text size" 20
+           "text valign" center
+          }
+          FrameWidgetClass TeamStatsHeader {
+           ignorepointer 1
+           position 10 10
+           size 48 16
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+          }
+          FrameWidgetClass TeamStatsContent {
+           ignorepointer 1
+           position 0 0
+           size 1 32
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass ControlFrame {
+   ignorepointer 1
+   position 128 128
+   size 560 96
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    GridSpacerWidgetClass VerticalGrid {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     Padding 16
+     Margin 0
+     "Size To Content V" 1
+     Columns 1
+     Rows 2
+     {
+      TextWidgetClass CountDownLabel {
+       ignorepointer 1
+       color 0.8 0.8 0.8 1
+       position 10 10
+       size 48 16
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "You will exit to  main menu in 30 seconds."
+       font "gui/fonts/sdf_MetronLight72"
+       "exact text" 1
+       "exact text size" 14
+       "text halign" right
+       "text valign" center
+      }
+      GridSpacerWidgetClass HorizontalGrid {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "Ignore invisible" 0
+       Padding 16
+       Margin 0
+       Columns 2
+       Rows 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

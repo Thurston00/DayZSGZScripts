@@ -1,0 +1,22 @@
+modded class BleedingSourcesManagerRemote 
+{
+
+	override void OnVariablesSynchronized(int current_bits)
+	{
+		if (current_bits != m_BleedingBits)
+		{
+			if(m_BleedingBits == 0)
+			{
+				m_Player.OnBleedingBegin();
+			}
+			OnBleedingBitsUpdate(m_BleedingBits, current_bits);
+			m_BleedingBits = current_bits;
+			if(m_BleedingBits == 0)
+			{
+				m_Player.OnBleedingEnd();
+			}
+			
+			PlayerBase.Cast(GetGame().GetPlayer()).GetPlayerEvents().Event_OnBleedingUpdate.Invoke(GetBleedingSourceCountRemote());
+		}
+	}
+}

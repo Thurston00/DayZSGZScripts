@@ -1,0 +1,82 @@
+FrameWidgetClass LoadingFrame {
+ position 0 0
+ size 1 1
+ priority 1000
+ {
+  PanelWidgetClass PanelWidget1 {
+   color 0 0 0 1
+   position 0 0
+   size 1 1
+   style rover_sim_colorable
+   {
+    ImageWidgetClass ImageBackground {
+     position 0 0
+     size 0.16 0.09
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     fixaspect inside
+     image0 "Gui/textures/loading_screens/loading_screen_1_co"
+     stretch 1
+    }
+    FrameWidgetClass ProgressBarFrameSmall {
+     clipchildren 0
+     position 0.02 0.02
+     size 0.2 0.2
+     valign bottom_ref
+     priority 100
+     {
+      ProgressBarWidgetClass ProgressBarWidgetSmall {
+       visible 1
+       color 1 1 1 1
+       position 0 0
+       size 0.02 0.01
+       valign bottom_ref
+       hexactpos 0
+       hexactsize 0
+       vexactsize 0
+       fixaspect inside
+       style DayZLoading
+       current 70
+      }
+     }
+    }
+    TextWidgetClass TextWidget {
+     position -0.00621 0.05
+     size 0.7438 0.06
+     halign center_ref
+     valign bottom_ref
+     text "Loading text..."
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    FrameWidgetClass ProgressBarFrameLarge {
+     clipchildren 0
+     size 0.3 0.3
+     halign center_ref
+     valign center_ref
+     priority 100
+     {
+      ProgressBarWidgetClass ProgressBarWidgetLarge {
+       visible 1
+       color 1 1 1 1
+       size 0.02 0.01
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       hexactsize 0
+       vexactsize 0
+       fixaspect inside
+       style Default
+       current 70
+      }
+     }
+    }
+   }
+  }
+ }
+}

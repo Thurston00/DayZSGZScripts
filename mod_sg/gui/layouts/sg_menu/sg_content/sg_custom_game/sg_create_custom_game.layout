@@ -1,0 +1,374 @@
+FrameWidgetClass rootFrame {
+ ignorepointer 1
+ color 0.5882 0.5882 0.5882 1
+ position 0 0
+ size 1 1
+ halign right_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  GridSpacerWidgetClass Grid {
+   ignorepointer 1
+   color 1 1 1 0
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content V" 1
+   content_valign bottom
+   Columns 1
+   Rows 7
+   {
+    FrameWidgetClass LabelFrame {
+     clipchildren 0
+     ignorepointer 1
+     size 1 48
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      TextWidgetClass CreateGameLabel {
+       clipchildren 0
+       ignorepointer 1
+       size 1 48
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "#sg_menu_lobby_create_game_c"
+       font "gui/fonts/sdf_MetronBook72"
+       "text color" 0 0 0 1
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 24
+       "size to text h" 1
+       "text valign" center
+       {
+        ImageWidgetClass ImageWidget {
+         color 0.9137 0.8314 0.3333 1
+         size 1 4
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass ContentFrame {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     {
+      ImageWidgetClass Background {
+       ignorepointer 1
+       color 0 0 0 0.2
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       mode blend
+       "src alpha" 1
+      }
+      GridSpacerWidgetClass ContentGrid {
+       color 1 1 1 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       Padding 16
+       Margin 32
+       "Size To Content V" 1
+       content_halign center
+       content_valign center
+       Columns 1
+       {
+        FrameWidgetClass GameNameFrame {
+         ignorepointer 1
+         size 1 80
+         halign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          GridSpacerWidgetClass GameNameGrid {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           Padding 16
+           Margin 0
+           "Size To Content V" 1
+           Columns 1
+           Rows 2
+           {
+            TextWidgetClass GameNameLabel {
+             ignorepointer 1
+             position 0 0
+             size 1 32
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+             text "#sg_menu_lobby_game_name"
+             font "gui/fonts/sdf_MetronBook72"
+             "bold text" 0
+             "exact text" 1
+             "exact text size" 24
+             "text valign" center
+            }
+           }
+          }
+         }
+        }
+        FrameWidgetClass TeamSizeFrame {
+         clipchildren 0
+         size 1 128
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          GridSpacerWidgetClass TeamSizeGrid {
+           clipchildren 0
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           Padding 16
+           Margin 0
+           "Size To Content V" 1
+           content_halign center
+           content_valign center
+           Columns 1
+           Rows 2
+           {
+            TextWidgetClass TeamSizeLabel {
+             ignorepointer 1
+             size 1 32
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+             text "#sg_menu_lobby_team_size"
+             font "gui/fonts/sdf_MetronBook72"
+             "bold text" 0
+             "exact text" 1
+             "exact text size" 24
+             "text valign" center
+            }
+            FrameWidgetClass TeamSizeContentFrame {
+             clipchildren 1
+             inheritalpha 0
+             ignorepointer 0
+             position 0 0
+             size 0.99 80
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+            }
+           }
+          }
+         }
+        }
+        FrameWidgetClass PlaygroundFrame {
+         clipchildren 0
+         ignorepointer 1
+         position 0 0
+         size 1 64
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          GridSpacerWidgetClass PlaygroundGrid {
+           clipchildren 0
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           Padding 16
+           Margin 0
+           "Size To Content V" 1
+           content_halign center
+           content_valign center
+           Columns 1
+           Rows 2
+           {
+            TextWidgetClass PlaygroundLabel {
+             clipchildren 0
+             ignorepointer 1
+             position 0 0
+             size 0.9 32
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+             text "#sg_menu_playground"
+             font "gui/fonts/sdf_MetronBook72"
+             "bold text" 0
+             "exact text" 1
+             "exact text size" 24
+             "text valign" center
+            }
+            FrameWidgetClass PlaygroundContentFrame {
+             clipchildren 0
+             inheritalpha 0
+             ignorepointer 1
+             size 1 16
+             halign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+            }
+           }
+          }
+         }
+        }
+        PanelWidgetClass PasswordPanel {
+         size 48 112
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          GridSpacerWidgetClass PasswordGrid {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           Padding 16
+           Margin 0
+           "Size To Content V" 1
+           content_halign center
+           content_valign center
+           Columns 1
+           Rows 2
+           {
+            TextWidgetClass PasswordLabel {
+             clipchildren 0
+             ignorepointer 1
+             size 0.9 32
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+             text "#sg_menu_game_password"
+             font "gui/fonts/sdf_MetronBook72"
+             "bold text" 0
+             "exact text" 1
+             "exact text size" 24
+             "text valign" center
+            }
+            FrameWidgetClass PasswordFrame {
+             ignorepointer 1
+             size 1 64
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 1
+            }
+           }
+          }
+         }
+        }
+        FrameWidgetClass Spacer {
+         visible 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass CreateGameButtonPanel {
+     visible 1
+     ignorepointer 1
+     color 0 0 0 0
+     size 1 48
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     {
+      FrameWidgetClass CreateGameButtonFrame {
+       ignorepointer 1
+       size 216 1
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

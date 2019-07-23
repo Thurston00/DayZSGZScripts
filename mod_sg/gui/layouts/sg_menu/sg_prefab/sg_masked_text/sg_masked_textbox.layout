@@ -1,0 +1,73 @@
+FrameWidgetClass rootFrame {
+ size 1 32
+ halign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ {
+  ImageWidgetClass Background {
+   color 1 1 1 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   mode blend
+   "src alpha" 1
+   {
+    PanelWidgetClass PasswordFrame {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     style sgz_border
+     {
+      EditBoxWidgetClass InputTextBox {
+       disabled 0
+       ignorepointer 0
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       style Default
+       text "rwqerwqerqw"
+       "limit visible" 1
+       "Use default text" 0
+       "exact text" 1
+       font "gui/fonts/sdf_MetronBook24"
+       "text color" 1 1 1 0
+       "disabled text color" 0 0 0 0
+       "text sharpness" 1.5
+      }
+      TextWidgetClass MaskedLabel {
+       visible 1
+       ignorepointer 1
+       size 0.99 0.95
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       font "gui/fonts/sdf_MetronLight30"
+       "exact text" 1
+       "exact text size" 20
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

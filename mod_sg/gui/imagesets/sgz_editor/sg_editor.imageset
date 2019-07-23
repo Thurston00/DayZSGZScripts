@@ -1,0 +1,43 @@
+ImageSetClass {
+ Name "sg_editor"
+ RefSize 1024 1024
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{D37F8627E0A8F9F6}mod_sg/gui/imagesets/sgz_editor/editor_atlas.edds"
+  }
+ }
+ Images {
+ }
+ Groups {
+  ImageSetGroupClass ai_group {
+   Name "ai_group"
+   Images {
+    ImageSetDefClass guard_icon {
+     Name "guard_icon"
+     Pos 31 18
+     Size 64 64
+     Flags 0
+    }
+    ImageSetDefClass screamer_icon {
+     Name "screamer_icon"
+     Pos 114 18
+     Size 64 64
+     Flags 0
+    }
+    ImageSetDefClass static_icon {
+     Name "static_icon"
+     Pos 197 18
+     Size 64 64
+     Flags 0
+    }
+    ImageSetDefClass patrol_icon {
+     Name "patrol_icon"
+     Pos 281 18
+     Size 64 64
+     Flags 0
+    }
+   }
+  }
+ }
+}

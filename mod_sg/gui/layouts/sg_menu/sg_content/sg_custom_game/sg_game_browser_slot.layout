@@ -1,0 +1,236 @@
+FrameWidgetClass rootFrame {
+ color 0 0 0 0
+ size 1 40
+ halign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ priority 10
+ {
+  ImageWidgetClass Background {
+   visible 1
+   clipchildren 1
+   ignorepointer 1
+   color 0 0 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   mode blend
+   "src alpha" 1
+  }
+  GridSpacerWidgetClass Grid {
+   clipchildren 0
+   ignorepointer 1
+   color 1 1 1 0
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Padding 16
+   Margin 0
+   "Size To Content H" 1
+   content_halign center
+   Columns 7
+   Rows 1
+   {
+    FrameWidgetClass FrameWidget2 {
+     visible 0
+     ignorepointer 1
+     size 0 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+    TextWidgetClass LobbyNameLabel {
+     clipchildren 0
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text "*LOBBY NAME"
+     font "gui/fonts/sdf_MetronBook72"
+     "bold text" 0
+     "exact text" 1
+     "exact text size" 20
+     "text valign" center
+    }
+    TextWidgetClass PlaygroundLabel {
+     clipchildren 0
+     ignorepointer 1
+     color 0.8 0.8 0.8 1
+     position 0 0
+     size 208 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "*Playground"
+     font "gui/fonts/sdf_MetronBook72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 20
+     "text halign" center
+     "text valign" center
+    }
+    FrameWidgetClass PassFrame {
+     clipchildren 0
+     ignorepointer 1
+     position 10 10
+     size 96 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     {
+      ImageWidgetClass LockImage {
+       visible 0
+       clipchildren 0
+       inheritalpha 1
+       ignorepointer 1
+       color 0.8 0.8 0.8 1
+       position 0 0
+       size 48 32
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:sg_ui_icons image:Lock"
+       mode blend
+       "src alpha" 1
+       "no wrap" 0
+       stretch 1
+       "flip u" 0
+       "flip v" 0
+      }
+     }
+    }
+    TextWidgetClass GameModeLabel {
+     clipchildren 0
+     ignorepointer 1
+     color 0.8 0.8 0.8 1
+     size 256 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "*Game Mode"
+     font "gui/fonts/sdf_MetronBook72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 20
+     "size to text h" 0
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass SlotsLabel {
+     clipchildren 0
+     ignorepointer 1
+     color 0.8 0.8 0.8 1
+     position 0 0
+     size 64 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     text "*Slots"
+     font "gui/fonts/sdf_MetronBook72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 20
+     "size to text h" 0
+     "text halign" center
+     "text valign" center
+    }
+    FrameWidgetClass FrameWidget1 {
+     ignorepointer 1
+     size 0 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+   }
+  }
+  ButtonWidgetClass SelectButton {
+   color 1 1 1 0
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style Empty
+  }
+  FrameWidgetClass FrameWidget0 {
+   visible 0
+   ignorepointer 1
+   size 1 4
+   halign center_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   {
+    ImageWidgetClass BottomImage1 {
+     visible 1
+     ignorepointer 1
+     color 0.8 0.8 0.8 1
+     size 1 2
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     scaled 0
+     image0 ""
+     mode blend
+     "src alpha" 1
+     stretch 0
+    }
+    ImageWidgetClass BottomImage0 {
+     visible 1
+     ignorepointer 1
+     color 0.8 0.8 0.8 1
+     size 96 4
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     scaled 0
+     image0 ""
+     mode blend
+     "src alpha" 1
+     stretch 0
+    }
+   }
+  }
+ }
+}
