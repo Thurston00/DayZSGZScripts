@@ -21,6 +21,17 @@ class SgPluginGameServer extends PluginBase
 	}
 	
 	//==================================
+	// SgPluginGameServer
+	//==================================
+	void ~SgPluginGameServer()
+	{
+		if ( GetSgGame().SgIsServerMP() )
+		{		
+			Print("[Server Event]["+ GetSgGame().SgGetServerTimeFormated() +"]: Turning off server instance: "+ SgSManagerPlayers.GetPlayersStateFormated() );
+		}
+	}
+	
+	//==================================
 	// Event_OnWarmUpPlayerJoined
 	//==================================
 	void Event_OnWarmUpPlayerJoined( SgPlayer sg_player )
@@ -28,7 +39,10 @@ class SgPluginGameServer extends PluginBase
 		array<ref SgPlayer> players = SgSManagerPlayers.GetSgPlayers();
 		foreach ( SgPlayer player : players )
 		{
-			if ( player.GetIsShell() == true) { return; }
+			if ( !player.GetIsUserConnected() )
+			{
+				return;
+			}
 		}
 		
 		PrepareForGameStart();
@@ -182,6 +196,56 @@ class SgPluginGameServer extends PluginBase
 	int GetServerTimer()
 	{
 		return m_TimerTime;
+	}
+	
+	//===================================
+	// GetGameTimeFormated
+	//===================================
+	static string GetGameTimeFormated()
+	{
+		SgPluginGameServer instance = GetInstance();
+		
+		int time_sec = instance.m_TimerTime;
+		int time_min = Math.Floor( time_sec / 60 );
+		time_sec = time_sec % 60;
+		
+		ESgLocationType loca_type = instance.GetLocationType();
+		ESgGameState game_state = instance.GetGameState();
+		
+		string game_state_str = "Uknow";
+		
+		if ( loca_type == ESgLocationType.PhaseStart && game_state == ESgGameState.Phase )
+		{
+			// Warmup
+			game_state_str = "Warmup";
+		}
+		else if ( loca_type == ESgLocationType.PhaseFirst && game_state == ESgGameState.Phase )
+		{
+			// Phase 1
+			game_state_str = "Phase 1";
+		}
+		else if ( loca_type == ESgLocationType.PhaseSecond && game_state == ESgGameState.Transition )
+		{
+			// Transition 1
+			game_state_str = "Transition 1";
+		}
+		else if ( loca_type == ESgLocationType.PhaseSecond && game_state == ESgGameState.Phase )
+		{
+			// Phase 2
+			game_state_str = "Phase 2";
+		}
+		else if ( loca_type == ESgLocationType.PhaseEnd && game_state == ESgGameState.Transition )
+		{
+			// Endgame Transition
+			game_state_str = "Endgame Transition";
+		}
+		else if ( loca_type == ESgLocationType.PhaseEnd && game_state == ESgGameState.Transition )
+		{
+			// Endgame Phase
+			game_state_str = "Endgame Phase";
+		}
+		
+		return "Game State: "+ game_state_str +" "+ " Time Left: "+ time_min +"min "+ time_sec +"sec";
 	}
 	
 	//==================================

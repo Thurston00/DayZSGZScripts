@@ -24,6 +24,11 @@ class SgSClientTimer
 		SgSSyncEvents.SyncEvent_OnGameSyncTimer.Remove( SyncEvent_OnGameSyncTimer );
 	}
 	
+	static void CleanUp()
+	{
+		ClientEvent_OneSecondTimerUpdate.Clear();
+	}
+	
 	//============================================
 	// SyncEvent_OnGameSyncTimer
 	//============================================

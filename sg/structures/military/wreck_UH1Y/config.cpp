@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////
 //DeRap: sg_structures\military\wreck_UH1Y\config.bin
-//Produced from mikero's Dos Tools Dll version 7.16
-//https://armaservices.maverick-applications.com/Products/MikerosDosTools/default
-//'now' is Tue Jul 23 06:59:57 2019 : 'file' last modified on Thu Jun 27 08:13:03 2019
+//Produced from mikero's Dos Tools Dll version 7.27
+//https://bytex.market/products/item/weodpphdknnzm70o0h8q/Mikero%27s%20Dos%20Tools
+//'now' is Thu Aug 01 16:12:32 2019 : 'file' last modified on Mon Jul 29 11:27:23 2019
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_

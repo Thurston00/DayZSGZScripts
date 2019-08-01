@@ -5,7 +5,7 @@
 */
 class SgUiHudBase extends SgUiHudPanel
 {
-	private static ref SgUiHudBase 	HUD_BASE; 
+	private static ref SgUiHudBase 	HUD_BASE;
 	// Widgets
 	private ref SgUiGameInfoBase	m_UiGameInfo;
 	private ref SgUiCompassBase		m_UiCompass;			//SG_60:40 - Hide The Aswesome Stuff Tha tDesigners Don't Want To Have In The Game For Now
@@ -23,6 +23,17 @@ class SgUiHudBase extends SgUiHudPanel
 	private void SgUiHudBase()
 	{
 		BuildLayout();
+	}
+	protected override void OnDestroy()
+	{
+		delete m_UiGameInfo;
+		delete m_UiCompass;
+		delete m_UiPlayerInfo;
+		delete m_UiPartyInfo;
+		delete m_UiGearInfo;
+		delete m_UiContActionPanel;
+		delete m_UiHudTracker;
+		delete m_HudEvents;
 	}
 	// Getter
 	static SgUiHudBase GetHudBase()

@@ -1,7 +1,7 @@
 enum ESgLootStartContainer
 {	
-	Crafting,
+	//Crafting,
 	Medical,
-	Ammo,
+	//Ammo,
 	Count
 }

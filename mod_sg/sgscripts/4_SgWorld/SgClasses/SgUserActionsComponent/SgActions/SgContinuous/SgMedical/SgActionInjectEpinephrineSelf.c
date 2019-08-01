@@ -5,8 +5,10 @@ modded class ActionInjectEpinephrineSelf
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item ) //condition for action
 	{
 		int max_health = player.GetMaxHealth("GlobalHealth", "Health");
+		int current_stamina = player.GetStaminaHandler().GetStamina();
+		int max_stamina = player.GetStaminaHandler().GetStaminaMax();
 		
-		if ( player.GetClientHealth() != max_health )
+		if ( player.GetClientHealth() != max_health || current_stamina != max_stamina )
 		{
 			return true;
 		}
@@ -18,13 +20,11 @@ modded class ActionInjectEpinephrineSelf
 	{	
 		super.OnExecuteServer( action_data );
 		
-		int max_health = action_data.m_Player.GetMaxHealth("GlobalHealth", "Health");
-		
-		action_data.m_Player.AddHealth("GlobalHealth", "Health", ( ( max_health / 100 ) * PERCENTAGE_HEAL_COUNSCIOUS ) );
+		action_data.m_Player.AddHealthEntirePlayer( PERCENTAGE_HEAL_COUNSCIOUS );	
 	}
 	
 	override void ApplyModifiers( ActionData action_data )
 	{
-		
+		action_data.m_MainItem.OnApply(action_data.m_Player);
 	}
 };

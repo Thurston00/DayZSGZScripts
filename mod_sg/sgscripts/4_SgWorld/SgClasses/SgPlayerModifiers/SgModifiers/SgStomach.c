@@ -8,11 +8,10 @@ modded class StomachMdfr
 	
 	override void OnTick(PlayerBase player, float deltaT)
 	{
-		// Ivo -
 		float stomach_volume = player.m_PlayerStomach.GetStomachVolume();
 		//Print( "************************************" );
 		
-		Print("stomach_volume" + stomach_volume.ToString());
+		//Print("stomach_volume" + stomach_volume.ToString());
 		if ( stomach_volume > 0 )
 		{	
 			

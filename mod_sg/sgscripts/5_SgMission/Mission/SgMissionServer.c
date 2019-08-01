@@ -47,13 +47,13 @@ modded class MissionServer
 		SgLocation start_location = SgSManagerPlayground.GetLocationByLocationType( ESgLocationType.PhaseStart );
 		pos = start_location.GetPosition();
 		
-		Print("Server Event: "+ GetWorldTime() +" OnPreloadEvent");
+		Print("[Server Event]["+ GetSgGame().SgGetServerTimeFormated() +"]: OnPreloadEvent (Loading start): "+ identity.GetId() +" "+ SgPluginGameServer.GetGameTimeFormated() +" -> "+ SgSManagerPlayers.GetPlayersStateFormated() );
 	}
 		
 	// Player connected
 	override PlayerBase OnClientNewEvent( PlayerIdentity identity, vector pos, ParamsReadContext ctx )
 	{
-		Print("Server Event: "+ GetWorldTime() +" OnClientNewEvent");
+		Print("[Server Event]["+ GetSgGame().SgGetServerTimeFormated() +"]: OnClientNewEvent (Loading finished): "+ identity.GetId() +" "+ SgPluginGameServer.GetGameTimeFormated() +" -> "+ SgSManagerPlayers.GetPlayersStateFormated() );
 		
 		int top = -1;
 		int bottom = -1;
@@ -71,18 +71,10 @@ modded class MissionServer
 	// Client disconnected from server
 	override void OnClientDisconnectedEvent( PlayerIdentity identity, PlayerBase player, int queueTime, bool authFailed )
 	{
-		Print("Server Event: "+ GetWorldTime() +" OnClientDisconnectedEvent");
+		Print("[Server Event]["+ GetSgGame().SgGetServerTimeFormated() +"]: OnClientDisconnectedEvent: "+ identity.GetId() +" "+ SgPluginGameServer.GetGameTimeFormated() +" -> "+ SgSManagerPlayers.GetPlayersStateFormated() );
 		
-		if ( SgPluginGameServer.GetInstance().GetGameState() == ESgGameState.WarmUp )
-		{
-			super.PlayerDisconnected( player, identity, identity.GetId() );
-		}
-		else
-		{
-			Print("Server: AddToReconnectCache");
-			GetGame().SendLogoutTime(player, 10);
-			GetGame().AddToReconnectCache(identity);
-		}
+		GetGame().SendLogoutTime(player, 10);
+		GetGame().AddToReconnectCache(identity);
 	}
 	
 	protected void ClientReconnected(Param params)
@@ -107,69 +99,69 @@ modded class MissionServer
 		{
 			case StartupEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> StartupEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> StartupEventTypeID");
 				break;
 			}
 			case MPSessionStartEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> MPSessionStartEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> MPSessionStartEventTypeID");
 				break;
 			}
 			case MPSessionEndEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> MPSessionEndEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> MPSessionEndEventTypeID");
 				break;
 			}
 			case MPSessionFailEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> MPSessionFailEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> MPSessionFailEventTypeID");
 				break;
 			}
 			case MPSessionPlayerReadyEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> MPSessionPlayerReadyEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> MPSessionPlayerReadyEventTypeID");
 				
 				break;
 			}
 			case ClientNewEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> ClientNewEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> ClientNewEventTypeID");
 				break;
 			}
 			case ClientRespawnEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> ClientRespawnEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> ClientRespawnEventTypeID");
 				break;
 			}
 			case ClientReconnectEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> ClientReconnectEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> ClientReconnectEventTypeID");
 				ClientReconnected(params);
 				break;
 			}
 			case ClientReadyEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> ClientReadyEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> ClientReadyEventTypeID");
 				break;
 			}
 			case ClientDisconnectedEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> ClientDisconnectedEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> ClientDisconnectedEventTypeID");
 				break;
 			}
 			case LogoutCancelEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> LogoutCancelEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> LogoutCancelEventTypeID");
 				break;
 			}
 			case LoginTimeEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> LoginTimeEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> LoginTimeEventTypeID");
 				break;
 			}
 			case MPConnectionLostEventTypeID :
 			{
-				Print("["+ GetGame().GetTime() +"]==========> MPConnectionLostEventTypeID");
+				Print("["+ GetSgGame().SgGetServerTimeFormated() +"]==========> MPConnectionLostEventTypeID");
 				break;
 			}		
 		}

@@ -11,11 +11,6 @@ modded class ActionGiveSalineTargetCB
 
 modded class ActionGiveSalineTarget
 {	
-	void ActionGiveSalineTarget()
-	{
-		m_StanceMask = DayZPlayerConstants.STANCEMASK_CROUCH;
-	}
-	
 	override void CreateConditionComponents()  
 	{	
 		m_ConditionTarget = new CCTMan(UAMaxDistances.DEFAULT);

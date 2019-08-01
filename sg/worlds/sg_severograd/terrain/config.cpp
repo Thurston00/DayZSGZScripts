@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////
 //DeRap: sg_worlds_severograd\config.bin
-//Produced from mikero's Dos Tools Dll version 7.16
-//https://armaservices.maverick-applications.com/Products/MikerosDosTools/default
-//'now' is Tue Jul 23 07:00:00 2019 : 'file' last modified on Wed Jul 10 13:31:25 2019
+//Produced from mikero's Dos Tools Dll version 7.27
+//https://bytex.market/products/item/weodpphdknnzm70o0h8q/Mikero%27s%20Dos%20Tools
+//'now' is Thu Aug 01 16:12:34 2019 : 'file' last modified on Tue Jul 23 11:27:05 2019
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
@@ -129,7 +129,7 @@ class CfgWorlds
 					class Infected_120
 					{
 						typeId = 120;
-						jumpLength = 3.1;
+						jumpLength = 2.0;
 						jumpHeight = 1.2;
 						minCenterHeight = 0.9;
 						jumpDropdownMin = 0.5;

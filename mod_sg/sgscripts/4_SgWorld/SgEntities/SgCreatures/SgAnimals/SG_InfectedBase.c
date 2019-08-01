@@ -139,4 +139,31 @@ class SG_InfectedBase extends AnimalBase
 		
 		return offset;
 	}
+	
+	override void EEKilled( Object killer )
+	{
+		super.EEKilled(killer);
+		
+		string killerUID = SG_UID_PLACEHOLDER;
+		
+		if ( killer != null )
+		{
+			if ( killer.IsInherited( EntityAI ) )
+			{
+				EntityAI parent = EntityAI.Cast( killer ).GetHierarchyRootPlayer();
+				PlayerBase item_owner = PlayerBase.Cast( parent );
+				
+				if ( item_owner && item_owner.IsInherited( PlayerBase ) )
+				{
+					PlayerIdentity identity = PlayerBase.Cast( item_owner ).GetIdentity();
+					if ( identity != null )
+					{
+						killerUID = identity.GetId();
+					}
+				}
+			}
+		}
+		
+		SgSManagerEventsServer.Event_OnZombieDied( this, killerUID );
+	}
 };

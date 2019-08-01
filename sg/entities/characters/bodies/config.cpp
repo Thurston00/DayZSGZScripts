@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////
 //DeRap: sg_entities_characters\bodies\config.bin
-//Produced from mikero's Dos Tools Dll version 7.16
-//https://armaservices.maverick-applications.com/Products/MikerosDosTools/default
-//'now' is Tue Jul 23 06:59:53 2019 : 'file' last modified on Mon Jul 15 09:45:14 2019
+//Produced from mikero's Dos Tools Dll version 7.27
+//https://bytex.market/products/item/weodpphdknnzm70o0h8q/Mikero%27s%20Dos%20Tools
+//'now' is Thu Aug 01 16:12:29 2019 : 'file' last modified on Mon Jul 29 11:13:29 2019
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_

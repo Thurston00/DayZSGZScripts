@@ -1,7 +1,7 @@
-﻿///<'sggraphics.pbo' properties via Mikero's dos tools, dll version 7.16>///
+﻿///<'sggraphics.pbo' properties via Mikero's dos tools, dll version 7.27>///
 product=sgz
 prefix=mod_sg\sggraphics
-version=5071P
+version=5257P
 //Pbo Type is: Arma Unknown pbo typ (no config).
-//Sha: '24DC9A3DA7E663F984EAB65CAF57AE1B5DAFE2F6'
+//Sha: 'F36D20A1AEA42E92D42E050CBC1BF811FF6E0268'
 //////</properties>//////

@@ -42,8 +42,13 @@ class SgSMatchRecorderSave
 	//============================================
 	// InitMovingEntity
 	//============================================
-		static void InitMovingEntity(EntityAI entity)
+	static void InitMovingEntity(EntityAI entity)
 	{
+		if ( !entity )
+		{
+			return;
+		}
+		
 		int entity_id = entity.GetID();
 		
 		if ( m_FileEntities.Contains(entity_id) )

@@ -181,8 +181,8 @@ class SgLocationPhaseStart : SgLocation
 				loot_items_copy.Insert( loot_item_copy );
 			}				
 			
-			// 2 is count of items in container
-			for ( int i = 0; i < 2; ++i )
+			// 3 is count of items in container
+			for ( int i = 0; i < 3; ++i )
 			{				
 				// Calculate chance for spawn
 				float chance_random = Math.RandomFloat01();

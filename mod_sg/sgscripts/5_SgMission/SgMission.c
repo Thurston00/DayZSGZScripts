@@ -6,8 +6,16 @@ Mission SgCreateMission( string path )
 
 	if (g_Game.IsClient())
 	{
+		// Preload Data
 		SgMap.InitMapResources();
 		SgSManagerSounds.InitSoundResources();
+		
+		// CleanUP
+		SgSClientGame.CleanUp();
+		SgSSyncEvents.CleanUp();
+		SgSClientTimer.CleanUp();
+		SgNetworkService.CleanUp();
+		SgDeadcam.CleanUp();
 	}
 	
 	if (g_Game.IsMultiplayer() && g_Game.IsServer())

@@ -1,32 +1,17 @@
 [
   {
     "m_StartLootCategory": 0,
-    "m_ItemName": "BurlapSack",
-    "m_SpawnOdd": 0.5
-  },
-  {
-    "m_StartLootCategory": 0,
-    "m_ItemName": "Rope",
-    "m_SpawnOdd": 0.5
-  },
-  {
-    "m_StartLootCategory": 1,
-    "m_ItemName": "BandageDressing",
-    "m_SpawnOdd": 0.5
-  },
-  {
-    "m_StartLootCategory": 1,
-    "m_ItemName": "VitaminBottle",
-    "m_SpawnOdd": 0.5
-  },
-  {
-    "m_StartLootCategory": 2,
     "m_ItemName": "SteakKnife",
     "m_SpawnOdd": 0.5
   },
   {
-    "m_StartLootCategory": 2,
-    "m_ItemName": "ChestHolster",
+    "m_StartLootCategory": 0,
+    "m_ItemName": "VitaminBottle",
+    "m_SpawnOdd": 0.5
+  },
+  {
+    "m_StartLootCategory": 0,
+    "m_ItemName": "BandageDressing",
     "m_SpawnOdd": 0.5
   }
 ]

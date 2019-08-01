@@ -1,7 +1,7 @@
-﻿///<'sgplaygrounds.pbo' properties via Mikero's dos tools, dll version 7.16>///
+﻿///<'sgplaygrounds.pbo' properties via Mikero's dos tools, dll version 7.27>///
 product=sgz
 prefix=mod_sg\sgplaygrounds
-version=5071P
+version=5257P
 //Pbo Type is: Arma Unknown pbo typ (no config).
-//Sha: 'A9203F8BAF8E217B0E661FEF728AC1F78462D391'
+//Sha: '26D24358EADBE3F012034B069C6D46DD7E109B83'
 //////</properties>//////

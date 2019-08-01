@@ -56,9 +56,9 @@ class SgLobbyEvents
 		m_NetService.GetEvent_OnGameServerIsReadied().Remove(Event_OnGameServerIsReadied);		// Start Game
 		m_NetService.GetEvent_OnLobbyStarted().Remove(Event_OnLobbyStarted);					// Waiting for server to initialize 
 		// Buttons
-		Event_OnStartGameButtonClicked.Insert(StartLobbyGameRequest);
-		Event_OnReadyGameButtonClicked.Insert(ChangePlayerReadinessRequest);
-		Event_OnLeaveLobbyButtonClicked.Insert(LeaveLobbyWindowThread);
+		Event_OnStartGameButtonClicked.Remove(StartLobbyGameRequest);
+		Event_OnReadyGameButtonClicked.Remove(ChangePlayerReadinessRequest);
+		Event_OnLeaveLobbyButtonClicked.Remove(LeaveLobbyWindowThread);
 		// Player Location Events
 		Event_UnassignePlayer.Remove(LeaveTeamRequest);
 		Event_AssignePlayer.Remove(JoinTeamRequest);

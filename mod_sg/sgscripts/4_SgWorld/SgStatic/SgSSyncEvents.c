@@ -43,6 +43,32 @@ class SgSSyncEvents
 	}
 	
 	//==================================
+	// CleanUp
+	//==================================
+	static void CleanUp()
+	{
+		Print("SgSSyncEvents Clean UP");
+		SyncEvent_OnWarmUpJoined.Clear();
+		SyncEvent_OnWarmUpFinished.Clear();
+		SyncEvent_OnGameStarted.Clear();
+		SyncEvent_OnGameUpdate.Clear();
+		SyncEvent_OnGameFinished.Clear();
+		SyncEvent_OnGamePhaseChanged.Clear();
+		SyncEvent_OnGameSyncTimer.Clear();
+		SyncEvent_OnGameShowPoI.Clear();
+		SyncEvent_OnPlayerInitialized.Clear();
+		SyncEvent_OnPlayerReconnected.Clear();
+		SyncEvent_OnPlayerDied.Clear();
+		SyncEvent_OnPlayerUnconscious.Clear();
+		SyncEvent_OnPlayerWokeUp.Clear();
+		SyncEvent_OnPlayerMoveLockChanged.Clear();
+		SyncEvent_OnCollarBlockChanged.Clear();
+		SyncEvent_OnCollarDamage.Clear();
+		SyncEvent_OnCollarExplode.Clear();
+		SyncEvent_OnTeamDeadStats.Clear();
+	}
+	
+	//==================================
 	// OnSyncEvent
 	//==================================
 	static void OnSyncEvent( ESgSyncEvent event_type, SgSyncData data, Object target )
@@ -158,7 +184,7 @@ class SgSSyncEvents
 		}
 		else
 		{
-			Print("[RPC Error] Event_OnWarmUpPlayerJoined: No Identity");
+			GameLog("[RPC Error] Event_OnWarmUpPlayerJoined: No Identity");
 		}
 	}
 	
@@ -178,7 +204,8 @@ class SgSSyncEvents
 	{
 		array<ref SgPlayer> players = SgSManagerPlayers.GetSgPlayers();
 		
-		GameLog( "Event_OnGameStarted players count: " + players.Count() );
+		Print("[Server Event]["+ GetSgGame().SgGetServerTimeFormated() +"]: Event_OnGameStarted Phase 1: Players Count: "+ players.Count() +" Users Connected: "+ SgSManagerPlayers.GetConnectedUsersCount() );
+		
 		for ( int i = 0; i < players.Count(); ++i )
 		{
 			SgPlayer sg_player = players[i];
@@ -193,7 +220,7 @@ class SgSSyncEvents
 			}
 			else
 			{
-				Print("[RPC Error] Event_OnGameStarted: No Identity");
+				GameLog("[RPC Error] Event_OnGameStarted: No Identity");
 			}
 		}
 		
@@ -255,7 +282,9 @@ class SgSSyncEvents
 						}
 						else
 						{
-							Print("[RPC Error] Event_OnGameUpdate: No Identity");
+#ifdef DEVELOPER
+//							Print("[RPC Error] Event_OnGameUpdate: No Identity");
+#endif
 						}
 					}
 				}
@@ -312,7 +341,8 @@ class SgSSyncEvents
 		data.m_DataGameResult = new SgSyncGameResultData();
 		data.m_DataGameResult.m_WinnerTeamID = team_id;
 		
-		GameLog( "Event_OnGameFinished WinnerTeamID: " + team_id );
+		//GameLog( "Event_OnGameFinished WinnerTeamID: " + team_id );
+		Print("[Server Event]["+ GetSgGame().SgGetServerTimeFormated() +"]: Event_OnGameFinished "+ SgSManagerPlayers.GetPlayersStateFormated() );
 		SgSRpcEvent.SendSyncEvent( ESgSyncEvent.GameFinished, data );
 	}
 	
@@ -336,7 +366,7 @@ class SgSSyncEvents
 		data.m_Int.Insert( details.m_Reason );
 		data.m_Int.Insert( SgSManagerPlayers.GetPlayersAliveCount() );
 		
-		GameLog( "Event_OnSgPlayerDied PlayerUID: " + sg_player.GetPlayerUID() );
+		Print("[Server Event]["+ GetSgGame().SgGetServerTimeFormated() +"]: Event_OnSgPlayerDied: "+ sg_player.GetPlayerUID() +" "+ SgPluginGameServer.GetGameTimeFormated() +" -> "+ SgSManagerPlayers.GetPlayersStateFormated() );
 		SgSRpcEvent.SendSyncEvent( ESgSyncEvent.PlayerDied, data );
 	}
 	
@@ -355,7 +385,7 @@ class SgSSyncEvents
 		}
 		else
 		{
-			Print("[RPC Error] Event_OnSgPlayerCollarDamage: No Identity");
+			GameLog("[RPC Error] Event_OnSgPlayerCollarDamage: No Identity");
 		}	
 	}
 	
@@ -374,7 +404,7 @@ class SgSSyncEvents
 		}
 		else
 		{
-			Print("[RPC Error] Event_OnSgPlayerCollarExplode: No Identity");
+			GameLog("[RPC Error] Event_OnSgPlayerCollarExplode: No Identity");
 		}		
 	}
 	
@@ -397,7 +427,7 @@ class SgSSyncEvents
 			}
 			else
 			{
-				Print("[RPC Error] Event_OnTeamDeadStats: No Identity");
+				GameLog("[RPC Error] Event_OnTeamDeadStats: No Identity");
 			}
 		}
 	}
@@ -419,7 +449,7 @@ class SgSSyncEvents
 		}
 		else
 		{
-			Print("[RPC Error] Event_OnSgPlayerMoveLockChanged: No Identity");
+			GameLog("[RPC Error] Event_OnSgPlayerMoveLockChanged: No Identity");
 		}
 	}	
 	
@@ -440,7 +470,7 @@ class SgSSyncEvents
 		}
 		else
 		{
-			Print("[RPC Error] Event_OnSgPlayerCollarBlockChanged: No Identity");
+			GameLog("[RPC Error] Event_OnSgPlayerCollarBlockChanged: No Identity");
 		}
 	}
 	
@@ -541,7 +571,7 @@ class SgSSyncEvents
 		}
 		else
 		{
-			Print("[RPC Error] Event_OnSgPlayerReconnected: No Identity");
+			GameLog("[RPC Error] Event_OnSgPlayerReconnected: No Identity");
 		}
 		
 		//return reconnect_data;

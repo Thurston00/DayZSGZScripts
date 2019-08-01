@@ -42,9 +42,10 @@ class SgUiResultScreenPlayerStatsRow extends SgUiMenuPanel
 		if (m_IsClientPlayer)
 		{
 				m_UiNameLabel.SetColor(SgCMenuColours.COLOUR_YELLOW);
-				m_UiPlayerKillsLabel.SetColor(SgCMenuColours.COLOUR_YELLOW);
-				m_UiZombieKillsLabel.SetColor(SgCMenuColours.COLOUR_YELLOW);
-				m_UiSurvTimeLabel.SetColor(SgCMenuColours.COLOUR_YELLOW);
+			
+			//	m_UiPlayerKillsLabel.SetColor(SgCMenuColours.COLOUR_YELLOW);
+			//	m_UiZombieKillsLabel.SetColor(SgCMenuColours.COLOUR_YELLOW);
+			//	m_UiSurvTimeLabel.SetColor(SgCMenuColours.COLOUR_YELLOW);
 		}
 		
 		m_UiNameLabel.SetText(m_Name);

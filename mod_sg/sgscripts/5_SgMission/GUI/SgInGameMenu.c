@@ -76,11 +76,10 @@ modded class InGameMenu
 		}
 	}
 	
-	override protected void OnClick_Exit()
+	/*override protected void OnClick_Exit()
 	{
 		//GetGame().GetUIManager().ShowDialog("EXIT", "Are you sure you want to exit?", IDC_MAIN_QUIT, DBT_YESNO, DBB_YES, DMT_QUESTION, NULL);
 		
 		GetGame().GetCallQueue(CALL_CATEGORY_GUI).Call(g_Game.RequestExit, IDC_MAIN_QUIT);
-	}
-	
+	}*/
 }

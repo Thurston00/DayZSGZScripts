@@ -1,6 +1,6 @@
 class SgUiHudPanel extends Hud
 { 
-	protected Widget 		m_RootFrame;		// Root frame
+	protected ref Widget 		m_RootFrame;		// Root frame
 	
 	void BuildLayout(Widget parent_widget = null)
 	{	
@@ -41,7 +41,7 @@ class SgUiHudPanel extends Hud
 	}
 	void Hide()
 	{
-		m_RootFrame.Show(false);	
+		m_RootFrame.Show(false);
 	}
 	
 	// GETTERS --------------------------------------

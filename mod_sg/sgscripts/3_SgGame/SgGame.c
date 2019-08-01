@@ -47,6 +47,19 @@ modded class DayZGame
 	}
 	
 	//===================================
+	// SgGetServerTimeFormated
+	//===================================
+	string SgGetServerTimeFormated()
+	{
+		int time_mil = GetGame().GetTime();
+		int time_sec = Math.Round( time_mil * 0.001 );
+		int time_min = Math.Floor( time_sec / 60 );
+		time_sec = time_sec % 60;
+		
+		return "Server Time: "+ time_min +"min "+ time_sec +"sec";
+	}
+	
+	//===================================
 	// SgIsServerMP
 	//===================================
 	bool SgIsServerMP()
@@ -135,39 +148,6 @@ modded class DayZGame
 		ref Param4<ref PlayerIdentity, Object, int, ref ParamsReadContext> data;
 		data = new Param4<ref PlayerIdentity, Object, int, ref ParamsReadContext>( sender, target, rpc_type, ctx );
 		CallMethod( CALL_ID_SG_RPC_CALL, data );
-	}
-	
-	// send additional information to server (must be called)
-	override ref array<ref Param> GetLoginData()
-	{
-		int top = -1;
-		int bottom = -1;
-		int shoes = -1;
-		int skin = -1;
-		
-		if (demounit.Count() > 0)
-		{
-			top = demounit.Get(0);
-			bottom = demounit.Get(1);
-			shoes = demounit.Get(2);
-			skin = demounit.Get(3);
-		}
-		
-		ref array<ref Param> params = new array<ref Param>;
-			
-		ref Param topParam = new Param1<int>(top);
-		params.Insert(topParam);
-			
-		ref Param bottomParam = new Param1<int>(bottom);
-		params.Insert(bottomParam);
-
-		ref Param shoesParam = new Param1<int>(shoes);
-		params.Insert(shoesParam);
-		
-		ref Param skinParam = new Param1<int>(skin);
-		params.Insert(skinParam);
-		
-		return params;
 	}
 	
 	// ------------------------------------------------------------

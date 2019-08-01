@@ -74,8 +74,13 @@ class SgSMatchRecorder
 		array<ref SgPlayer> sg_players = SgSManagerPlayers.GetSgPlayers();
 		foreach ( SgPlayer sg_player : sg_players )
 		{
-			m_MovingEntities.Insert(sg_player.GetPlayerBase());
-			SgSMatchRecorderSave.InitMovingEntity(sg_player.GetPlayerBase());
+			PlayerBase player_base = sg_player.GetPlayerBase();
+			
+			if ( player_base )
+			{
+				m_MovingEntities.Insert(sg_player.GetPlayerBase());
+				SgSMatchRecorderSave.InitMovingEntity(sg_player.GetPlayerBase());
+			}
 		}
 		
 		/*array<ref EntityAI> ai_entities = SgSManagerAi.GetAIEntities();

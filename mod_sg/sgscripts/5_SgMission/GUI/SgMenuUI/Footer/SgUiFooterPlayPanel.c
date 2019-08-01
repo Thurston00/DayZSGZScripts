@@ -6,6 +6,7 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 	private Widget 		m_UiPlayGrid;
 	private Widget 		m_UiCancelGrid;
 	private TextWidget	m_UiLoadingLabel;
+	private TextWidget 	m_UiSearchLabel;
 	// Custom Widgets
 	private ref SgUiButtonActionHigh	m_UiPlayButton;
 	private ref SgUiButtonImage			m_UiCancelButton;
@@ -41,6 +42,7 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 		m_UiPlayGrid = FindPanel("GridPlay");
 		m_UiCancelGrid = FindPanel("GridSearch");
 		m_UiLoadingLabel = FindLabel("SearchLabelLoading");
+		m_UiSearchLabel = FindLabel("SearchLabel");
 	}
 	override protected void LoadAllWidgets()
 	{
@@ -55,6 +57,8 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 		
 		FooterEvent_OnPlayButtonClicked.Insert(OnPlayButtonClicked);
 		FooterEvent_OnCancelButtonClicked.Insert(OnCancelButtonClicked);
+		
+		SgNetworkService.GetService().GetEvent_OnAddedToMatch().Insert(OnAddedToMatch);
 	}
 	
 	// -----------------------------------
@@ -63,6 +67,18 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 	// Play Button
 	private void OnPlayButtonClicked()
 	{
+		
+#ifdef DEVELOPER
+		string sgConnectToLocalServer;
+		if ( GetGame().CommandlineGetParam("sgConnectToLocalServer", sgConnectToLocalServer))
+		{
+			Print("Connecting to Local Server..");
+			GetDayZGame().ConnectFromJoin( "127.0.0.1" , 2302 );
+		}
+		
+		return;
+#endif
+		
 		// If NOT already looking for a match
 		if (!m_IsLookingForMatch)
 		{
@@ -98,6 +114,9 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 			// Handle result
 			if (result == SgEResult.OK)
 			{
+				m_UiSearchLabel.SetText(SgCMenuWidgetStrings.FINDING_MATCH); 
+				m_UiCancelButton.Show(true);
+				
 				// Register the client for "Match found event"
 				SgNetworkService.GetService().GetEvent_OnGameServerIsReadied().Insert(OnMatchFound);
 				// Set the state to Looking for a Match				
@@ -107,12 +126,11 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 				// Show cancel button
 				m_UiCancelGrid.Show(true);
 				// Runnable 
-				StartLodingAnimation();	// ... animation
+				//StartLodingAnimation();	// ... animation
 				StartStopwatch();		// Timer 
 			}
 			else 
 			{
-				// Tento pribeh je smutny .... 
 				m_IsLookingForMatch = false;
 			}
 			
@@ -141,7 +159,7 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 				// Hide Cancel button
 				m_UiCancelGrid.Show(false);
 				// Stop Runnable 
-				StopLoadingAnimation();
+				//StopLoadingAnimation();
 				StopStowatch();
 			}
 			else 
@@ -172,6 +190,15 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 		}
 	}
 	
+	private void OnAddedToMatch()
+	{
+		m_UiCancelButton.Show(false);
+		m_UiSearchLabel.SetText(SgCMenuWidgetStrings.WAITING_FOR_SERVER);
+		
+		StopStowatch();
+		StartLodingAnimation();
+	}
+	
 	private void OnMatchFound(ref SgNetServerDataServerReadyResponse resultValue)
 	{
 		g_Game.ConnectFromJoin(resultValue.GetServerIp() , resultValue.GetServerPort());
@@ -183,6 +210,7 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 	// Start thread
 	private void StartStopwatch()
 	{
+		m_StopwatchTime = 0;
 		GetGame().GetCallQueue(CALL_CATEGORY_GUI).CallLater(UpdateStopwatch, 1000, true);
 	}
 	// Stop thread
@@ -194,7 +222,35 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 	private void UpdateStopwatch()
 	{
 		m_StopwatchTime++;
-		Print("Stopwatch Time: " + m_StopwatchTime);
+		
+		int min, sec;
+		string minS, secS;
+		
+		min = m_StopwatchTime / 60 % 60;
+		sec = m_StopwatchTime % 60;
+		
+		if (min < 10) 
+		{
+			minS = "0" + min.ToString();
+		}
+		else 
+		{
+			minS = min.ToString();
+		}
+		
+		if (sec < 10)
+		{
+			secS = "0" + sec.ToString();
+		}
+		else 
+		{
+			secS = sec.ToString();
+		}
+		
+		m_UiLoadingLabel.SetText(string.Format("(%1:%2)" , minS, secS));
+		
+		
+		Print("Stopwatch Time: " + string.Format("(%1:%2)" , minS, secS));
 	}
 	
 	// -------------------------------------

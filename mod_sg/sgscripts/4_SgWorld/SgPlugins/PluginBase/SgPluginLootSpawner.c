@@ -79,7 +79,9 @@ class SgSManagerLootSpawner extends PluginBase
 							
 							spawned_items_count++;
 
+#ifdef DEVELOPER
 Print("SgPluginLootSpawner INFO: Spawned item: "+ spawned_items_count +" ItemPack: "+ item_pack.m_ItemPackName +" ItemName: '"+ item.m_ItemName +"' BuildingType: "+ spawn_building_type +" item pack count left: "+ item_pack.m_Count);
+#endif
 														
 							if ( item_pack.m_Count <= 0 )
 							{
@@ -94,12 +96,16 @@ Print("SgPluginLootSpawner INFO: Spawned item: "+ spawned_items_count +" ItemPac
 						else
 						{
 							item_pack.m_LootGameItems.RemoveItem( item );
+#ifdef DEVELOPER
 Error("SgPluginLootSpawner ERROR: Item: '"+ item.m_ItemName +"' is not exists in the game!" );
+#endif
 						}
 					}
 					else
 					{
+#ifdef DEVELOPER
 Print("SgPluginLootSpawner INFO: No more spawn points of building type:  ItemName: '"+ item.m_ItemName +"' BuildingType: "+ spawn_building_type +" deleting from lists!");
+#endif
 						// while 2 condition count if is array 0 while 2 will stop
 						item.m_BuildingTypes.RemoveItem( spawn_building_type );
 					}
@@ -107,15 +113,18 @@ Print("SgPluginLootSpawner INFO: No more spawn points of building type:  ItemNam
 				else
 				{
 					item_pack.m_LootGameItems.RemoveItem( item );
+#ifdef DEVELOPER
 Error("SgPluginLootSpawner ERROR: No more free spawn points for Item: "+ item.m_ItemName +" in ItemPack: "+ item_pack.m_ItemPackName +" Count: "+ item_pack.m_Count +"! Removing from ItemPack. Left Items in ItemPack: "+ item_pack.m_LootGameItems.Count() );
+#endif
 				}			
 			}
 			else
 			{
 				location_loot.m_LootItemPacks.Remove(i);
 				i--;
-				
+#ifdef DEVELOPER				
 Error("SgPluginLootSpawner ERROR: ItemPack: "+ item_pack.m_ItemPackName +" has no items !!! Fix it in xls");
+#endif
 			}
 			
 			i++;
@@ -124,8 +133,9 @@ Error("SgPluginLootSpawner ERROR: ItemPack: "+ item_pack.m_ItemPackName +" has n
 				i = 0;
 			}
 		}
-		
+#ifdef DEVELOPER
 Print("SgPluginLootSpawner DONE -> Item Count: "+ spawned_items_count);
+#endif
 	}
 	
 	//===========================================

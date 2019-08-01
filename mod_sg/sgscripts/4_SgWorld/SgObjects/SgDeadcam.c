@@ -23,6 +23,14 @@ class SgDeadcam : Camera
 	}
 	
 	//========================================
+	// CleanUp
+	//========================================
+	static void CleanUp()
+	{
+		m_TargetPlayer = null;
+	}
+	
+	//========================================
 	// EOnPostFrame
 	//========================================
 	override void EOnPostFrame(IEntity other, int extra)
@@ -39,7 +47,8 @@ class SgDeadcam : Camera
 			int bone_index = ply.GetBoneIndexByName("Face_BrowMiddle");
 			if (bone_index != -1)
 			{
-				new_pos = ply.GetBonePositionWS(bone_index);
+				//move the camera a bit so the helms do not go into the way
+				new_pos = ply.CoordToParent( ply.GetBonePositionMS(bone_index) + "0.1 0.1 0.1" );
 				
 				float bone_rot[4];
 				ply.GetBoneRotationWS( bone_index, bone_rot );

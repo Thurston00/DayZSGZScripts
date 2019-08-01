@@ -17,9 +17,7 @@ modded class ActionInjectMorphineSelf
 	override void OnExecuteServer( ActionData action_data )
 	{	
 		super.OnExecuteServer( action_data );
-		
-		int max_health = action_data.m_Player.GetMaxHealth("GlobalHealth", "Health");
-		
-		action_data.m_Player.AddHealth("GlobalHealth", "Health", ( ( max_health / 100 ) * PERCENTAGE_HEAL_HEALTH ) );		
+			
+		action_data.m_Player.AddHealthEntirePlayer( PERCENTAGE_HEAL_HEALTH );	
 	}
 };

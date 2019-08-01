@@ -161,8 +161,8 @@ class SgUiResultScreenBase extends SgUiMenuPanel
 	
 	private void ExitGame()
 	{
-		GetGame().GetCallQueue(CALL_CATEGORY_GUI).Call(g_Game.RequestExit, IDC_MAIN_QUIT);
-		//GetGame().GetMission().AbortMission();
+		//GetGame().GetCallQueue(CALL_CATEGORY_GUI).Call(g_Game.RequestExit, IDC_MAIN_QUIT);
+		GetGame().GetMission().AbortMission();
 	}	
 	private void SpectateGame()
 	{

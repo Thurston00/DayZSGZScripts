@@ -17,7 +17,6 @@ class SgSManagerGui
 		SgSSyncEvents.SyncEvent_OnPlayerUnconscious.Insert( SyncEvent_OnPlayerUnconscious );
 		SgSSyncEvents.SyncEvent_OnPlayerWokeUp.Insert( SyncEvent_OnPlayerWokeUp );
 		SgSSyncEvents.SyncEvent_OnTeamDeadStats.Insert( SyncEvent_OnTeamDeadStats );
-
 	}
 
 	//============================================
@@ -47,6 +46,13 @@ class SgSManagerGui
 	{
 		GetGame().GetUIManager().Back();
 
+		Print("SyncEvent_OnGameStarted");
+		Print("m_PlayersUIDs Debug:");
+		game_data.m_PlayersUIDs.Debug();
+		Print("m_TeammateUIDs Debug:");
+		game_data.m_TeammateUIDs.Debug();
+		Print("---------------------------------------");
+		
 		SgUiWarmUpBase.ClearWarmUpBase(); // Fix for rare case when player connected just right before this event and had WarmUp GUI showed.
 		BackScreenFadeOut( 1 );
 

@@ -18,8 +18,12 @@ class SgUiButtonMenuPrimary extends SgUiButtonSelection
 	override void UnRegisterAllEvents()
 	{
 		super.UnRegisterAllEvents();
-		Event_OnNavigationButtonSetUpdated.Remove(OnNavigationUpdated);
-	}	
+		
+		if ( Event_OnNavigationButtonSetUpdated )
+		{
+			Event_OnNavigationButtonSetUpdated.Remove(OnNavigationUpdated);
+		}
+	}
 		
 	override protected void CallButtonSetEvent(Widget w)
 	{
@@ -31,6 +35,6 @@ class SgUiButtonMenuPrimary extends SgUiButtonSelection
 	
 	static void UnselectAll()
 	{
-		Event_OnNavigationButtonSetUpdated.Invoke();
+		Event_OnNavigationButtonSetUpdated.Invoke( null );
 	}
 }

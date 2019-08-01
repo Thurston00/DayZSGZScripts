@@ -21,6 +21,10 @@ class SgCMenuWidgetStrings
 	static const string END_SCREEN_WINNER_LINE_2 	= "#sg_result_won_c";
 	static const string END_SCREEN_DEAD_LINE_1		= "#sg_result_you_are_c";
 	static const string END_SCREEN_DEAD_LINE_2		= "#sg_resut_dead_c";	
+	// Footer
+	//static const string WAITING_FOR_SERVER			= "#sg_menu_waiting_for_server_c";
+	static const string WAITING_FOR_SERVER			= "MATCH FOUND";
+	static const string FINDING_MATCH    			= "#sg_menu_finding_match_c";
 }
 
 class SgCMenuButtonStrings
@@ -42,8 +46,8 @@ class SgCMenuButtonStrings
 	// Create Custom Game
 	static const string CREATE_GAME_C			= "#sg_menu_buttons_create_custom_game_c"; 
 	// Result Screen
-	static const string EXIT					= "#sg_menu_button_exit_menu"; 
-	static const string SPECTATE				= "#sg_menu_button_spectate"; 
+	static const string EXIT					= "#sg_menu_button_exit_menu_c"; 
+	static const string SPECTATE				= "#sg_menu_button_spectate_c"; 
 }
 
 class SgCMenuSwitchStrings

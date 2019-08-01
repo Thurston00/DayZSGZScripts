@@ -23,6 +23,7 @@ class SgSManagerPlayers
 		
 		SgSManagerEventsServer.Event_OnUserConnected.Insert(SgSManagerPlayers.Event_OnUserConnected);
 		SgSManagerEventsServer.Event_OnGameServerMatchInfoLoaded.Insert(Event_OnGameServerMatchInfoLoaded);
+		SgSManagerEventsServer.Event_OnGameTimeSecond.Insert(Event_OnGameTimeSecond);
 		
 		string forceCustomPlayers;
 		if ( GetGame().CommandlineGetParam("sgForceCustomPlayers", forceCustomPlayers) )
@@ -55,13 +56,19 @@ class SgSManagerPlayers
 		SgLocation start_location = SgSManagerPlayground.GetLocationByLocationType( ESgLocationType.PhaseStart );
 		vector spawn_pos = start_location.GetPosition();
 		
+		Print( "Event_OnGameServerMatchInfoLoaded");
+		
 		array<ref SgNetDataMatchPlayer> players_list = matchInfo.GetPlayerList();
 		foreach ( SgNetDataMatchPlayer playerInfo : players_list )
 		{
 			string player_uid = playerInfo.GetPlayerUID();
 			int team_id = playerInfo.GetTeamId();
 			
-			Print( "Event_OnGameServerMatchInfoLoaded Player: " + player_uid );
+			
+			Print( "GetPlayerUID : " + playerInfo.GetPlayerUID() );
+			Print( "GetSteamName : " + playerInfo.GetSteamName() );
+			Print( "GetTeamId : " + playerInfo.GetTeamId() );
+			
 			m_AllowedPlayersUIDs.Insert(player_uid);
 			
 			Entity playerEnt = GetGame().CreatePlayer(null, GetGame().CreateRandomPlayer(), spawn_pos, 0, "NONE");
@@ -75,7 +82,7 @@ class SgSManagerPlayers
 			SgTeam team = GetTeamByID( team_id );
 			if ( team == null )
 			{
-				Print("Event_OnGameServerMatchInfoLoaded Team: " + team_id.ToString());
+				Print("Event_OnGameServerMatchInfoLoaded Team Create with TeamID: " + team_id.ToString());
 				team = SgSManagerPlayers.RegisterTeam( team_id );
 				//team_new.SetName( "" ); // SG_TODO
 				//team_new.SetColour( 0 ); // SG_TODO
@@ -83,6 +90,8 @@ class SgSManagerPlayers
 			
 			team.PlayerInsert( sg_player );
 			sg_player.SetTeamID( team_id );
+			
+			Print("------------------------------");
 		}
 		
 		SgLocationPhaseStart.Cast(SgSManagerPlayground.GetLocations()[0]).TeleportPlayersAtStartingPosition();
@@ -131,6 +140,21 @@ class SgSManagerPlayers
 #endif
 			return;
 		}
+	}
+	
+	//==================================
+	// Event_OnGameTimeSecond
+	//==================================
+	static void Event_OnGameTimeSecond( int secods_left )
+	{
+		foreach ( SgPlayer sg_player : m_Players )
+		{
+			if ( sg_player )
+			{
+				sg_player.CheckConnectionTimeOut();
+			}
+		}
+		
 	}
 	
 	//==================================
@@ -234,6 +258,35 @@ class SgSManagerPlayers
 		}
 		
 		return count;
+	}
+	
+	//==================================
+	// GetConnectedUsersCount
+	//==================================
+	static int GetConnectedUsersCount()
+	{
+		int count = 0;
+
+		if ( m_Players )
+		{
+			for ( int i = 0; i < m_Players.Count(); ++i )
+			{
+				if ( m_Players[i] && m_Players[i].GetIsUserConnected() )
+				{
+					++count;
+				}
+			}
+		}
+		
+		return count;
+	}
+	
+	//===================================
+	// GetPlayersStateFormated
+	//===================================
+	static string GetPlayersStateFormated()
+	{
+		return "Alive Teams: "+ SgSManagerPlayers.GetTeamsAliveCount() +" Alive Players: "+ SgSManagerPlayers.GetPlayersAliveCount();
 	}
 	
 	//==================================

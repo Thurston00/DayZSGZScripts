@@ -1,13 +1,12 @@
 modded class InjuryAnimationHandler
 {
-	override void Update(float deltaT)
+	void SetInjuryCommandParams(bool enable, eInjuryHandlerLevels level)
 	{
-		if( m_AnimationChange )
-		{
-			m_Player.GetCommandModifier_Additives().SetInjured(0, false);
-			m_AnimationChange = false;
-		}
-
-		super.Update( deltaT );
+		super.SetInjuryCommandParams(enable, level);
+		
+		// player in sgz does not get anim injury
+		level = 0;
+		
+		m_InjuryAnimDamageValue = GetInjuryValue(level);
 	}
 }

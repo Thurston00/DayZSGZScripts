@@ -1,10 +1,9 @@
 FrameWidgetClass rootFrame {
- position 0 0
- size 784 32
- valign center_ref
+ size 1 32
+ halign center_ref
  hexactpos 1
  vexactpos 1
- hexactsize 1
+ hexactsize 0
  vexactsize 1
  {
   GridSpacerWidgetClass Grid {
@@ -24,7 +23,7 @@ FrameWidgetClass rootFrame {
    {
     TextWidgetClass PlayerNameLabel {
      ignorepointer 1
-     size 288 1
+     size 400 1
      halign center_ref
      valign center_ref
      hexactpos 1
@@ -35,8 +34,9 @@ FrameWidgetClass rootFrame {
      font "gui/fonts/sdf_MetronBook72"
      "bold text" 1
      "exact text" 1
-     "exact text size" 32
+     "exact text size" 20
      "size to text h" 0
+     "text valign" center
     }
     TextWidgetClass PlayerKillsLabel {
      ignorepointer 1
@@ -51,8 +51,9 @@ FrameWidgetClass rootFrame {
      font "gui/fonts/sdf_MetronBook72"
      "bold text" 1
      "exact text" 1
-     "exact text size" 32
+     "exact text size" 20
      "text halign" center
+     "text valign" center
     }
     TextWidgetClass ZombieKillsLabel {
      ignorepointer 1
@@ -66,8 +67,9 @@ FrameWidgetClass rootFrame {
      font "gui/fonts/sdf_MetronBook72"
      "bold text" 1
      "exact text" 1
-     "exact text size" 32
+     "exact text size" 20
      "text halign" center
+     "text valign" center
     }
     TextWidgetClass SurvivalTimeLabel {
      visible 0

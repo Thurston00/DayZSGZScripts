@@ -40,10 +40,10 @@ class SgCPopupHeaderTexts
 class SgCPopupButtonTexts 		
 {
 	static const string OK 							= "#sg_menu_buttons_ok_c";
-	static const string CANCEL 						= "#sg_menu_button_cancel";
-	static const string DESTROY 					= "#sg_menu_buttons_destroy";
-	static const string LEAVE 						= "#sg_menu_buttons_leave";
+	static const string CANCEL 						= "#sg_menu_buttons_cancel_c";
+	static const string DESTROY 					= "#sg_menu_buttons_destroy_c";
+	static const string LEAVE 						= "#sg_menu_buttons_leave_c";
 	static const string EXIT 						= "#sg_menu_button_exit_c";
-	static const string ENTER 						= "#sg_menu_buttons_enter";
+	static const string ENTER 						= "#sg_menu_buttons_enter_c";
 	static const string RETRY 						= "#sg_menu_buttons_retry_c";
 }

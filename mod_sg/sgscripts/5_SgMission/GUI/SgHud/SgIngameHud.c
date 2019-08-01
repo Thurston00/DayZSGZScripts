@@ -179,4 +179,6 @@ modded class IngameHud
 		m_Notifiers.Show( false );
 	}
 	
+	
+	override void HideQuickbarTimer(){}
 }

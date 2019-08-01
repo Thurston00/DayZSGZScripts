@@ -32,13 +32,17 @@ class SgUiWarmUpBase extends SgUiHudPanel
 	}
 	
 	private void SgUiWarmUpBase()
-	{		
-		
+	{
 		if ( SgSClientGame.GetGameState() == ESgGameState.WarmUp)
 		{
+			MissionGameplay mission_gameplay = MissionGameplay.Cast( GetGame().GetMission() );
+			if ( mission_gameplay != null )
+			{
+				mission_gameplay.PlayerControlDisable(INPUT_EXCLUDE_ALL);
+			}
+			
 			GetGame().GetMission().GetHud().Show(false);
 		
-			MissionGameplay.Cast(GetGame().GetMission()).PlayerControlDisable(INPUT_EXCLUDE_ALL);
 			GetGame().GetUIManager().ShowUICursor(true);
 			
 			GetGame().GetInput().ChangeGameFocus(1, INPUT_DEVICE_MOUSE);
@@ -57,9 +61,11 @@ class SgUiWarmUpBase extends SgUiHudPanel
 	{
 		StopSlideShow();
 		
-		GetGame().GetMission().GetHud().Show(true);
-		
-		GetGame().GetUIManager().ShowUICursor(false);
+		if ( SgSClientGame.GetGameState() != ESgGameState.WarmUp )
+		{
+			GetGame().GetMission().GetHud().Show(true);
+			GetGame().GetUIManager().ShowUICursor(false);
+		}
 	}
 	
 	static void ClearWarmUpBase()

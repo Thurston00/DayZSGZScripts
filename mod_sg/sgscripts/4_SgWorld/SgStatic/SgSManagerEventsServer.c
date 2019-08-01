@@ -245,7 +245,7 @@ class SgSManagerEventsServer
 	//==================================
 	// Event_OnZombieDied
 	//==================================
-	static void Event_OnZombieDied( ZombieBase zombie, string killerUID )
+	static void Event_OnZombieDied( SG_InfectedBase zombie, string killerUID )
 	{
 		GameLog( "[Game]: Event_OnZombieDied" );
 		Event_OnZombieDied.Invoke( zombie, killerUID );

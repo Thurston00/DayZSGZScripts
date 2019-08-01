@@ -54,7 +54,7 @@ class SgSResultScreenStatsCollector
 	//==================================
 	// Event_OnSgPlayerDied
 	//==================================
-	static void Event_OnZombieDied( ZombieBase zombie, string killer_uid )
+	static void Event_OnZombieDied( SG_InfectedBase zombie, string killer_uid )
 	{
 		if ( killer_uid != SG_UID_PLACEHOLDER )
 		{

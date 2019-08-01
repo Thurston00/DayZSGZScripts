@@ -42,15 +42,15 @@ EffectDef {
    VelAngle 0
    RandomAngle 1
    Sort 0
-   Velocity 10
-   VelocityRND 30
-   AirResistance 10
-   AirResistanceRND 5
+   Velocity 30
+   VelocityRND 60
+   AirResistance 20
+   AirResistanceRND 0
    GravityMultiply 1
    GravityMultiplyRND 1
    Wind 1
    LifeTime 0.1
-   LifeTimeRND 0.4
+   LifeTimeRND 0.2
    Color {
     0 0.1392 0.1392 0.1519 1 0.1519 0.1392 0.1392
    }
@@ -62,6 +62,46 @@ EffectDef {
    }
    Size {
     0 0 0.025 0.25 1 1
+   }
+   EffectTime 0.1
+   Repeat 0
+  }
+  EmitorDef Winded_smoke {
+   ShapeType Cone
+   ConeAngle 360 100 150
+   MaxNum 10
+   BirthRate 600
+   Angles 0 0 0
+   LocalTransform 0
+   Material "{67FEB95AE2ECC2EA}Graphics/Particles/materials/smoke/smoke_dust_01.emat"
+   SizeMultiplier 15
+   SizeRND 10
+   RandomRotDir 1
+   RotMultiplier 50
+   StreakFullUV 0
+   VelAngle 0
+   RandomAngle 1
+   Sort 0
+   Velocity 1
+   VelocityRND 1.5
+   AirResistance 0
+   AirResistanceRND 0
+   GravityMultiply 0
+   GravityMultiplyRND 0
+   Wind 1
+   LifeTime 10
+   LifeTimeRND 5
+   Color {
+    0 0.4557 0.4684 0.462 1 1 1 1
+   }
+   Alpha {
+    0 0 0.025 0.55 1 0
+   }
+   RotationSpeed {
+    0 0.18354 1 0.1962
+   }
+   Size {
+    0 0 0.01116 0.13924 1 1
    }
    EffectTime 0.1
    Repeat 0
@@ -123,7 +163,7 @@ EffectDef {
    RandomAngle 1
    Sort 0
    Velocity 12
-   VelocityRND 5
+   VelocityRND 10
    AirResistance 2
    AirResistanceRND 0
    GravityMultiply 2
@@ -293,7 +333,7 @@ EffectDef {
    GravityMultiplyRND 1
    Wind 1
    RandomFrame 1
-   LifeTime 1
+   LifeTime 2
    LifeTimeRND 0
    Color {
     0 0.2722 0 0 1 0.3038 0 0

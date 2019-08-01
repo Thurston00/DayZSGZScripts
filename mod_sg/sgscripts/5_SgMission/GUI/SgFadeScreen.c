@@ -42,6 +42,8 @@ class SgFadeScreen extends SgSWEH
 	
 	void RaiseFade()
 	{
+		if ( m_Root == null) { return; }
+		
 		float alpha = m_Root.GetAlpha() + ( 1.0 / 50.0 );
 		if( alpha < 1 )
 		{
@@ -56,6 +58,8 @@ class SgFadeScreen extends SgSWEH
 	
 	void LowerFade()
 	{
+		if ( m_Root == null) { return; }
+		
 		float alpha = m_Root.GetAlpha() - ( 1.0 / 50.0 );
 		if( alpha > 0 )
 		{

@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////
 //DeRap: sg_items_gear_functional\collar\config.bin
-//Produced from mikero's Dos Tools Dll version 7.16
-//https://armaservices.maverick-applications.com/Products/MikerosDosTools/default
-//'now' is Tue Jul 23 06:59:54 2019 : 'file' last modified on Tue Jun 25 14:33:16 2019
+//Produced from mikero's Dos Tools Dll version 7.27
+//https://bytex.market/products/item/weodpphdknnzm70o0h8q/Mikero%27s%20Dos%20Tools
+//'now' is Thu Aug 01 16:12:30 2019 : 'file' last modified on Mon Jul 29 11:31:30 2019
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
@@ -36,39 +36,32 @@ class CfgAmmo
 	class DefaultAmmo;
 	class SG_CollarExplosion: DefaultAmmo
 	{
-		hit = 0.1;
 		indirectHit = 1;
-		indirectHitRange = 0.1;
+		indirectHitRange = 0.5;
 		effect = "SgEffCollarExplosion";
 		explosive = 1;
 		typicalSpeed = 3;
 		initSpeed = 3;
-		fuseDistance = 1;
-		cost = 40;
 		simulation = "shotShell";
 		simulationStep = 0.05;
 		soundSetExplosion[] = {"Grenade_explosion_SoundSet","Grenade_Tail_SoundSet"};
 		soundHit[] = {"DZ\sounds\weapons\grenades\hand_grenade_1",10.0,1};
 		soundFly[] = {"dz\sounds\Weapons\explosions\noise",3.162277e-005,1};
 		soundEngine[] = {"",9.999998e-005,4};
-		visibleFire = 2;
-		audibleFire = 0.25;
-		whistleDist = 4;
-		visibleFireTime = 0;
 		class DamageApplied
 		{
-			type = "Projectile";
+			type = "FragGrenade";
 			class Health
 			{
-				damage = 99;
+				damage = 50;
 			};
 			class Blood
 			{
-				damage = 500;
+				damage = 0;
 			};
 			class Shock
 			{
-				damage = 500;
+				damage = 0;
 			};
 		};
 	};

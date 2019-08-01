@@ -22,4 +22,9 @@ modded class ActionGiveSalineSelf
 		
 		return false;
 	}
+	
+	override void OnFinishProgressServer( ActionData action_data )
+	{			
+		
+	}
 };

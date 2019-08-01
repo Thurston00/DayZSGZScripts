@@ -20,6 +20,7 @@ class SgNetworkService
 	static private ref ScriptInvoker Event_OnLobbyPlayerReadied;
 	static private ref ScriptInvoker Event_OnLobbyStarted;
 	static private ref ScriptInvoker Event_OnGameServerIsReadied;
+	static private ref ScriptInvoker Event_OnAddedToMatch;
 	
 	// Server Events only 
 	static private ref ScriptInvoker Event_OnGameServerMatchInfoLoaded;	
@@ -55,6 +56,27 @@ class SgNetworkService
 	proto native SgEResult GameServerFinishGame(SgNetServerDataGameFinishRequest inputValue);
 	
 	static private bool m_IsLoggedIn = false;
+	
+	// ----------------------------------------------------------------------------
+	// CLEAN UP
+	
+	static void CleanUp()
+	{
+		if ( Event_OnLoggedIn != null ) 					{ Event_OnLoggedIn.Clear(); }
+		if ( Event_OnLobbyListLoaded != null ) 				{ Event_OnLobbyListLoaded.Clear(); }
+		if ( Event_OnLobbyCreated != null ) 				{ Event_OnLobbyCreated.Clear(); }
+		if ( Event_OnLobbyDeleted != null ) 				{ Event_OnLobbyDeleted.Clear(); }
+		if ( Event_OnLobbyJoined != null ) 					{ Event_OnLobbyJoined.Clear(); }
+		if ( Event_OnLobbyLeft != null ) 					{ Event_OnLobbyLeft.Clear(); }
+		if ( Event_OnLobbySlotSet != null ) 				{ Event_OnLobbySlotSet.Clear(); }
+		if ( Event_OnTeamJoined != null ) 					{ Event_OnTeamJoined.Clear(); }
+		if ( Event_OnTeamLeft != null ) 					{ Event_OnTeamLeft.Clear(); }
+		if ( Event_OnLobbyPlayerReadied != null ) 			{ Event_OnLobbyPlayerReadied.Clear(); }
+		if ( Event_OnLobbyStarted != null ) 				{ Event_OnLobbyStarted.Clear(); }
+		if ( Event_OnGameServerIsReadied != null ) 			{ Event_OnGameServerIsReadied.Clear(); }
+		if ( Event_OnGameServerMatchInfoLoaded != null ) 	{ Event_OnGameServerMatchInfoLoaded.Clear(); }
+
+	}
 	
 	// ----------------------------------------------------------------------------
 	// GETTERS
@@ -169,6 +191,14 @@ class SgNetworkService
 		}
 		return Event_OnGameServerMatchInfoLoaded;
 	}
+	ScriptInvoker GetEvent_OnAddedToMatch()
+	{
+		if (!Event_OnAddedToMatch)
+		{
+			Event_OnAddedToMatch = new ScriptInvoker();
+		}
+		return Event_OnAddedToMatch;
+	}
 	
 	// ----------------------------------------------------------------------------
 	// CALLBACKS - Event methods / invokes 
@@ -185,6 +215,10 @@ class SgNetworkService
 	
 	void OnAddedToMatch()
 	{
+		if (Event_OnAddedToMatch)
+		{
+			Event_OnAddedToMatch.Invoke();
+		}
 		
 	}
 

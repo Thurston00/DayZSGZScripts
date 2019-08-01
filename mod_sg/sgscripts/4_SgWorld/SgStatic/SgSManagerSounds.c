@@ -20,7 +20,7 @@ class SgSManagerSounds
 		{			
 			m_EffectSound10to1 		= SEffectManager.CreateSound( SgAudioManager.TimeLeft10to01, "0 0 0" );
 			m_EffectSound03to1 		= SEffectManager.CreateSound( SgAudioManager.TimeLeft03to01, "0 0 0" );
-			m_EffectSoundAirSiren	= SEffectManager.CreateSound( SgAudioManager.AirSiren, "0 0 0", 0, 0, false, true );
+			m_EffectSoundAirSiren	= SEffectManager.CreateSound( SgAudioManager.AirSiren, "0 0 0", 0, 0, false, true);
 			
 			m_AreResourcesLoaded 	= true;
 		}

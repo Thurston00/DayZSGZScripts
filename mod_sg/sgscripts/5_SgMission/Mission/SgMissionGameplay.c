@@ -94,16 +94,6 @@ modded class MissionGameplay
 		{
 			PlayerControlDisable(INPUT_EXCLUDE_ALL);
 		}
-		
-		PlayerBase player;
-
-		if (player && m_LifeState == EPlayerStates.ALIVE && !player.IsUnconscious() )
-		{	
-			if ( g_Game.GetInput().LocalPress("UAZeroingUp",false) || g_Game.GetInput().LocalPress("UAZeroingDown",false) || g_Game.GetInput().LocalPress("UAToggleWeapons",false) )
-			{
-				player.GetPlayerEvents().GetEvent_OnFireModeSwiched().Invoke(player.GetCurrentWeaponMode());
-			}
-		}
 	}
 	
 	override void PlayerControlEnable()

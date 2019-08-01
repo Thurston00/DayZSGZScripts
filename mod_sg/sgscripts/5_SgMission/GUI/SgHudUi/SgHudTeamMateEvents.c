@@ -26,7 +26,13 @@ class SgHudTeamMateEvents
 	void SgHudTeamMateEvents(SgPlayerClient teammate)
 	{
 		m_Teammate = teammate;
-		RegisterAllEvents();				//SG_60:40 - Hide The Aswesome Stuff Tha tDesigners Don't Want To Have In The Game For Now
+		
+		//Print("TEAMMATE HUD INIT");
+		//Print("TEAMMATE NAME: " 	+ m_Teammate.GetUserName());
+		//Print("TEAMMATE NAME: " 	+ m_Teammate.GetPlayerUID());
+		//Print("TEAMMATE TEAM ID: " 	+ m_Teammate.GetTeamID());
+		
+		RegisterAllEvents();				//SG_60:40
 	}	
 	void ~SgHudTeamMateEvents()
 	{
@@ -38,7 +44,7 @@ class SgHudTeamMateEvents
 		Print("-------------------------------------------------------------");	
 	}	
 	private void RegisterAllEvents()
-	{
+	{		
 		// Player info updates
 		SgPlayerBaseEvents player_events = m_Teammate.GetPlayerBase().GetPlayerEvents();	// Get PlayerBase events
 		
@@ -68,11 +74,7 @@ class SgHudTeamMateEvents
 	
 	// Event Updates --------------------------------------------
 	private void OnTeammateHealthUpdate(float health)
-	{
-	//	Print("Teammate ID: " 		+ m_Teammate.GetPlayerBase().GetIdentity().GetId() );
-	//	Print("Teammate Name: " 	+ m_Teammate.GetUserName() );
-	//	Print("Teammate Health: " 	+ health.ToString() );
-		
+	{		
 		if (m_LastHealth != health)
 		{
 			m_LastHealth = health;

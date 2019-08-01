@@ -1,10 +1,9 @@
 FrameWidgetClass rootFrame {
- position 0 0
- size 784 16
- valign center_ref
+ size 1 16
+ halign center_ref
  hexactpos 1
  vexactpos 1
- hexactsize 1
+ hexactsize 0
  vexactsize 1
  {
   GridSpacerWidgetClass Grid {
@@ -25,7 +24,7 @@ FrameWidgetClass rootFrame {
      clipchildren 0
      ignorepointer 1
      color 0.4902 0.4902 0.4902 1
-     size 288 1
+     size 400 1
      halign center_ref
      valign center_ref
      hexactpos 1

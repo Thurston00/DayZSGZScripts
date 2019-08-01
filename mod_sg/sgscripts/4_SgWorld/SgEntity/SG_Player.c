@@ -17,6 +17,8 @@ modded class PlayerBase
 	protected SgEPlayerStates 		m_PlayerState;
 	
 	protected ref SgPlayerBaseEvents	m_PlayerEvents = new SgPlayerBaseEvents();	
+	
+	protected ref TStringArray m_DamageZones = new TStringArray;
 		
 //----------------------------------------------------------------------------------------	
 //----------------------------------------------------------------------------------------
@@ -47,6 +49,8 @@ modded class PlayerBase
 		m_ClientHealth = GetMaxHealth("GlobalHealth", "Health");
 		
 		SgSManagerEventsServer.Event_OnGameStarted.Insert( Event_OnGameStarted );
+		
+		GetDamageZones( m_DamageZones );
 	}
 	
 	override void SetActions()
@@ -244,7 +248,7 @@ modded class PlayerBase
 			m_BleedingManagerServer.EnableAddingNewBleedingSources(false);
 			m_BleedingManagerServer.RemoveAllSources();
 			DayZPlayerSyncJunctures.SendPlayerUnconsciousness(this, true);
-			SetHealth("GlobalHealth", "Health", 100);
+			SetHealthEntirePlayer( GetMaxHealth("GlobalHealth", "Health") );
 		}
 	}
 	
@@ -459,10 +463,32 @@ modded class PlayerBase
 	
 	void ProcessMedicals( MedicalProfile profile, float consumedquantity )
 	{
-		int max_health = GetMaxHealth("GlobalHealth", "Health");
 		float percentage_heal = consumedquantity * profile.GetPercentageHeal();
 		
-		AddHealth("GlobalHealth", "Health", ( ( max_health / 100 ) * percentage_heal ) );
+		AddHealthEntirePlayer( percentage_heal );
+	}
+	
+	void AddHealthEntirePlayer( float percentage_heal )
+	{
+		int max_health = GetMaxHealth("GlobalHealth", "Health");
+		float heal_amount = ( max_health / 100 ) * percentage_heal;
+		
+		AddHealth( "GlobalHealth", "Health", heal_amount );
+		
+		for ( int i = 0; i < m_DamageZones.Count(); i++ )
+		{
+			AddHealth( m_DamageZones.Get(i), "Health", heal_amount );
+		}
+	}
+	
+	void SetHealthEntirePlayer( float set_health )
+	{
+		AddHealth( "GlobalHealth", "Health", set_health );
+		
+		for ( int i = 0; i < m_DamageZones.Count(); i++ )
+		{
+			AddHealth( m_DamageZones.Get(i), "Health", set_health );
+		}
 	}
 	
 	//===================================

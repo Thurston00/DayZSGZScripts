@@ -130,13 +130,14 @@ FrameWidgetClass rootFrame {
      clipchildren 0
      ignorepointer 1
      position 0 10
-     size 18 48
+     size 90 48
      hexactpos 1
      vexactpos 1
      hexactsize 1
      vexactsize 1
-     text "..."
+     text "(00:00)"
      font "gui/fonts/sdf_MetronBook72"
+     "text offset" 16 0
      "bold text" 1
      "exact text" 1
      "exact text size" 24

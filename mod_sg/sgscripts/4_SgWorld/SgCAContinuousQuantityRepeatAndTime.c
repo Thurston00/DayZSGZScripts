@@ -119,7 +119,7 @@ class SgCAContinuousQuantityRepeatAndTime : CAContinuousBase
 		}
 		else
 		{
-			return 1 - ( m_ItemQuantity - m_SpentQuantity ) / m_ItemMaxQuantity );
+			return 1 - ( m_ItemQuantity - m_SpentQuantity ) / m_ItemMaxQuantity;
 		}
 	}
 	
@@ -140,7 +140,7 @@ class SgCAContinuousQuantityRepeatAndTime : CAContinuousBase
 			}
 			else 
 			{
-				player_target.AddHealth("GlobalHealth", "Health", m_SpentQuantity * ( max_health / m_ItemMaxQuantity ) );
+				player_target.AddHealthEntirePlayer( PERCENTAGE_HEAL_COUNSCIOUS );
 			}	
 		}
 	}

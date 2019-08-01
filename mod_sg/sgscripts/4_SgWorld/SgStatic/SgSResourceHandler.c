@@ -67,20 +67,20 @@ class SgSResourceHandler
 	//===================================	
 	static void LocationAIGroupsSpawnDataSave( int pgId, string locationName, SgJsonLocationAIGroupsSpawnData spawnData )
 	{		
-		JsonSerializer js = new JsonSerializer();
+		FileSerializer file = new FileSerializer();
 		
-		string filePath = "mod_sg/SgPlaygrounds/SgPlayground_" + pgId + "/SgLocationAIGroupsSpawnData_" + locationName + ".json";
-		string jsonContent;
+		string data_path = "mod_sg/SgPlaygrounds/SgPlayground_" + pgId + "/SgLocationAIGroupsSpawnData_" + locationName + ".sg";
 		
-		if ( js.WriteToString( spawnData, true, jsonContent ) )
+		if ( file.Open( data_path, FileMode.WRITE ) )
 		{
-			FileHandle f = OpenFile( filePath, FileMode.WRITE );
+			file.Write( spawnData );
+			file.Close();
 			
-			if ( f != 0 )
-			{
-				FPrintln( f, jsonContent );
-				CloseFile(f);
-			}
+			Print("AI is saved: " + data_path);
+		}
+		else
+		{
+			Error("AI Save Error => cant open file: " + data_path );
 		}
 	}
 	
@@ -89,31 +89,21 @@ class SgSResourceHandler
 	//===================================
 	static SgJsonLocationAIGroupsSpawnData LocationAIGroupsSpawnDataLoad( int pgId, string locationName, )
 	{
-		ref SgJsonLocationAIGroupsSpawnData locationAIGroupsSpawnData = new SgJsonLocationAIGroupsSpawnData();
+		SgJsonLocationAIGroupsSpawnData locationAIGroupsSpawnData = new SgJsonLocationAIGroupsSpawnData();
 		
-		string filePath = "mod_sg/SgPlaygrounds/SgPlayground_" + pgId + "/SgLocationAIGroupsSpawnData_" + locationName + ".json";
-		FileHandle fileHandle = OpenFile( filePath, FileMode.READ );
-		JsonSerializer js = new JsonSerializer();
+		FileSerializer file = new FileSerializer();		
+		string data_path = "mod_sg/SgPlaygrounds/SgPlayground_" + pgId + "/SgLocationAIGroupsSpawnData_" + locationName + ".sg";
+	
+		if ( file.Open( data_path, FileMode.READ ) )
+		{
+			if ( !file.Read( locationAIGroupsSpawnData ) )
+			{
+				Error( "SG ERROR => LOCATION AI GROUPS DATA LOAD [" + data_path + "]: " );
+			}
+			
+			file.Close();				
+		}
 		
-		string jsError = "";
-		string lineContent = "";
-		string content = "";		
-		while ( FGets( fileHandle,  lineContent ) >= 0 )
-		{
-			content += lineContent;
-		}
-		CloseFile( fileHandle );	
-		
-		if ( js.ReadFromString( locationAIGroupsSpawnData, content, jsError ) )
-		{
-			return locationAIGroupsSpawnData;
-		}
-		else
-		{
-			Error( "JSON ERROR => LOCATION AI GROUPS DATA LOAD [" + filePath + "]: " + jsError );
-			DumpStack();
-		}
-
 		return locationAIGroupsSpawnData;
 	}
 	

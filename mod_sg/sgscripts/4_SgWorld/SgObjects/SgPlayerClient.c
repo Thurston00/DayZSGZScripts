@@ -79,7 +79,8 @@ class SgPlayerClient
 	// GetPosition
 	//===================================
 	vector GetPosition()
-	{		
+	{
+		if ( GetPlayerBase() == null ) { return "0 0 0"; } // SG_TODO: Fix to dont overkill user logs with errors (alpha lunch steam id issues)
 		return GetPlayerBase().GetPosition();
 	}
 	
@@ -88,6 +89,7 @@ class SgPlayerClient
 	//===================================
 	vector GetDirection()
 	{
+		if ( GetPlayerBase() == null ) { return "0 0 0"; } // SG_TODO: Fix to dont overkill user logs with errors (alpha lunch steam id issues)
 		return GetPlayerBase().GetDirection();
 	}
 	

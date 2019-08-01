@@ -7,9 +7,12 @@ class SgPlayer
 	protected int					m_TeamID;
 	protected PlayerBase			m_PlayerBase;
 	protected ref SG_Collar			m_Collar;
+	protected int					m_UserConnectionTimeOut;
 	
 	//SG_TODO: termporary solution for vertical slice
-	protected bool		 			m_IsShell = true;
+	protected bool		 			m_IsUserConnected;
+	
+	protected static const int CONNECTION_TIMEOUT_TIME = 120;
 
 	//==================================
 	// SgPlayer Constructor
@@ -35,7 +38,7 @@ class SgPlayer
 	void PostInit()
 	{	
 		PlayerIdentity identity = m_PlayerBase.GetIdentity();
-		m_IsShell				= false;
+		m_IsUserConnected = true;
 
 		m_PlayerBase.SetCanBeDestroyed(false);
 	}
@@ -89,11 +92,30 @@ class SgPlayer
 	}
 	
 	//===================================
-	// GetIsShell
+	// GetIsUserConnected
 	//===================================
-	bool GetIsShell()
+	bool GetIsUserConnected()
 	{
-		return m_IsShell;
+		return m_IsUserConnected;
+	}
+	
+	//===================================
+	// CheckConnectionTimeOut
+	//===================================
+	void CheckConnectionTimeOut()
+	{
+		if ( !GetIsUserConnected() )
+		{
+			if ( m_UserConnectionTimeOut < CONNECTION_TIMEOUT_TIME )
+			{
+				m_UserConnectionTimeOut++;
+				
+				if ( m_UserConnectionTimeOut >= CONNECTION_TIMEOUT_TIME )
+				{
+					m_Collar.CollarExplode();
+				}
+			}
+		}		
 	}
 	
 	//===================================

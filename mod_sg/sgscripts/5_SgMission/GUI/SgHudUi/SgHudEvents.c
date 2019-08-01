@@ -153,8 +153,9 @@ class SgHudEvents
 		SgSClientTimer.ClientEvent_OneSecondTimerUpdate.Remove(OnRoundTimerSync);								// Round Timer
 		// Gear info panel updates
 		m_PlayerEvents.GetEvent_OnStanceUpdate().Remove(OnStanceUpdate);								// Player Stance
-		m_PlayerBase.GetOnItemAddedToHands().Remove(OnItemInHandsAdded);								// Item in hands Added
-		m_PlayerBase.GetOnItemRemovedFromHands().Remove(OnItemInHandsRemoved);							// Item in hands Removed
+		//SG_TODO: Cant get ref on methods.
+		//m_PlayerBase.GetOnItemAddedToHands().Remove(OnItemInHandsAdded);								// Item in hands Added
+		//m_PlayerBase.GetOnItemRemovedFromHands().Remove(OnItemInHandsRemoved);							// Item in hands Removed
 		m_PlayerEvents.GetEvent_OnFireModeSwiched().Remove(OnFireModeUpdate);							// Weapon fire ModelEntity
 		m_PlayerClient.GetOnHelmetChangedEvent().Remove(OnHelmetUpdate);								// Helmet			//SG_60:40 
 		m_PlayerClient.GetOnVestChangedEvent().Remove(OnVestUpdate);									// Vest				//SG_60:40 
@@ -166,13 +167,17 @@ class SgHudEvents
 		array<string> team_members = SgSClientGame.GetTeammates();										// List of team members ids	
 		string player_uid = SgSClientGame.GetPlayerUID();												// Client id
 		
+		Print("Your ID: "+ player_uid);
+		
 		// For each team member 
 		for (int slot = 0; slot < team_members.Count(); slot++)
 		{
-			string team_member_uid = team_members[slot];												// Team member ID 
+			string team_member_uid = team_members[slot];												// Team member ID
+			Print("team_member_uid: "+ team_member_uid);
 			// if team member id is different than client id
 			if ( team_member_uid != player_uid )
 			{
+				Print("team_member_uid: This is your teammate: "+ team_member_uid);
 				// Get teammate client
 				SgPlayerClient teammate = SgSClientGame.GetPlayerByUID(team_member_uid);	
 				if (teammate)
@@ -191,7 +196,7 @@ class SgHudEvents
 	void Update(float time_slice)
 	{
 		// Compass
-		OnUpdateCompass(GetGame().GetCurrentCameraDirection());							//SG_60:40 - Hide The Aswesome Stuff Tha tDesigners Don't Want To Have In The Game For Now
+		OnUpdateCompass(GetGame().GetCurrentCameraDirection());							//SG_60:40
 		// Sound
 		OnPresenceUpdate();
 		// Markers

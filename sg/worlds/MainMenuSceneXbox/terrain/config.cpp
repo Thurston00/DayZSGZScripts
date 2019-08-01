@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////
 //DeRap: sg_worlds_MainMenuSceneXbox\config.bin
-//Produced from mikero's Dos Tools Dll version 7.16
-//https://armaservices.maverick-applications.com/Products/MikerosDosTools/default
-//'now' is Tue Jul 23 06:59:59 2019 : 'file' last modified on Thu Apr 11 10:50:54 2019
+//Produced from mikero's Dos Tools Dll version 7.27
+//https://bytex.market/products/item/weodpphdknnzm70o0h8q/Mikero%27s%20Dos%20Tools
+//'now' is Thu Aug 01 16:12:34 2019 : 'file' last modified on Tue Jul 23 11:28:26 2019
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_

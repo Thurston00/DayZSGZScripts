@@ -26,9 +26,7 @@ class SgCasterCamera : Camera
 	protected int					m_LastPostFrameTickTime;
 	
 	void SgCasterCamera()
-	{
-		SgSClientGame.Event_OnCasterCameraCreated( this );
-		
+	{		
 		SetActive( true );
 		
 		SetEventMask(EntityEvent.POSTFRAME);

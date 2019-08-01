@@ -26,24 +26,9 @@ class SgSClientGame
 	private static SG_StaticCollarDeactivator 					m_CollarDeactivator;
 
 	static ref ScriptInvoker Event_OnGamePlayersAliveCount		= new ScriptInvoker();
-	static ref ScriptInvoker Event_OnDeadcamStart				= new ScriptInvoker();
-	static ref ScriptInvoker Event_OnCasterCameraCreated		= new ScriptInvoker();
-	static ref ScriptInvoker Event_OnClientPlayerDied 			= new ScriptInvoker();
 
 	static void Init()
-	{
-		if ( !m_UserPlayers )
-		{
-			m_UserPlayers = new array<PlayerBase>;
-		}
-
-		m_Players = new array<ref SgPlayerClient>;
-		m_PlayerUIDsTeams = new array<ref SgSyncPlayerInfo>;
-		m_TeamPlayersUIDs = new array<string>;
-		m_PoIEffects = new array<int>;
-		m_CarPositions = new array<vector>;
-		m_HeliPositions = new array<vector>;
-
+	{		
 		SgSSyncEvents.SyncEvent_OnGameStarted.Insert( SyncEvent_OnGameStarted );
 		SgSSyncEvents.SyncEvent_OnGamePhaseChanged.Insert( SyncEvent_OnGamePhaseChanged );
 		SgSSyncEvents.SyncEvent_OnGameShowPoI.Insert( SyncEvent_OnGameShowPoI );
@@ -54,6 +39,38 @@ class SgSClientGame
 		SgSSyncEvents.SyncEvent_OnCollarExplode.Insert( SyncEvent_OnCollarExplode );
 	}
 
+	static void CleanUp()
+	{
+		m_GameState 			= ESgGameState.WarmUp;
+		m_LocationType 			= ESgLocationType.PhaseFirst;
+		m_LocationDuration		= 0;
+		m_PlayersAliveCount 	= 0;
+		m_IsCollarDamageBlocked = false;
+		
+		m_UserPlayers 			= new array<PlayerBase>;
+		m_PlayerUIDsTeams 		= new array<ref SgSyncPlayerInfo>;
+		m_TeamPlayersUIDs 		= new array<string>;
+		
+		m_JsonPgData			= null;
+		
+		m_PoIEffects 			= new array<int>;
+		m_CarPositions 			= new array<vector>;
+		m_HeliPositions 		= new array<vector>;
+		
+		m_CurrentPhasePosition  = "0 0 0";
+		m_Deadcam				= null;
+		m_PlayerUID 			= SG_UID_PLACEHOLDER;
+		m_DeadCamNextTarget		= null;
+		m_Player				= null;
+		
+		m_Players 				= new array<ref SgPlayerClient>;
+		
+		m_CollarBeep			= null;
+		m_CollarDeactivator		= null;
+		
+		Event_OnGamePlayersAliveCount.Clear();
+	}
+	
 	static void DebugUpdate()
 	{
 Print("GetPlayerBySgID Count: "+ m_Players.Count());
@@ -225,11 +242,6 @@ Print("GetPlayerBySgID i: " + i);
 		SgPlayerClient player = GetPlayerByUID( player_uid );
 		player.Died();
 		
-		if (GetGame().GetPlayer().GetIdentity().GetId() == player_uid)			// SG_TODO reduce getters 
-		{
-			Event_OnClientPlayerDied.Invoke();
-		}
-
 		Print("Your Team:");
 		for ( int i = 0; i < m_TeamPlayersUIDs.Count(); ++i )
 		{
@@ -323,11 +335,16 @@ Print("GetPlayerBySgID i: " + i);
 		{
 			m_CollarBeep.SoundStop();
 		}
-				
-		m_CollarBeep = SEffectManager.PlaySound(SgAudioManager.CollarTimer1sec, player.GetPlayerBase().GetPosition());
-		m_CollarBeep.SetSoundAutodestroy(true);
+		
+		PlayerBase player_base = player.GetPlayerBase();
+		
+		if ( player_base )
+		{
+			m_CollarBeep = SEffectManager.PlaySound(SgAudioManager.CollarTimer1sec, player_base.GetPosition());
+			m_CollarBeep.SetSoundAutodestroy(true);
+		}
 	}
-
+	
 	//============================================
 	// SyncEvent_OnCollarExplode
 	//============================================
@@ -342,14 +359,6 @@ Print("GetPlayerBySgID i: " + i);
 
 			SEffectManager.PlayInWorld( new SgEffCollarExplosion(), head_position );
 		}
-	}
-
-	//============================================
-	// Event_OnCasterCameraCreated
-	//============================================
-	static void Event_OnCasterCameraCreated( SgCasterCamera camera )
-	{
-		Event_OnCasterCameraCreated.Invoke( camera );
 	}
 
 	// SG_TODO: SG-929
@@ -485,24 +494,27 @@ Print("GetPlayerBySgID i: " + i);
 		for ( int i = 0; i < m_UserPlayers.Count(); ++i )
 		{
 			PlayerBase player = m_UserPlayers[i];
-			PlayerIdentity identity = player.GetIdentity();
 			
-			if ( identity == null)
+			if ( player )
 			{
-				foreach ( SgSyncPlayerInfo playerInfo : m_PlayerUIDsTeams )
+				PlayerIdentity identity = player.GetIdentity();
+				
+				if ( identity == null )
 				{
-					if ( playerInfo.m_PlayerUID == player_uid )
+					foreach ( SgSyncPlayerInfo playerInfo : m_PlayerUIDsTeams )
 					{
-						return PlayerBase.Cast( GetGame().GetObjectByNetworkId( playerInfo.m_LowBits, playerInfo.m_HighBits ) );	
+						if ( playerInfo.m_PlayerUID == player_uid )
+						{
+							Object network_object = GetGame().GetObjectByNetworkId( playerInfo.m_LowBits, playerInfo.m_HighBits );
+							PlayerBase network_player = PlayerBase.Cast( network_object );
+							return network_player;
+						}
 					}
 				}
-				
-				return null;
-			}
-			
-			if ( identity.GetId() == player_uid )
-			{
-				return player;
+				else if ( identity.GetId() == player_uid )
+				{
+					return player;
+				}
 			}
 		}
 
@@ -607,10 +619,7 @@ Print("GetPlayerBySgID i: " + i);
 	static void SetDeadcam( SgDeadcam dead_cam )
 	{
 		m_Deadcam = dead_cam;
-
-		Event_OnDeadcamStart.Invoke();
 	}
-
 
 	//============================================
 	// GetRandomAliveEnemy

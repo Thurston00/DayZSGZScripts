@@ -60,6 +60,10 @@ class SgUiMenuPanel extends ScriptedWidgetEventHandler
 	{
 		this.m_UiBackground.LoadImageFile(0,image_path);
 	}
+	void Show(bool is_shown)
+	{
+		m_RootFrame.Show(is_shown);
+	}
 	
 	// ↘ ↘ ↘  METHODS FOR OVERRIDE  ↙ ↙ ↙ 	
 	string GetLayoutPath()
