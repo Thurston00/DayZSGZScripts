@@ -2,7 +2,7 @@
 //DeRap: sg_worlds_chernarusplusminus\config.bin
 //Produced from mikero's Dos Tools Dll version 7.27
 //https://bytex.market/products/item/weodpphdknnzm70o0h8q/Mikero%27s%20Dos%20Tools
-//'now' is Thu Aug 01 16:12:32 2019 : 'file' last modified on Tue May 08 15:10:37 2018
+//'now' is Tue Aug 06 17:38:44 2019 : 'file' last modified on Tue May 08 15:10:37 2018
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_

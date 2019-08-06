@@ -1,7 +1,7 @@
 ﻿///<'sgscripts.pbo' properties via Mikero's dos tools, dll version 7.27>///
 product=sgz
 prefix=mod_sg\sgscripts
-version=5257P
+version=5284P
 //Pbo Type is: Arma Unknown pbo typ (no config).
-//Sha: '14E31A02CC9805F362EE9BA7DC8E7F6453D0B2B5'
+//Sha: '3876BA1370572043B830ED82B1B94C141CF43DB5'
 //////</properties>//////

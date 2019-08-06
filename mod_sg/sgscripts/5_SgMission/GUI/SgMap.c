@@ -241,8 +241,15 @@ class SgMap extends SgUISM
 	{
 		float map_x_scale, map_y_scale;
 		
-		map_x_scale = 2 / m_MapSourceXSize;
-		map_y_scale = 2 / m_MapSourceYSize;
+		/*
+			The script was originally written for a texture map size of 7680px times 7680px.
+			Later on the texture size was changed to 4096px times 4096px.
+			The m_MapSourceXSize and m_MapSourceYSize needs to be adjusted by:
+			the ratio between old and new teture sizel size = 1.06666666667
+			 
+		*/
+		map_x_scale = 1.06666666667 / m_MapSourceXSize;
+		map_y_scale = 1.06666666667 / m_MapSourceYSize;
 
 		float x = world_pos[0] * map_x_scale;
 		float y = world_pos[2] * map_y_scale;
@@ -445,8 +452,16 @@ class SgMapTracker
 	{
 		float map_x_scale, map_y_scale;
 		
-		map_x_scale = 2 / m_MapSourceXSize;
-		map_y_scale = 2 / m_MapSourceYSize;
+		/*
+			The script was originally written for a texture map size of 7680px times 7680px.
+			Later on the texture size was changed to 4096px times 4096px.
+			The m_MapSourceXSize and m_MapSourceYSize needs to be adjusted by:
+			the ratio between old and new teture sizel size = 1.06666666667
+			 
+		*/
+		
+		map_x_scale = 1.06666666667 / m_MapSourceXSize;
+		map_y_scale = 1.06666666667 / m_MapSourceYSize;
 
 		float x = world_pos[0] * map_x_scale;
 		float y = world_pos[2] * map_y_scale;

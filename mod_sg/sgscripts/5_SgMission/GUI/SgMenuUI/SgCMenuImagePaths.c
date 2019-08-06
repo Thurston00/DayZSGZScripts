@@ -68,7 +68,11 @@ class SgCMenuWidgetPaths
 	// MENU -> Hind navigation 
 	static const string HINT_NAVIGATION_NORMAL		= string.Format("set:%1 image:%2", IMAGESET_MENU, 		"button_navigation_normal" );
 	static const string HINT_NAVIGATION_SELECTED	= string.Format("set:%1 image:%2", IMAGESET_MENU, 		"button_navigation_selected" );
+	// Logos
+	static const string LOGO_SIMPLE					= string.Format("set:%1 image:%2", IMAGESET_MENU, 		"logo" );
+	static const string LOGO_FULL					= string.Format("set:%1 image:%2", IMAGESET_MENU, 		"logo_full" );
+	// Icons	
+	static const string ICON_ALERT					= string.Format("set:%1 image:%2", IMAGESET_MENU, 		"icon_alert" );
 	
-
 }
 

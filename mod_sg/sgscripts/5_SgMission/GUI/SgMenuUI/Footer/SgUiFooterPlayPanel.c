@@ -211,6 +211,7 @@ class SgUiFooterPlayPanel extends SgUiMenuPanel
 	private void StartStopwatch()
 	{
 		m_StopwatchTime = 0;
+		m_UiLoadingLabel.SetText("(00:00)");
 		GetGame().GetCallQueue(CALL_CATEGORY_GUI).CallLater(UpdateStopwatch, 1000, true);
 	}
 	// Stop thread

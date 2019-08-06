@@ -4,7 +4,7 @@ ImageSetClass {
  Textures {
   ImageSetTextureClass {
    mpix 1
-   path "{95163AA0A4BF58F0}mod_sg/gui/imagesets/sgz_new_ui/sgz_ui_menu_atlas.edds"
+   path "{DAFEF69175A4821F}mod_sg/gui/imagesets/sgz_new_ui/sgz_ui_menu_atlas.edds"
   }
  }
  Images {
@@ -18,6 +18,12 @@ ImageSetClass {
    Name "loading"
    Pos 3399 403
    Size 144 144
+   Flags 0
+  }
+  ImageSetDefClass icon_alert {
+   Name "icon_alert"
+   Pos 3627 486
+   Size 64 64
    Flags 0
   }
  }

@@ -1,7 +1,7 @@
 MetaFileClass {
  Name "{DAFEF69175A4821F}mod_sg/gui/imagesets/sgz_new_ui/sgz_ui_menu_atlas.edds"
  Author "pato-pc"
- ChangeDate 1563125483
+ ChangeDate 1977329413
  Configurations {
   TGAResourceClass PC {
    SourceFile "sgz_ui_menu_atlas.tga"

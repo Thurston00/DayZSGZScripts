@@ -22,6 +22,7 @@ FrameWidgetClass rootFrame {
    mode blend
   }
   PanelWidgetClass ContentFrame {
+   position 0 0
    size 544 272
    halign center_ref
    valign center_ref
@@ -196,7 +197,6 @@ FrameWidgetClass rootFrame {
            {
             FrameWidgetClass InputFrame {
              ignorepointer 1
-             position 0 0
              size 1 64
              halign center_ref
              valign center_ref

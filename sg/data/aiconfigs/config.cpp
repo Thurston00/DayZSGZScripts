@@ -2,7 +2,7 @@
 //DeRap: sg_data\aiconfigs\config.bin
 //Produced from mikero's Dos Tools Dll version 7.27
 //https://bytex.market/products/item/weodpphdknnzm70o0h8q/Mikero%27s%20Dos%20Tools
-//'now' is Thu Aug 01 16:12:29 2019 : 'file' last modified on Mon Jul 29 10:57:32 2019
+//'now' is Tue Aug 06 17:38:41 2019 : 'file' last modified on Mon Jul 29 10:57:32 2019
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_

@@ -47,3 +47,8 @@ class SgCPopupButtonTexts
 	static const string ENTER 						= "#sg_menu_buttons_enter_c";
 	static const string RETRY 						= "#sg_menu_buttons_retry_c";
 }
+
+class SgCPopupNoteTexts
+{
+	static const string UP_TO_DATE					= "*Make sure your game is up to date.";
+}

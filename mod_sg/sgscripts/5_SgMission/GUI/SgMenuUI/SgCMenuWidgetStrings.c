@@ -14,8 +14,9 @@ class SgCMenuWidgetStrings
 	static const string WARMUP_WAITING				= "#sg_popup_content_waiting_for_players";
 	static const string WARMUP_STARTING				= "#sg_popup_content_starting";
 	// Result Screen Strings
-	static const string RESULT_SCREEN_WINNER 		= "#sg_result_winner_c";
+	static const string RESULT_SCREEN_WINNER 		= "*YOU WON";
 	static const string RESULT_SCREEN_TEAM_RANK 	= "#sg_result_team_rank_c";
+	static const string RESULT_SCREEN_LOSER 		= "*YOU LOST";
 	// Endscreen
 	static const string END_SCREEN_WINNER_LINE_1	= "#sg_result_you_have_won_c";
 	static const string END_SCREEN_WINNER_LINE_2 	= "#sg_result_won_c";

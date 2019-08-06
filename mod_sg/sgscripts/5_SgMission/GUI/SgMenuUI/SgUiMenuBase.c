@@ -75,6 +75,12 @@ class SgUiMenuBase extends SgUiMenuPanel
 	{
 		m_Popup = new SgUiPopupResponse(header, message, primary_button_text, secondary_button_text);
 		return m_Popup.GetResponseEvent();
+	}	
+	ScriptInvoker OpenUserResponseInputNotePopup(string header, string message, string primary_button_text, string secondary_button_text, string note, string icon)		// Show question with closed question (Yes/No) 
+	{
+		m_Popup = new SgUiPopupResponseNote(header, message, primary_button_text, secondary_button_text);
+		SgUiPopupResponseNote.Cast(m_Popup).SetPopUpNote(note, icon);
+		return m_Popup.GetResponseEvent();
 	}
 	ScriptInvoker OpenUserTextInputPopup(string header, string primary_button_text, string secondary_button_text)								// Show popup that promp user input (password so on...)
 	{
@@ -207,7 +213,7 @@ class SgUiMenuBase extends SgUiMenuPanel
 			// Close the connecting popup
 			ClosePopup();
 			// Prop user to exit the game or try again
-			OpenUserResponseInputPopup(SgCPopupHeaderTexts.ALERT, SgCPopupDescTexts.E_SERVICE_CONNECT_FAIL , SgCPopupButtonTexts.RETRY, SgCPopupButtonTexts.EXIT).Insert(OnRetryPopupResponse);
+			OpenUserResponseInputNotePopup(SgCPopupHeaderTexts.ALERT, SgCPopupDescTexts.E_SERVICE_CONNECT_FAIL , SgCPopupButtonTexts.RETRY, SgCPopupButtonTexts.EXIT, SgCPopupNoteTexts.UP_TO_DATE, SgCMenuWidgetPaths.ICON_ALERT).Insert(OnRetryPopupResponse);
 		}
 	}
 	
